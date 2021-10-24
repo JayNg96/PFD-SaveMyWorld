@@ -19,6 +19,23 @@
     flex-direction: column!important;
 }
 
+/* Articles */
+.section-padding{
+    padding: 30px;
+  }
+
+/* Center and scale the image nicely */
+.bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/* Removes link colours */
+.remove-link-deco, .remove-link-deco:hover{
+    color: white;
+}
+
 /* Reference for .glassmorphism: https://glassmorphism.com/ */
 .glassmorphism {
     background: rgba( 255, 255, 255, 0.35 );
