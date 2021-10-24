@@ -1,3 +1,24 @@
+/* Header */
+.header{
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: auto;
+    padding-top: 10vh;
+    padding-bottom: 50vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
+}
+
+.centralise {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column!important;
+}
+
 /* Reference for .glassmorphism: https://glassmorphism.com/ */
 .glassmorphism {
     background: rgba( 255, 255, 255, 0.35 );
