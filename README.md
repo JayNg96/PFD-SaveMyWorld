@@ -6,8 +6,8 @@ Each of us can help to protect our planet in simple ways. We can follow the thre
 
 The challenge is whether we can use technology to help us in our effort to save our planet. Technology can educate both the young and old and help them understand the importance and value of our natural resources. Technology can aid us in our collaborative effort to protect the Earth.
 ## Team Members
-*👨‍💻 Alexander [Front-End Developer]
-*👨‍💻 Jian Wei [Full Stack Developer]
-*👨‍💻 Jun Keat [Full Stack Developer]
-*🖼️ Herman [Content Specialist]
-*🖼️ Mitchell [Content Specialist]
+* 👨‍💻 Alexander [Front-End Developer]
+* 👨‍💻 Jian Wei [Full Stack Developer]
+* 👨‍💻 Jun Keat [Full Stack Developer]
+* 🖼️ Herman [Content Specialist]
+* 🖼️ Mitchell [Content Specialist]
