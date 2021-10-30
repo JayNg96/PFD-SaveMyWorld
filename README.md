@@ -78,13 +78,13 @@ The challenge is whether we can use technology to help us in our effort to save 
 - Added Cart HTML/CSS/JS
 
 ### 18/10/2021 
-
+-
 
 # Credits
 
 ### shop.html Template(HTML/CSS/JS) taken from
-Video: https://www.youtube.com/watch?v=023Psne_-_4&ab_channel=freeCodeCamp.org
-Github: https://github.com/john-smilga/setup-files-js-comfy-house
+- [Video](https://www.youtube.com/watch?v=023Psne_-_4&ab_channel=freeCodeCamp.org).
+- [Github](https://github.com/john-smilga/setup-files-js-comfy-house).
 
 ### Content
 - [Contentful](https://www.youtube.com/watch?v=bLKkG0_4Xc4&ab_channel=PragmaticReviews).
@@ -101,5 +101,5 @@ Github: https://github.com/john-smilga/setup-files-js-comfy-house
 
 # Acknowledgement
 #### We received inspiration for this project from:
-- [Massdrop](https://drop.com/).
+- [?](https://?.com/).
 
