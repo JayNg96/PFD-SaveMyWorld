@@ -5,7 +5,6 @@ $(document).ready(function () {
     console.log(z);
 
     $("#submit-login").on("click", function (e) {
-        let inputFullName = $("#input-fullname").val();
         let inputEmail = $("#input-email").val();
         let inputPassword = $("#input-password").val();
 
