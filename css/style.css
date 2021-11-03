@@ -133,8 +133,6 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
     border-radius: 10px;
 }
 
-
-
 /* --------------- Navbar (Cart) ---------------- */
 .navbar {
     background: var(--mainWhite);
@@ -410,6 +408,47 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
     padding: 100%;
 }
 /* --------------- end of lottie loading ---------------- */
+/* --------------- log in page --------------- */
+.login-container{
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 30px;
+}
+
+.login-btn{
+    text-align: center;
+}
+
+.login-form{
+    margin:20px;
+}
+
+#submit-login{
+    margin-top: 2rem;
+    width: 20%;
+}
+/* --------------- end of log in page ---------------- */
+/* --------------- sign up page --------------- */
+
+.sign-up-container{
+    margin-left: 10%;
+    margin-right: 20%;
+    padding: 30px;
+}
+
+.sign-up-btn{
+    text-align: center;
+}
+
+.sign-up-form{
+    margin:20px;
+}
+
+#submit-sign-up{
+    margin-top: 2rem;
+    width: 20%;
+}
+/* --------------- end of sign un page ---------------- */
 /* --------------- responsive webpage css ----------------- */
 @media screen and (min-width: 768px) {
     .cart {
