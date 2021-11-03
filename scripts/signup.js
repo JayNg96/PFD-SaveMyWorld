@@ -6,17 +6,20 @@ $(document).ready(function () {
         let inputEmail = $("#input-email").val();
         let inputPassword = $("#input-password").val();
 
-        if(checkValidity(inputEmail)){
+        if(checkValidity(inputEmail)==true){
+            console.log("test1");
             addAccount(inputFullName, inputEmail, inputPassword);
         }
     });
 
     function addAccount(inputFullName, inputEmail, inputPassword){
+        console.log("test2")
         var jsondata = {
             "full-name": inputFullName,
             "email": inputEmail,
             "password": inputPassword
         };
+        console.log("test3");
         var settings = {
             "async": true,
             "crossDomain": true,
@@ -30,11 +33,13 @@ $(document).ready(function () {
             "processData": false,
             "data": JSON.stringify(jsondata)
         }
+        console.log("test4");
         $.ajax(settings).done(function (response) {
             console.log(response);
             window.alert('Successfully signed up. Redirecting to login page');
             window.location.href="login.html"
         });
+        console.log("test5");
     }
 
     function checkValidity(inputEmail){
@@ -52,6 +57,7 @@ $(document).ready(function () {
         }
         $.ajax(settings).done(function (response) {
                 console.log(response);
+                console.log("return response");
 
                 for(var i = 0; i < response.length; i++){
                     if(response[i].email == inputEmail){
