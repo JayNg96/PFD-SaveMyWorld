@@ -291,4 +291,3 @@ document.addEventListener("DOMContentLoaded", () => {
 	document.getElementById("lottie-loading-container").style.display = "none"
 }, 3000);**/
 //* ---------------------- end of loading JS ---------------------- *//
-

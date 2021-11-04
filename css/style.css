@@ -427,6 +427,14 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
     margin-top: 2rem;
     width: 20%;
 }
+
+@media screen and (max-width: 768px) {
+    #submit-login, #submit-sign-up {
+        min-width: 50%;
+    }
+
+    
+}
 /* --------------- end of log in page ---------------- */
 /* --------------- sign up page --------------- */
 
