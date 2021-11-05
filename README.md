@@ -73,8 +73,6 @@ Link:
   * This project makes use of Alt Tag Checker to check for any missing Alt tags.
 * [Typosaur](https://typosaur.us/)
   * This project makes use of Typosaur to check for any spelling errors.
-* [Cross-browser testing](https://accounts.lambdatest.com/)
-  * This project makes use of cross-browser tester to check how the website looks across different browsers.
 * [CSS Minifier](https://cssnano.co/playground/)
   * This project makes use of CSS Minifier to minify CSS code.
 * [JS Minifier](https://javascript-minifier.com/)
@@ -145,7 +143,7 @@ To be inserted when ready.
 * [Video](https://www.youtube.com/watch?v=023Psne_-_4&ab_channel=freeCodeCamp.org)
 * [Github](https://github.com/john-smilga/setup-files-js-comfy-house)
 * [Contentful](https://www.youtube.com/watch?v=bLKkG0_4Xc4&ab_channel=PragmaticReviews)
-## Inspiration
+### Inspiration
 * We received inspiration for this project from:
   * [Save The Earth Foundation](https://savetheearth.org/)
   * [We Love the Earth](https://welovetheearth.org/)
