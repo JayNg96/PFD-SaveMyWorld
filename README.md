@@ -121,14 +121,14 @@ Link:
 * We're working on it.
 # Credits
 References can also be found in the attached Word document titled "references".
-### Content
-#### Articles
+## Content
+### Articles
 APA References to be added as soon as word ver is finalised.
-#### YouTube videos
+### YouTube videos
 To be inserted when ready.
-### Media
-#### Images
-##### Shop (Contentful API)
+## Media
+### Images
+### Shop (Contentful API)
 - [book wallpaper](https://wallpapercave.com/tea-winter-and-books-wallpapers)
 - [Couch](https://www.zmartbuild.com/renovate-house-light-wall-framing/)
 - [Queen Panel Bed](https://www.bdcnetwork.com/marriott-hilton-and-ihg-continue-dominate-us-hotel-construction-pipeline-q2%E2%80%9920-close)
@@ -137,15 +137,15 @@ To be inserted when ready.
 - [Twin Panel Bed](https://www.bproperty.com/blog/different-types-of-beds/)
 - [Single Panel Bed](https://www.getorganizedcolumbus.com/tips-for-maximizing-small-spaces-in-your-home)
 - [King Panel Bed](https://enlightened-digital.com/the-future-of-smart-home-technology/)
-#### Lottie
-#### Icons
-### Acknowledgements
-#### Codes
-##### Shop Template (HTML, CSS & JavaScript)
+### Lottie
+### Icons
+## Acknowledgements
+### Codes
+#### Shop Template (HTML, CSS & JavaScript)
 * [Video](https://www.youtube.com/watch?v=023Psne_-_4&ab_channel=freeCodeCamp.org)
 * [Github](https://github.com/john-smilga/setup-files-js-comfy-house)
 * [Contentful](https://www.youtube.com/watch?v=bLKkG0_4Xc4&ab_channel=PragmaticReviews)
-#### Inspiration
+## Inspiration
 * We received inspiration for this project from:
   * [Save The Earth Foundation](https://savetheearth.org/)
   * [We Love the Earth](https://welovetheearth.org/)
