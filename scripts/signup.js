@@ -20,7 +20,7 @@ $(document).ready(function () {
             "password": inputPassword
         };
         console.log("test3");
-        var settings = {
+        let settings = {
             "async": true,
             "crossDomain": true,
             "url": "https://savetheearth-c589.restdb.io/rest/registered-accounts",
@@ -35,11 +35,12 @@ $(document).ready(function () {
         }
         console.log("test4");
         $.ajax(settings).done(function (response) {
+            console.log("test5");
             console.log(response);
             window.alert('Successfully signed up. Redirecting to login page');
             window.location.href="login.html"
-        });
-        console.log("test5");
+        })
+        console.log("test6");
     }
 
     function checkValidity(inputEmail){
@@ -57,8 +58,6 @@ $(document).ready(function () {
         }
         $.ajax(settings).done(function (response) {
                 console.log(response);
-                console.log("return response");
-
                 for(var i = 0; i < response.length; i++){
                     if(response[i].email == inputEmail){
                         window.alert('Email already in use. Redirecting to login page');
@@ -68,7 +67,36 @@ $(document).ready(function () {
                     }
                 }
         })
-        return status;
+        
+        if(status){
+            var jsondata = {
+                "full-name": inputFullName,
+                "email": inputEmail,
+                "password": inputPassword
+            };
+            console.log("test3");
+            let settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://savetheearth-c589.restdb.io/rest/registered-accounts",
+                "method": "POST",
+                "headers": {
+                "content-type": "application/json",
+                "x-apikey": APIKEY,
+                "cache-control": "no-cache"
+                },
+                "processData": false,
+                "data": JSON.stringify(jsondata)
+            }
+            console.log("test4");
+            $.ajax(settings).done(function (response) {
+                console.log("test5");
+                console.log(response);
+                window.alert('Successfully signed up. Redirecting to login page');
+                window.location.href="login.html"
+            })
+            console.log("test6");
+        }
 
     }
 
