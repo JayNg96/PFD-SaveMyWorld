@@ -18,7 +18,7 @@ Link:
 ## Team Members
 * 👨‍💻 Alexander [Front-End Developer]
 * 👨‍💻 Jian Wei [Full Stack Developer]
-* 👨‍💻 Jun Keat [Full Stack Developer]
+* 👨‍💻 Jun Keat [Back-End Developer]
 * 🖼️ Herman [Content Specialist]
 * 🖼️ Mitchell [Content Specialist]
 
