@@ -115,6 +115,7 @@ Link:
     * Sign Up
     * Login
 * Added images and content from wireframe
+* Added carousel for homepage
 ### Version 1.3 (17 November 2021)
 * We're working on it.
 # Credits

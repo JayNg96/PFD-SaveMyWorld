@@ -109,6 +109,11 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
         height: 100%;
     }
 
+/* Carousel */
+.carousel .carousel-item {
+    height: 450px;
+}
+
 /* Buttons */
 .btn {
     background-color: black;
