@@ -109,11 +109,6 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
         height: 100%;
     }
 
-/* Carousel */
-.carousel .carousel-item {
-    height: 450px;
-}
-
 /* Buttons */
 .btn {
     background-color: black;
@@ -467,6 +462,11 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
     .cart {
         width: 30vw;
         min-width: 450px;
+    }
+
+    /* Carousel */
+    .carousel .carousel-item {
+        height: 450px;
     }
 }
 
