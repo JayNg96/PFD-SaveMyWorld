@@ -13,7 +13,7 @@ $(document).ready(function () {
     });
 
     function checkValidity(inputEmail, inputPassword){
-        sessionStorage.setItem("loginStatus" , "invalid");
+        sessionStorage.setItem("loginStatus" , "loggedOut");
         let settings = {
             "async": true,
             "crossDomain": true,
@@ -33,14 +33,19 @@ $(document).ready(function () {
                         if(response[i].password == inputPassword){
                             window.alert('Login Successful');
                             window.location.href="index.html"
-                            sessionStorage.setItem("loginStatus" , "valid")
+                            sessionStorage.setItem("loginStatus" , "loggedIn")
+                            sessionStorage.setItem("user_id", response[i]._id);
                             sessionStorage.setItem("full_name", response[i].full_name);
+                            sessionStorage.setItem("email", response[i].email);
+                            sessionStorage.setItem("password", response[i].password);
+                            sessionStorage.setItem("cart", response[i].cart);
+                            sessionStorage.setItem("points", response[i].points);
                             break;
                         }
                     }
                 }
                 var status = sessionStorage.getItem("loginStatus");
-                if(status == "invalid")
+                if(status == "loggedOut")
                 {
                     window.alert('Wrong password and/or email. Please try again');
                     document.getElementById('input-email').value = "";

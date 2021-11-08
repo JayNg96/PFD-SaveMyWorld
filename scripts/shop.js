@@ -5,6 +5,7 @@ const client = contentful.createClient({
 });
 //RestDB
 const APIKEY = '6028a9575ad3610fb5bb5fe3';
+const APIKEY2 = '617ffebf63fbb2763ab02509'
 console.log(client);
 // variables
 const cartBtn = document.querySelector(".cart-btn");
@@ -24,6 +25,10 @@ if (parseFloat(localStorage['points']) > 0) {
 	totalPoints = parseFloat(localStorage['points']);
 }
 let pointEarned = 0;
+
+//* ---------------------- Retrieve Account Details ---------------------- *//
+var loginStatus = sessionStorage.getItem("loginStatus");
+
 //* ---------------------- shop.html JS ---------------------- *//
 class Products {
 	async getProducts() {
@@ -233,14 +238,14 @@ class UI {
 		// console.log(this);
 		cart = [];
 		this.setCartValues(cart);
-		Storage.saveCart(cart);
+		Storage.saveCart(cart, totalPoints);
 		if (cartContent.children.length < 1 || cartContent.children.length == undefined) {
 			alert("There are no item in cart.")
 		} else {
 			alert("Order has been placed! You've earned " + pointEarned.toFixed(0) + " points.");
 			totalPoints += pointEarned;
 			userPoints.innerHTML = parseFloat(totalPoints.toFixed(0));
-			Storage.savePoint(totalPoints.toFixed(0));
+			Storage.savePoint(cart, totalPoints.toFixed(0));
 		}
 		const buttons = [...document.querySelectorAll(".bag-btn")];
 		buttons.forEach(button => {
@@ -261,14 +266,52 @@ class Storage {
 		let products = JSON.parse(localStorage.getItem("products"));
 		return products.find(product => product.id === id);
 	}
-	static saveCart(cart) {
+	static saveCart(cart, totalPoints) {
 		localStorage.setItem("cart", JSON.stringify(cart));
 	}
 	static getCart() {
 		return localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
 	}
-	static savePoint(totalPoints) {
+	static savePoint(cart, totalPoints) {
+		console.log(cart);
+		console.log(totalPoints);
+
+		localStorage.setItem("cart", JSON.stringify(cart));
 		localStorage.setItem("points", totalPoints)
+		
+		let userId = localStorage.getItem("user_id");
+		let fullName = localStorage.getItem("full_name");
+		let email = localStorage.getItem("email");
+		let password = localStorage.getItem("password");
+
+		/* ------------------- Add to account database if logged in ------------------- */
+		if(loginStatus == "loggedIn"){
+			let jsondata = {
+                "full-name": fullName,
+                "email": email,
+                "password": password,
+				"cart": JSON.stringify(cart),
+				"points": totalPoints
+            };
+			var settings = {
+			"async": true,
+			"crossDomain": true,
+			"url": `https://savetheearth-c589.restdb.io/rest/registered-accounts/${userId}`,
+			"method": "PUT",
+			"headers": {
+				"content-type": "application/json",
+				"x-apikey": APIKEY2,
+				"cache-control": "no-cache"
+			},
+			"processData": false,
+			"data": JSON.stringify(jsondata)
+	}
+
+	$.ajax(settings).done(function (response) {
+	console.log(response);
+	console.log("test");
+	});
+		}
 	}
 }
 document.addEventListener("DOMContentLoaded", () => {

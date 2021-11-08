@@ -1,5 +1,5 @@
 var loggedIn = sessionStorage.getItem("loginStatus");
-if (loggedIn == "valid"){
+if (loggedIn == "loggedIn"){
     document.querySelector("#sign-up-dropdown").removeAttribute('href');
     var user = localStorage.getItem("full_name");
     document.querySelector("#sign-up-dropdown").innerHTML = user;
