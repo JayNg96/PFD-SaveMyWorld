@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../images/logo.png">
+
+    <!-- CSS -->
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Yeseva+One&display=swap" rel="stylesheet">
+
+        <!-- Self-Defined -->
+        <link href="../../css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!--
+    Title: Bootstrap
+    Author: Bootstrap
+    Date: 2021
+    Code version: 5.1
+    Availability: https://getbootstrap.com/docs/5.1/getting-started/introduction/
+    -->
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar sticky-top navbar navbar-expand-lg navbar-dark glassmorphism" style="background-color: #000D4A;">
+        
+        <!-- Logo & Name -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../images/logo.png" class="rounded mx-auto d-block d-inline-block align-top" alt="Logo" width="50" height="50"><h6>Earth Savers</h6>
+            </a>
+
+            <!-- Mobile nav bar button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav bar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <!-- Environmental Issues -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../environmentalissues/environmentalissues.html">Environmental Issues</a>
+                    </li>
+
+                    <!-- Learning -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Learning</a>
+                        <ul class="dropdown-menu glassmorphism-dropdown" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="3rs.html">Reduce, Reuse & Recycle</a></li>
+                            <li><a class="dropdown-item" href="playyourpart.html">Play Your Part</a></li>
+                            <li><a class="dropdown-item active" href="quiz.html">Quiz</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- What's Happening -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../whatshappening.html">What's Happening</a>
+                    </li>
+
+                    <!-- Support Us -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../supportus.html">Support Us</a>
+                    </li>
+
+                    <!-- Shop -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../shop.html">Shop</a>
+                    </li>
+
+                    <!-- Account -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
+
+                        <ul class="dropdown-menu glassmorphism-dropdown" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h2 style="text-align: center; padding-top: 10px;"><b>Quiz</b></h2>
+
+    <!-- Footer -->
+    <footer class="d-flex align-items-center justify-content-center glassmorphism-footer" style="color: white;">
+        <div class="container">
+          <div class="row my-5 px-0">
+              
+            <!-- Developer's Names & Links -->
+            <div class="col-6">
+              Earth Savers<br><br>
+              Connect with us<br><br>
+  
+              <a href="https://www.linkedin.com/school/ngee-ann-polytechnic/?originalSubdomain=sg" target="_blank"><img src="../../images/linkedin.png" alt="LinkedIn logo" width="32" height="32" title="LinkedIn"></a> 
+              <a href="https://github.com/JayNg96/PFD-SaveMyWorld" target="_blank"><img src="../../images/github-light.png" alt="GitHub logo" width="32" height="32" title="GitHub"></a>
+            </div>
+  
+            <!-- GitHub & API Links -->
+            <div class="col-3">
+                <b>Team</b>  <br> <br>
+
+                <p>👨‍💻 Alexander [Front-End Developer]</p>
+                <p>👨‍💻 Jian Wei [Full Stack Developer]</p>
+                <p>👨‍💻 Jun Keat [Back-End Developer]</p>
+                <p>🖼️ Herman [Content Specialist]</p>
+                <p>🖼️ Mitchell [Content Specialist]</p>
+            </div>
+  
+            <!-- Contact Link -->
+            <div class="col-3" id="contact">
+              <b>Contact Us</b> <br><br>
+
+                <address>
+                    <a href="mailto:earthsaversfeedback@gmail.com" class="remove-link-deco" title="Email us">Email</a>
+                </address>
+
+                <a href="tel:+6512345678" class="remove-link-deco" title="Call us">Phone</a>
+            </div>
+  
+          </div>
+  
+          <!-- Application's Name -->
+          <div class="row my-5">
+              <div class="col-12 text-center " style="font-size: 1rem;">&copy; Earth Savers 2021</div>
+          </div>
+  
+        </div>          
+    </footer>
+
+    <!-- Scripts -->
+        <!-- Others -->
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="../../scripts/shop.js"></script>
+</body>
+</html>
