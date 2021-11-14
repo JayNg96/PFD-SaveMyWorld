@@ -3,87 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>Global Warming</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/logo.png">
-    
+    <link rel="icon" type="image/png" href="../../images/logo.png">
+
     <!-- CSS -->
-        <!-- Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Yeseva+One&display=swap" rel="stylesheet">
-        
-        <!-- Self-Defined -->
-        <link href="../../css/style.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Yeseva+One&display=swap" rel="stylesheet">
+
+    <!-- Self-Defined -->
+    <link href="../../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../../css/environmentalsubpage.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <!--
-    Title: Bootstrap
-    Author: Bootstrap
-    Date: 2021
-    Code version: 5.1
-    Availability: https://getbootstrap.com/docs/5.1/getting-started/introduction/
+        Title: Bootstrap
+        Author: Bootstrap
+        Date: 2021
+        Code version: 5.1
+        Availability: https://getbootstrap.com/docs/5.1/getting-started/introduction/
     -->
-    
     <!-- Navigation Bar -->
     <nav class="navbar sticky-top navbar navbar-expand-lg navbar-dark glassmorphism" style="background-color: #000D4A;">
-        
+
         <!-- Logo & Name -->
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" class="rounded mx-auto d-block d-inline-block align-top" alt="Logo" width="50" height="50"><h6>Earth Savers</h6>
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../images/logo.png" class="rounded mx-auto d-block d-inline-block align-top" alt="Logo" width="50" height="50"><h6>Earth Savers</h6>
             </a>
-            
+
             <!-- Mobile nav bar button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-          
+
             <!-- Nav bar links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    
+
                     <!-- Environmental Issues -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="environmentalissues.html">Environmental Issues</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="environmentalissues.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Environmental Issues</a>
+                        <ul class="dropdown-menu glassmorphism-dropdown" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="foodwaste.html">Food waste</a></li>
+                            <li><a class="dropdown-item" href="deforestation.html">Deforestation</a></li>
+                            <li><a class="dropdown-item" href="airpollution.html">Air Pollution</a></li>
+                            <li><a class="dropdown-item active" href="globalwarming.html">Global Warming</a></li>
+                            <li><a class="dropdown-item" href="lossofbiodiversity.html">Loss of Biodiversity</a></li>
+                            <li><a class="dropdown-item" href="plasticpollution.html">Plastic Pollution</a></li>
+                        </ul>
                     </li>
 
                     <!-- Learning -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Learning</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Learning</a>
                         <ul class="dropdown-menu glassmorphism-dropdown" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="3rs.html">Reduce, Reuse & Recycle</a></li>
-                            <li><a class="dropdown-item" href="playyourpart.html">Play Your Part</a></li>
-                            <li><a class="dropdown-item active" href="quiz.html">Quiz</a></li>
+                            <li><a class="dropdown-item" href="../learning/3rs.html">Reduce, Reuse & Recycle</a></li>
+                            <li><a class="dropdown-item" href="../learning/playyourpart.html">Play Your Part</a></li>
+                            <li><a class="dropdown-item" href="../learning/quiz.html">Quiz</a></li>
                         </ul>
                     </li>
 
                     <!-- What's Happening -->
                     <li class="nav-item">
-                        <a class="nav-link" href="whatshappening.html">What's Happening</a>
+                        <a class="nav-link" href="../whatshappening.html">What's Happening</a>
                     </li>
 
                     <!-- Support Us -->
                     <li class="nav-item">
-                        <a class="nav-link" href="supportus.html">Support Us</a>
+                        <a class="nav-link" href="../supportus.html">Support Us</a>
                     </li>
-                    
+
                     <!-- Shop -->
                     <li class="nav-item">
-                        <a class="nav-link" href="shop.html">Shop</a>
+                        <a class="nav-link" href="../shop.html">Shop</a>
                     </li>
 
                     <!-- Account -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
-                        
+
                         <ul class="dropdown-menu glassmorphism-dropdown" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
-                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="../account/signup.html">Sign Up</a></li>
+                            <li><a class="dropdown-item" href="../account/login.html">Login</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -91,60 +99,113 @@
         </div>
     </nav>
 
-    <h2 style="text-align: center; padding-top: 10px;"><b>Quiz</b></h2>
+    <!-- Page Header-->
+    <header class="masthead" style="background-image: url('../../images/foodwaste-bg.jpeg')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="post-heading">
+                        <h1>Global Food Waste and its Environmental Impact. </h1>
+                        <h2 class="subheading">Global food waste is a far-reaching problem with tremendous financial, ethical and environmental costs. The causes range from bumpy roads to overly-selective customers.</h2>
+                        <span class="meta">
+                            Posted by
+                            <a href="https://en.reset.org/knowledge/global-food-waste-and-its-environmental-impact-09122018">Olio</a>
+                            on September 2018
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Post Content-->
+    <article class="mb-4">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7" id="bodyP">
+                    <h2 class="section-heading">Environmentally catastrophic</h2>
+                    <p>Food waste is really, really bad for the environment. It takes a land mass larger than China to grow the food each year that is ultimately never eaten – land that has been deforested, species that have been driven to extinction, indigenous populations that have been moved, soil that has been degraded – all to produce food that we then just throw away. In addition, food that is never eaten accounts for 25% of all fresh water consumption globally. Gulp.</p>
+                    <p>Not only are all of the resources that went into creating the uneaten food wasted (land, water, labour, energy, manufacturing, packaging, etc), but when food waste goes to landfill, which is where the vast majority of it ends up, it decomposes without access to oxygen and creates methane, which is 23x more deadly than carbon dioxide.</p>
+                    <p>Every which way you look at it food waste is a major culprit in destroying our planet, and in fact if food waste were a country, it would be the third largest emitter of greenhouse gases after China and the USA.</p>
+                    <p>It’s easy for many people to dismiss food waste as someone else’s problem (“I don’t waste any food”) or to focus solely on the more visibly shocking examples of waste (unharvested fields of produce ploughed back into the earth, supermarket skip waste).</p>
+                    <p>However the reality is that in the ‘developed’ world, more than 50% of food waste takes place in our homes. In contrast, less than 2% of food waste takes place at the retail store level (though supermarket practices are directly responsible for much food waste elsewhere in the supply chain.)</p>
+                    <h2 class="section-heading">Morally wrong</h2>
+                    <p>Meanwhile 800 million people go to bed hungry every night. That is 1 in 9 people on the planet who are starving or malnourished. Each and every one of them could be sufficiently fed on less than a quarter of the food that is wasted in the USA, UK and Europe each year.</p>
+                    <p>Because we have a globalised food supply system, demand for food in the West can drive up the price of food grown for export in developing countries, as well as displace the growth of crops to feed native populations and drive accelerated degradation of natural habitats.</p>
+                    <blockquote class="blockquote">Respect for food is a respect for life, for who we are and what we do.</blockquote>
+                    <p>And, hunger is not just a problem that’s happening ‘somewhere else’ – in the UK for example, over 1 million people accessed a food bank last year, whilst in the USA 40 million Americans live in food poverty.</p>
+                    <h2 class="section-heading">What Can We Do About It?</h2>
+                    <p><span style="font-weight:bold">Help reduce loss in handling, storage, processing and transport.</span> In low-income countries, the keys lie in better training for farmers and public and private investments in infrastructure. Improved technologies in refrigeration and reliable, renewable energy sources can have a significant impact.</p>
+                    <p><span style="font-weight:bold">Share the surplus.</span> Supermarkets in industrialised nations can, and often do, donate unsold goods. UK retailer Tesco, for example, works with software platform FareShare FoodCloud to notify local charities about surplus food available for pickup.</p>
+                    <a href="#!"><img class="img-fluid" src="../../images/foodwaste-img.jpg" alt="..." /></a>
+                    <span class="caption text-muted"> There is food for everyone on this planet, but not everyone eats.     - Carlo Petrini.</span>
+                    <p><span style="font-weight:bold">Turn waste into worth.</span> There are already quite a few initiatives transforming leftovers into new products: turning coffee cherries into flour, producing award-winning ale from leftover bread, turning restaurant scraps into bioplastics and home food waste into biogas - essentially using food scraps to produce household energy.</p>
+                    <p>
+                        <span style="font-weight:bold">Change consumer behaviour.</span> Consumers can try to buy locally whenever possible (shorter supply chains equal fewer opportunities for loss), improve their meal planning, become informed about date labelling and only throw away food when it is truly inedible.
+                    </p>
+                    <p>
+                        Article credit to
+                        <a href="https://olioex.com/food-waste/the-problem-of-food-waste/">Olio ex</a>
+                        &middot; Images by
+                        <a href="https://olioex.com/food-waste/the-problem-of-food-waste/">The Problem Of Food Waste</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </article>
+
 
     <!-- Footer -->
     <footer class="d-flex align-items-center justify-content-center glassmorphism-footer" style="color: white;">
         <div class="container">
-          <div class="row my-5 px-0">
-              
-            <!-- Developer's Names & Links -->
-            <div class="col-6">
-              Earth Savers<br><br>
-              Connect with us<br><br>
-  
-              <a href="https://www.linkedin.com/school/ngee-ann-polytechnic/?originalSubdomain=sg" target="_blank"><img src="images/linkedin.png" alt="LinkedIn logo" width="32" height="32" title="LinkedIn"></a> 
-              <a href="https://github.com/JayNg96/PFD-SaveMyWorld" target="_blank"><img src="images/github-light.png" alt="GitHub logo" width="32" height="32" title="GitHub"></a>
-            </div>
-  
-            <!-- GitHub & API Links -->
-            <div class="col-3">
-                <b>Team</b>  <br> <br>
+            <div class="row my-5 px-0">
 
-                <p>👨‍💻 Alexander [Front-End Developer]</p>
-                <p>👨‍💻 Jian Wei [Full Stack Developer]</p>
-                <p>👨‍💻 Jun Keat [Back-End Developer]</p>
-                <p>🖼️ Herman [Content Specialist]</p>
-                <p>🖼️ Mitchell [Content Specialist]</p>
-            </div>
-  
-            <!-- Contact Link -->
-            <div class="col-3" id="contact">
-              <b>Contact Us</b> <br><br>
+                <!-- Developer's Names & Links -->
+                <div class="col-6">
+                    Earth Savers<br><br>
+                    Connect with us<br><br>
 
-                <address>
-                    <a href="mailto:earthsaversfeedback@gmail.com" class="remove-link-deco" title="Email us">Email</a>
-                </address>
+                    <a href="https://www.linkedin.com/school/ngee-ann-polytechnic/?originalSubdomain=sg" target="_blank"><img src="../../images/linkedin.png" alt="LinkedIn logo" width="32" height="32" title="LinkedIn"></a>
+                    <a href="https://github.com/JayNg96/PFD-SaveMyWorld" target="_blank"><img src="../../images/github-light.png" alt="GitHub logo" width="32" height="32" title="GitHub"></a>
+                </div>
 
-                <a href="tel:+6512345678" class="remove-link-deco" title="Call us">Phone</a>
+                <!-- GitHub & API Links -->
+                <div class="col-3">
+                    <b>Team</b>  <br> <br>
+
+                    <p>👨‍💻 Alexander [Front-End Developer]</p>
+                    <p>👨‍💻 Jian Wei [Full Stack Developer]</p>
+                    <p>👨‍💻 Jun Keat [Back-End Developer]</p>
+                    <p>🖼️ Herman [Content Specialist]</p>
+                    <p>🖼️ Mitchell [Content Specialist]</p>
+                </div>
+
+                <!-- Contact Link -->
+                <div class="col-3" id="contact">
+                    <b>Contact Us</b> <br><br>
+
+                    <address>
+                        <a href="mailto:earthsaversfeedback@gmail.com" class="remove-link-deco" title="Email us">Email</a>
+                    </address>
+
+                    <a href="tel:+6512345678" class="remove-link-deco" title="Call us">Phone</a>
+                </div>
+
             </div>
-  
-          </div>
-  
-          <!-- Application's Name -->
-          <div class="row my-5">
-              <div class="col-12 text-center " style="font-size: 1rem;">&copy; Earth Savers 2021</div>
-          </div>
-  
-        </div>          
+
+            <!-- Application's Name -->
+            <div class="row my-5">
+                <div class="col-12 text-center " style="font-size: 1rem;">&copy; Earth Savers 2021</div>
+            </div>
+
+        </div>
     </footer>
 
     <!-- Scripts -->
-        <!-- Others -->
-        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <script src="../../scripts/shop.js"></script>
+    <!-- Others -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="../../scripts/shop.js"></script>
 </body>
 </html>
