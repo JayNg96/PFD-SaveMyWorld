@@ -24,7 +24,6 @@ $("#login-btn").on("click", function () {
         }
     } 
     $.ajax(settings).done(function (response) {
-        alert(response);
         //Check if user and password match in RestDb
         for (let j = 0; j < response.length; j++) {
             if(username == response[j].username && password == response[j].password){
