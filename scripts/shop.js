@@ -26,8 +26,10 @@ if (parseFloat(localStorage['points']) > 0) {
 }
 let pointEarned = 0;
 
-//* ---------------------- Retrieve Account Details ---------------------- *//
 var loginStatus = sessionStorage.getItem("loginStatus");
+
+//* ---------------------- Retrieve Account Details ---------------------- *//
+
 
 //* ---------------------- shop.html JS ---------------------- *//
 class Products {
@@ -266,32 +268,19 @@ class Storage {
 		let products = JSON.parse(localStorage.getItem("products"));
 		return products.find(product => product.id === id);
 	}
-	static saveCart(cart, totalPoints) {
+	static saveCart(cart) {
 		localStorage.setItem("cart", JSON.stringify(cart));
-	}
-	static getCart() {
-		return localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
-	}
-	static savePoint(cart, totalPoints) {
-		console.log(cart);
-		console.log(totalPoints);
-
-		localStorage.setItem("cart", JSON.stringify(cart));
-		localStorage.setItem("points", totalPoints)
-		
 		let userId = localStorage.getItem("user_id");
 		let fullName = localStorage.getItem("full_name");
 		let email = localStorage.getItem("email");
 		let password = localStorage.getItem("password");
 
-		/* ------------------- Add to account database if logged in ------------------- */
 		if(loginStatus == "loggedIn"){
 			let jsondata = {
                 "full-name": fullName,
                 "email": email,
                 "password": password,
 				"cart": JSON.stringify(cart),
-				"points": totalPoints
             };
 			var settings = {
 			"async": true,
@@ -312,6 +301,18 @@ class Storage {
 	console.log("test");
 	});
 		}
+	}
+	static getCart() {
+		if(loginStatus == "loggedIn" && sessionStorage.getItem("cart").length != 0){
+			console.log()
+			return JSON.parse(sessionStorage.getItem("cart"));
+		}
+		else{
+			return localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
+		}
+	}
+	static savePoint(cart, totalPoints) {
+		localStorage.setItem("points", totalPoints)
 	}
 }
 document.addEventListener("DOMContentLoaded", () => {
@@ -334,3 +335,4 @@ document.addEventListener("DOMContentLoaded", () => {
 	document.getElementById("lottie-loading-container").style.display = "none"
 }, 3000);**/
 //* ---------------------- end of loading JS ---------------------- *//
+
