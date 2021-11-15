@@ -304,7 +304,6 @@ class Storage {
 	}
 	static getCart() {
 		if(loginStatus == "loggedIn" && sessionStorage.getItem("cart").length != 0){
-			console.log()
 			return JSON.parse(sessionStorage.getItem("cart"));
 		}
 		else{
