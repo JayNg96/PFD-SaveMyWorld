@@ -1,4 +1,4 @@
-var APIKEY = "617ffebf63fbb2763ab02509";
+/*var APIKEY = "617ffebf63fbb2763ab02509";
 
 var settings = {
     "async": true,
@@ -24,4 +24,4 @@ $.ajax(settings).done(function (response) {
           $("#invalid").show();
         }
     }
-  });
+  });*/
