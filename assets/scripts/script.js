@@ -7,6 +7,7 @@ if (loginStatus == "loggedIn"){
 
     $("#register-dropdown").on("click", function (){
         sessionStorage.clear();
+        localStorage.clear();
     })
 }
 
