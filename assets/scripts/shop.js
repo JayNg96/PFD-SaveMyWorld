@@ -266,42 +266,24 @@ class Storage {
 		let products = JSON.parse(localStorage.getItem("products"));
 		return products.find(product => product.id === id);
 	}
-	static saveCart(cart, totalPoints) {
+	static saveCart(cart) {
 		localStorage.setItem("cart", JSON.stringify(cart));
-		console.log(JSON.stringify(cart));
-	}
-	static getCart() {
-		if(loginStatus == "loggedIn" && sessionStorage.getItem("cart").length != 0){
-			console.log()
-			return JSON.parse(sessionStorage.getItem("cart"));
-		}
-		else{
-			return localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
-		}
-	}
-	static savePoint(cart, totalPoints) {
-		console.log(cart);
-		console.log(totalPoints);
 
-		localStorage.setItem("cart", JSON.stringify(cart));
-		localStorage.setItem("points", totalPoints)
-		
-		let userId = localStorage.getItem("user_id");
-		let fullName = localStorage.getItem("full_name");
-		let email = localStorage.getItem("email");
-		let password = localStorage.getItem("password");
+		let userId = sessionStorage.getItem("userId");
+		let username = sessionStorage.getItem("username");
+		let password = sessionStorage.getItem("password");
 
-		/* ------------------- Add to account database if logged in ------------------- */
+		/* ------------------- Add to cart database if logged in ------------------- */
 		if(loginStatus == "loggedIn"){
 			let jsondata = {
-                "full-name": fullName,
-                "email": email,
+                "username": username,
                 "password": password,
 				"cart": JSON.stringify(cart),
-				"points": totalPoints
             };
+			console.log(userId);
+
 			var settings = {
-			"async": true,
+				"async": true,
 			"crossDomain": true,
 			"url": `https://savetheearth-c589.restdb.io/rest/registered-accounts/${userId}`,
 			"method": "PUT",
@@ -312,13 +294,27 @@ class Storage {
 			},
 			"processData": false,
 			"data": JSON.stringify(jsondata)
-	}
+			}
 
-	$.ajax(settings).done(function (response) {
-	console.log(response);
-	console.log("test");
-	});
+			$.ajax(settings).done(function (response) {
+				console.log("test1");
+				console.log(response);
+			});
 		}
+	}
+	static getCart() {
+		if(loginStatus == "loggedIn" && sessionStorage.getItem("cart").length != 0){
+			return JSON.parse(sessionStorage.getItem("cart"));
+		}
+		else{
+			return localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
+		}
+	}
+	static savePoint(cart, totalPoints) {
+		console.log(cart);
+
+		localStorage.setItem("cart", JSON.stringify(cart));
+		
 	}
 }
 document.addEventListener("DOMContentLoaded", () => {

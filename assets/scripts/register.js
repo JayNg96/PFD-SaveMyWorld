@@ -29,7 +29,7 @@ $("#register-btn").on("click", function () {
     let settings = {
       "async": true,
       "crossDomain": true,
-        "url": "https://savetheearth-c589.restdb.io/rest/registered-accounts",
+      "url": "https://savetheearth-c589.restdb.io/rest/registered-accounts",
       "method": "POST",
       "headers": {
         "content-type": "application/json",

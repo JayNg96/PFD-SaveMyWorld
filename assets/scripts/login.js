@@ -27,10 +27,12 @@ $("#login-btn").on("click", function () {
         //Check if user and password match in RestDb
         for (let j = 0; j < response.length; j++) {
             if(username == response[j].username && password == response[j].password){
-              sessionStorage.setItem("userId", response[j]._id);
               sessionStorage.setItem("loginStatus", "loggedIn");
+              sessionStorage.setItem("userId", response[j]._id);
               sessionStorage.setItem("username", response[j].username);
+              sessionStorage.setItem("password", response[j].password)
               sessionStorage.setItem("cart", response[j].cart);
+              console.log(response[j]._id);
               window.location.replace("../../index.html");
             }
             else

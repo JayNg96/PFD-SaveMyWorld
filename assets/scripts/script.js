@@ -1,9 +1,7 @@
 var loginStatus = sessionStorage.getItem("loginStatus");
 if (loginStatus == "loggedIn"){
-    console.log("test1");
-    document.getElementById("login-dropdown").href = "websites/account/account.html"; 
+    document.getElementById("login-dropdown").href = "../.././websites/account/account.html"; 
     var user = sessionStorage.getItem("username");
-    console.log(user);
     document.querySelector("#register-dropdown").innerHTML = "Sign Out";
     document.querySelector("#login-dropdown").innerHTML = user;
 
