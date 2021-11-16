@@ -3,101 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Air Pollution</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../../images/logo.png">
-    <!-- Font Awesome -->
-    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="../../assets/images/logo.png">
 
     <!-- CSS -->
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
+    <!-- Awesome Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Yeseva+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+
+    <!-- Vendor CSS Files -->
+    <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
     <!-- Self-Defined -->
-    <link href="../../css/style.css" rel="stylesheet" type="text/css">
-    <link href="../../css/environmentalsubpage.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/environmentalsubpage.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
+    <!--
+    Title: Bootstrap
+    Author: Bootstrap
+    Date: 2021
+    Code version: 5.1
+    Availability: https://getbootstrap.com/docs/5.1/getting-started/introduction/
+    -->
     <!-- Navigation Bar -->
-    <nav class="navbar sticky-top navbar navbar-expand-lg navbar-dark glassmorphism" style="background-color: #000D4A;">
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+        <div class="container d-flex justify-content-between align-items-center">
 
-        <!-- Logo & Name -->
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../../index.html">
-                <img src="../../images/logo.png" class="rounded mx-auto d-block d-inline-block align-top" alt="Logo" width="50" height="50"><h6>Earth Savers</h6>
-            </a>
+            <div id="logo">
+                <h1><a href="../../index.html">EARTHERS</a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a> -->
+            </div>
 
-            <!-- Mobile nav bar button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Nav bar links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-
-                    <!-- Environmental Issues -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="environmentalissues.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Environmental Issues</a>
-                        <ul class="dropdown-menu glassmorphism-dropdown" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="foodwaste.html">Food waste</a></li>
-                            <li><a class="dropdown-item" href="deforestation.html">Deforestation</a></li>
-                            <li><a class="dropdown-item active" href="airpollution.html">Air Pollution</a></li>
-                            <li><a class="dropdown-item" href="globalwarming.html">Global Warming</a></li>
-                            <li><a class="dropdown-item" href="lossofbiodiversity.html">Loss of Biodiversity</a></li>
-                            <li><a class="dropdown-item" href="plasticpollution.html">Plastic Pollution</a></li>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto" href="../../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="environmentalissues.html"><span>Environmental Issues</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="foodwaste.html">Food Waste</a></li>
+                            <li><a href="deforestation.html">Deforestation</a></li>
+                            <li><a href="airpollution.html">Air Pollution</a></li>
+                            <li><a href="globalwarming.html">Global Warming</a></li>
+                            <li><a href="lossofbiodiversity.html">Loss of Biodiversity</a></li>
+                            <li><a href="plasticpollution.html">Plastic Pollution</a></li>
                         </ul>
                     </li>
-
-                    <!-- Learning -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Learning</a>
-                        <ul class="dropdown-menu glassmorphism-dropdown" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../learning/3rs.html">Reduce, Reuse & Recycle</a></li>
-                            <li><a class="dropdown-item" href="../learning/playyourpart.html">Play Your Part</a></li>
-                            <li><a class="dropdown-item" href="../learning/quiz.html">Quiz</a></li>
+                    <li class="dropdown">
+                        <a href="#"><span>Waste Management</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="../wastemanagement/3rs.html">3Rs</a></li>
+                            <li><a href="../wastemanagement/playyourpart.html">Play Your Part</a></li>
                         </ul>
                     </li>
-
-                    <!-- What's Happening -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="../whatshappening.html">What's Happening</a>
-                    </li>
-
-                    <!-- Support Us -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="../supportus.html">Support Us</a>
-                    </li>
-
-                    <!-- Shop -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="../shop.html">Shop</a>
-                    </li>
-
-                    <!-- Account -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
-
-                        <ul class="dropdown-menu glassmorphism-dropdown" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../account/register.html">Register</a></li>
-                            <li><a class="dropdown-item" href="../account/login.html">Login</a></li>
+                    <li><a class="nav-link scrollto" href="../volunteer.html">Volunteer Events</a></li>
+                    <li><a class="nav-link scrollto" href="../quiz.html">Quiz</a></li>
+                    <li><a class="nav-link scrollto" href="../shop.html">Shop</a></li>
+                    <li class="dropdown">
+                        <a href="#"><span>Account</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="../account/login.html">Login</a></li>
+                            <li><a href="../account/register.html">Register</a></li>
                         </ul>
                     </li>
                 </ul>
-            </div>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
         </div>
-    </nav>
-
+    </header><!-- End Header -->
 
     <!-- Page Header-->
-    <header class="masthead" style="background-image: url('../../images/airpollution-bg.jpg')">
+    <header class="masthead" style="background-image: url('../../assets/images/airpollution-bg.jpg')">
         <div class="container position-relative px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
@@ -120,21 +112,17 @@
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7" id="bodyP">
                     <h2 class="section-heading">Air Pollution</h2>
-                    <a href="#!"><img class="img-fluid" src="../../images/Airpollution1-img.jpg" alt="..." /></a>
+                    <a href="#!"><img class="img-fluid" src="../../assets/images/Airpollution1-img.jpg" alt="..." /></a>
                     <span class="caption text-muted">Source: Earth.Org Drawn Up: The Biggest Environmental Problems of 2021: https://earth.org/drawn-up-biggest-environmental-problems-of-2021/</span>
                     <p>Air pollution increases as countries develop, primarily from industrial and vehicular sources, but also from indoor fuel combustion. Pollution tends to build up in the early stages before legislation catches up and begins to reduce it. Africa is a prime example, with 258,000 people dying in 2017 as a result of outdoor air pollution.</p>
                     <p>As a result of its rapid development, China has had a very polluted period in the last four decades, but it has made significant progress in the last decade, and India remains in a critical state, with routine polluted air in its densely populated cities and areas affecting millions of people every day.</p>
-                    <a href="#!"><img class="img-fluid" src="../../images/Airpollution2-img.jpg" alt="..." /></a>
+                    <a href="#!"><img class="img-fluid" src="../../assets/images/Airpollution2-img.jpg" alt="..." /></a>
                     <span class="caption text-muted">Source: Earth.Org Drawn Up: The Biggest Environmental Problems of 2021: https://earth.org/drawn-up-biggest-environmental-problems-of-2021/</span>
                     <p>Individuals can help by walking, cycling, or taking public transportation instead of driving whenever possible. Individuals can also use mobile phone air quality index apps to track pollution in real time and choose healthier routes for themselves and others.</p>
                 </div>
             </div>
         </div>
     </article>
-
-
-
-
 
 
     <!-- Footer -->
@@ -147,8 +135,8 @@
                     Earth Savers<br><br>
                     Connect with us<br><br>
 
-                    <a href="https://www.linkedin.com/school/ngee-ann-polytechnic/?originalSubdomain=sg" target="_blank"><img src="../../images/linkedin.png" alt="LinkedIn logo" width="32" height="32" title="LinkedIn"></a>
-                    <a href="https://github.com/JayNg96/PFD-SaveMyWorld" target="_blank"><img src="../../images/github-light.png" alt="GitHub logo" width="32" height="32" title="GitHub"></a>
+                    <a href="https://www.linkedin.com/school/ngee-ann-polytechnic/?originalSubdomain=sg" target="_blank"><img src="../../assets/images/linkedin.png" alt="LinkedIn logo" width="32" height="32" title="LinkedIn"></a>
+                    <a href="https://github.com/JayNg96/PFD-SaveMyWorld" target="_blank"><img src="../../assets/images/github-light.png" alt="GitHub logo" width="32" height="32" title="GitHub"></a>
                 </div>
 
                 <!-- GitHub & API Links -->
@@ -184,11 +172,19 @@
     </footer>
 
     <!-- Scripts -->
+    <!-- Vendor JS Files -->
+    <script src="../../assets/vendor/aos/aos.js"></script>
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../../assets/vendor/php-email-form/validate.js"></script>
+
     <!-- Others -->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="../../scripts/shop.js"></script>
+
+    <!-- Scripts -->
+    <script src="../../assets/scripts/script.js"></script>
 </body>
 </html>
