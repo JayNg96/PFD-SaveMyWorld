@@ -268,9 +268,16 @@ class Storage {
 	}
 	static saveCart(cart, totalPoints) {
 		localStorage.setItem("cart", JSON.stringify(cart));
+		console.log(JSON.stringify(cart));
 	}
 	static getCart() {
-		return localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
+		if(loginStatus == "loggedIn" && sessionStorage.getItem("cart").length != 0){
+			console.log()
+			return JSON.parse(sessionStorage.getItem("cart"));
+		}
+		else{
+			return localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
+		}
 	}
 	static savePoint(cart, totalPoints) {
 		console.log(cart);

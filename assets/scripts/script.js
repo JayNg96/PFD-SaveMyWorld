@@ -1,9 +1,15 @@
-var loggedIn = sessionStorage.getItem("loginStatus");
-if (loggedIn == "loggedIn"){
-    document.querySelector("#sign-up-dropdown").removeAttribute('href');
-    var user = localStorage.getItem("full_name");
-    document.querySelector("#sign-up-dropdown").innerHTML = user;
-    document.querySelector("#login-dropdown").innerHTML = "Sign Out";
+var loginStatus = sessionStorage.getItem("loginStatus");
+if (loginStatus == "loggedIn"){
+    console.log("test1");
+    document.getElementById("login-dropdown").href = "websites/account/account.html"; 
+    var user = sessionStorage.getItem("username");
+    console.log(user);
+    document.querySelector("#register-dropdown").innerHTML = "Sign Out";
+    document.querySelector("#login-dropdown").innerHTML = user;
+
+    $("#register-dropdown").on("click", function (){
+        sessionStorage.clear();
+    })
 }
 
 (function () {
