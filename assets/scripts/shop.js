@@ -194,8 +194,9 @@ class UI {
 				Storage.saveCart(cart);
 				cartContent.removeChild(removeItem.parentElement.parentElement);
 				const buttons = [...document.querySelectorAll(".bag-btn")];
+				console.log(buttons);
 				buttons.forEach(button => {
-					if (parseInt(button.dataset.id) === id) {
+					if (button.dataset.id === id) {
 						button.disabled = false;
 						button.innerHTML = `<i class="fa fa-shopping-cart"></i>add to bag`;
 					}
@@ -225,7 +226,7 @@ class UI {
 					cartContent.removeChild(lowerAmount.parentElement.parentElement);
 					const buttons = [...document.querySelectorAll(".bag-btn")];
 					buttons.forEach(button => {
-						if (parseInt(button.dataset.id) === id) {
+						if (button.dataset.id === id) {
 							button.disabled = false;
 							button.innerHTML = `<i class="fa fa-shopping-cart"></i>add to bag`;
 						}
