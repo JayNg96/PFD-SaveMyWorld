@@ -3,14 +3,39 @@ var APIKEY = "617ffebf63fbb2763ab02509";
 $("#registered").hide();
 $("#invalid").hide();
 $("#invalid-fill").hide();
+$("#invalid-email").hide();
 
 //Register button
 $("#register-btn").on("click", function () { 
+  let email = $("email").val();
   let username = $("#username").val();
   let password = $("#password").val();
   let c_password = $("#c-password").val();
 
-  //Validation check
+  var status = true;
+  let settings1 = {
+    "async": true,
+    "crossDomain": true,
+    "url": "https://savetheearth-c589.restdb.io/rest/registered-accounts",
+    "method": "GET",
+    "headers": {
+      "content-type": "application/json",
+      "x-apikey": APIKEY,
+      "cache-control": "no-cache"
+    },
+}
+
+$.ajax(settings).done(function (response) {
+  for(var i = 0; i < response.length; i++){
+      if(response[i].email == email){
+          $("#invalid-email").show();
+          break;
+      }
+  }
+})
+
+  function register(email, username, password, c_password){
+    //Validation check
   if(username == "" || password == "" || c_password == ""){
     $("#invalid-fill").show();
   }
@@ -43,4 +68,6 @@ $("#register-btn").on("click", function () {
     $.ajax(settings).done(function (response) {
     })
   }
+  }
+  
 })
