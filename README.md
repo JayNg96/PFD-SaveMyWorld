@@ -95,56 +95,11 @@ Link:
 ### Online Documentation
 * [W3Schools](https://www.w3schools.com/)
 * [Stack Overflow](https://stackoverflow.com/)
-# Development Progress
-## Release Notes
-### Version 1.1 (31 October 2021)
-* Implemented HTML, CSS & JavaScript
-* Implemented BootStrap 5.1
-* Developed Page's Structure:
-  * Index
-  * Environmental Issues
-  * Learning
-    * Reduce, Reuse & Recycle
-    * Play Your Part
-### Version 1.2 (14 November 2021)
-* Developed Page's Structure:
-  * What's Happening
-  * Support Us
-  * Shop
-  * Account
-    * Sign Up
-    * Login
-* Added images and content from wireframe
-* Added carousel for homepage
-### Version 1.3 (17 November 2021)
-* We're working on it.
-# Credits
-References can also be found in the attached Word document titled "references".
-## Content
-### Articles
-APA References to be added as soon as word ver is finalised.
-### YouTube videos
-To be inserted when ready.
-## Media
-### Images
-### Shop (Contentful API)
-- [book wallpaper](https://wallpapercave.com/tea-winter-and-books-wallpapers)
-- [Couch](https://www.zmartbuild.com/renovate-house-light-wall-framing/)
-- [Queen Panel Bed](https://www.bdcnetwork.com/marriott-hilton-and-ihg-continue-dominate-us-hotel-construction-pipeline-q2%E2%80%9920-close)
-- [Dresser](https://furniture.mu/pexels-photo-271660-1/)
-- [Fridge](https://katiescrochet.xyz/small-kitchen-design-ideas/)
-- [Twin Panel Bed](https://www.bproperty.com/blog/different-types-of-beds/)
-- [Single Panel Bed](https://www.getorganizedcolumbus.com/tips-for-maximizing-small-spaces-in-your-home)
-- [King Panel Bed](https://enlightened-digital.com/the-future-of-smart-home-technology/)
-### Lottie
-### Icons
-## Acknowledgements
-### Codes
-#### Shop Template (HTML, CSS & JavaScript)
-* [Video](https://www.youtube.com/watch?v=023Psne_-_4&ab_channel=freeCodeCamp.org)
-* [Github](https://github.com/john-smilga/setup-files-js-comfy-house)
-* [Contentful](https://www.youtube.com/watch?v=bLKkG0_4Xc4&ab_channel=PragmaticReviews)
-### Inspiration
+# Acknowledgements
+## References
+* All of our references can be viewed at:
+  * [Microsoft Word File](https://connectnpedu-my.sharepoint.com/:w:/g/personal/s10194188_connect_np_edu_sg/EeOxMKPOllVKjZPkjOvBxEoB1cx7ap7iFstrgMn1dOxqSg?e=mKaDIe)
+## Inspiration
 * We received inspiration for this project from:
   * [Save The Earth Foundation](https://savetheearth.org/)
   * [We Love the Earth](https://welovetheearth.org/)
