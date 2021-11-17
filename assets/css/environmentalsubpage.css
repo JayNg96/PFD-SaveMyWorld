@@ -195,6 +195,7 @@ caption {
 .img-fluid {
     max-width: 100%;
     height: auto;
+    width: 100%;
 }
 
 .gx-lg-5 {
