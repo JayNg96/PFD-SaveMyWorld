@@ -178,9 +178,9 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
     text-transform: uppercase;
     letter-spacing: var(--mainSpacing);
     font-size: 1rem;
-    background: var(--primaryColor);
+    background: #57fb37;
     color: var(--mainBlack);
-    border: 1px solid var(--primaryColor);
+    border: 1px solid #1c4007;
     transition: var(--mainTransition);
     cursor: pointer;
     text-decoration: none;
@@ -188,7 +188,7 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
 
     .banner-btn:hover {
         background: transparent;
-        color: var(--primaryColor);
+        color: #1c4007;
     }
 /* --------------- End of Banner(shop.html) ---------------- */
 /* --------------- Shop(shop.html) ---------------- */
@@ -213,7 +213,7 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
     margin: 0 auto;
     max-width: 1170px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-column-gap: 1.5rem;
     grid-row-gap: 2rem;
 }
@@ -229,7 +229,7 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
     position: absolute;
     top: 70%;
     right: 0;
-    background: var(--primaryColor);
+    background-color:#3dba18;
     border: none;
     text-transform: uppercase;
     padding: 0.5rem 0.75rem;
@@ -255,7 +255,7 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
 .product-img, .redeem-img {
     display: block;
     width: 100%;
-    min-height: 12rem;
+    min-height: 400px;
     transition: var(--mainTransition);
 }
 
@@ -274,7 +274,7 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
 .product h4, .redeem h4 {
     margin-top: 0.7rem;
     letter-spacing: var(--mainSpacing);
-    color: var(--primaryColor);
+    color: #1fa035;
     text-align: center;
 }
 /* --------------- End Of Shop(shop.html) ---------------- */
@@ -287,7 +287,7 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
     height: 100%;
     background: transparent;
     transition: var(--mainTransition);
-    background: rgb(240, 157, 81, 0.5);
+    background: rgb(0, 157, 81, 0.5);
     z-index: 999;
     visibility: hidden;
 }
@@ -361,7 +361,7 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
 }
 
 .fa-chevron-up, .fa-chevron-down {
-    color: var(--primaryColor);
+    color: #1c4007;
     cursor: pointer;
 }
 /*---------- End of Cart Item -------------------- */
