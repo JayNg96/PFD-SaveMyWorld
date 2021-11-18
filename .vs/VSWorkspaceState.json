@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\scripts",
-    "\\websites"
+    "\\websites",
+    "\\websites\\account",
+    "\\websites\\environmentalissues"
   ],
-  "SelectedNode": "\\websites\\shop.html",
+  "SelectedNode": "\\websites\\environmentalissues\\environmentalissues.html",
   "PreviewInSolutionExplorer": false
 }
