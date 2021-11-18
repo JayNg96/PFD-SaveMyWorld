@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Volunteer</title>
+    <title>Welfare - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../assets/images/logo.png">
-
-    <!-- CSS -->
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
 
     <!-- Awesome Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,19 +21,30 @@
     <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-    <!-- Self-Defined -->
+    <!-- External CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/volunteer/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/volunteer/css/animate.css">
+    <link rel="stylesheet" href="../assets/volunteer/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/volunteer/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../assets/volunteer/css/magnific-popup.css">
+    <link rel="stylesheet" href="../assets/volunteer/css/aos.css">
+    <link rel="stylesheet" href="../assets/volunteer/css/ionicons.min.css">
+    <link rel="stylesheet" href="../assets/volunteer/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../assets/volunteer/css/jquery.timepicker.css">
+    <link rel="stylesheet" href="../assets/volunteer/css/flaticon.css">
+    <link rel="stylesheet" href="../assets/volunteer/css/icomoon.css">
     <link href="../assets/css/style.css" rel="stylesheet" type="text/css">
-    <link href="../assets/css/button.css" rel="stylesheet" type="text/css">
-</head>
+    <link rel="stylesheet" href="../assets/volunteer/css/style.css">
 
+    <style>
+        a {
+            color: #00ff21;
+        }
+    </style>
+</head>
 <body>
-    <!--
-    Title: Bootstrap
-    Author: Bootstrap
-    Date: 2021
-    Code version: 5.1
-    Availability: https://getbootstrap.com/docs/5.1/getting-started/introduction/
-    -->
     <!-- Navigation Bar -->
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center header-transparent">
@@ -82,7 +88,7 @@
                         </ul>
                     </li>
                     <li>
-                        <div class="cart-btn">
+                        <div class="cart-btn" style="display:none">
                             <span class="nav-icon">
                                 <i class="fa fa-cart-plus" style="color: rgb(255, 255, 255);"></i>
                             </span>
@@ -93,191 +99,349 @@
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
-        </div>
-        <!-- Cart -->
-        <div class="cart-overlay">
-            <div class="cart">
-                <span class="close-cart"><i class="fa fa-window-close"></i></span>
+            <!-- Cart -->
+            <div class="cart-overlay">
+                <div class="cart">
+                    <span class="close-cart"><i class="fa fa-window-close"></i></span>
 
-                <h2>Your Cart</h2>
+                    <h2>Your Cart</h2>
 
-                <div class="cart-content"></div>
+                    <div class="cart-content"></div>
 
-                <!-- Calculations -->
-                <div class="cart-footer">
-                    <h3>Cart Total: $<span class="cart-total">0</span></h3>
-                    <h3>Reward Points Attainable: <span class="cart-point">0</span></h3>
-                    <h3>Reward Points Earned: <span class="cart-totalpoint">0</span></h3>
-                    <button class="checkout-cart banner-btn">checkout</button>
+                    <!-- Calculations -->
+                    <div class="cart-footer">
+                        <h3>Cart Total: $<span class="cart-total">0</span></h3>
+                        <h3>Reward Points Attainable: <span class="cart-point">0</span></h3>
+                        <h3>Reward Points Earned: <span class="cart-totalpoint">0</span></h3>
+                        <button class="checkout-cart banner-btn">checkout</button>
+                    </div>
                 </div>
             </div>
         </div>
-
     </header><!-- End Header -->
-    <!-- Banner -->
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-
-                <!-- Image -->
-                <img src="../assets/images/supportusbanner.jpg" class="d-block w-100" alt="City Banner">
 
 
-                <!-- Caption -->
-                <div class="carousel-caption d-md-block">
-                    <h1>text here</h1>
-                    <p>Learn about ongoing events and how you can contribute.</p>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-    <div class="section-padding">
-        <div class="container-fluid">
-
-            <h2><b>Volunteering</b></h2>
-
-            <p>
-                Protecting the environment is the responsibility of everyone in the community.
-                We can do this by leading eco-friendly lifestyles, and by taking ownership of our living environment.
-                You can make a difference by being an environment volunteer.
-            </p>
-
-        </div>
-    </div>
-
-    <!-- Events -->
-    <div class="section-padding">
-
-        <!-- Event 1: Coastal Cleanup -->
-        <div class="container-fluid">
-            <div class="row">
-
-                <!-- Event 1's image -->
-                <div class="col-sm d-flex align-items-center justify-content-center flex-column">
-                    <img src="../assets/images/starfish.jpg" class="img-fluid img-rounded" alt="Event 1's image">
-                </div>
-
-                <!-- Content -->
-                <div class="col-sm d-flex align-items-center justify-content-center flex-column">
-                    <div class="text-left">
-                        <h2><b>Coastal Cleanup</b></h2>
-
-                        <p>Start cleaning up your local beaches or start volunteering with your local organizations today.</p>
-
-                        <a href="https://www.sevencleanseas.com/" class="btn btn-dark" target="_blank">Learn More</a>
-                    </div>
-                </div>
-            </div>
-
-            <br>
-
-            <!-- Event 2: Zero Waste Ambassador -->
-            <div class="row">
-
-                <!-- Event 2's image -->
-                <div class="col-sm d-flex align-items-center justify-content-center flex-column">
-                    <img src="../assets/images/volunteer.jpg" class="img-fluid img-rounded" alt="Event 2's image">
-                </div>
-
-                <!-- Content -->
-                <div class="col-sm d-flex align-items-center justify-content-center flex-column">
-                    <div class="text-left">
-                        <h2><b>Zero Waste Ambassador</b></h2>
-
-                        <p>Start volunteering as a Zero Waste Ambassador today to spread awareness about the environment to play your part!</p>
-
-                        <a href="http://www.zerowastesg.com/volunteer/" class="btn btn-dark" target="_blank">Learn More</a>
-                    </div>
-                </div>
-            </div>
-
-            <br>
-
-            <!-- Event 3: 3Rs Workshop  -->
-            <div class="row">
-
-                <!-- Event 3's image -->
-                <div class="col-sm d-flex align-items-center justify-content-center flex-column">
-                    <img src="../assets/images/tools.jpg" class="img-fluid img-rounded" alt="Article 1's image">
-                </div>
-
-                <!-- Content -->
-                <div class="col-sm d-flex align-items-center justify-content-center flex-column">
-                    <div class="text-left">
-                        <h2><b>3Rs Workshop</b></h2>
-
-                        <p>Get involved with our workshop to see how you can reuse, reduce, and recycle everyday items in your daily life!</p>
-
-                        <a href="https://www.greennudge.sg/workshops" class="btn btn-dark" target="_blank">Learn More</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="d-flex align-items-center justify-content-center glassmorphism-footer" style="color: white;">
+    <div class="hero-wrap" style="background-image: url('../assets/volunteer/images/bg_7.jpg'); " data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
         <div class="container">
-            <div class="row my-5 px-0">
+            <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+                <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+                    <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Doing Nothing is Not An Option of Our Life</h1>
 
-                <!-- Developer's Names & Links -->
-                <div class="col-6">
-                    Earth Savers<br><br>
-                    Connect with us<br><br>
-
-                    <a href="https://www.linkedin.com/school/ngee-ann-polytechnic/?originalSubdomain=sg" target="_blank"><img src="../assets/images/linkedin.png" alt="LinkedIn logo" width="32" height="32" title="LinkedIn"></a>
-                    <a href="https://github.com/JayNg96/PFD-SaveMyWorld" target="_blank"><img src="../assets/images/github-light.png" alt="GitHub logo" width="32" height="32" title="GitHub"></a>
+                    <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="https://vimeo.com/45830194" class="btn btn-white btn-outline-white px-4 py-3 popup-vimeo"><span class="icon-play mr-2"></span>Watch Video</a></p>
                 </div>
-
-                <!-- GitHub & API Links -->
-                <div class="col-3">
-                    <b>Team</b>  <br> <br>
-
-                    <p>👨‍💻 Alexander [Front-End Developer]</p>
-                    <p>👨‍💻 Jian Wei [Full Stack Developer]</p>
-                    <p>👨‍💻 Jun Keat [Back-End Developer]</p>
-                    <p>🖼️ Herman [Content Specialist]</p>
-                    <p>🖼️ Mitchell [Content Specialist]</p>
-                </div>
-
-                <!-- Contact Link -->
-                <div class="col-3" id="contact">
-                    <b>Contact Us</b> <br><br>
-
-                    <address>
-                        <a href="mailto:earthsaversfeedback@gmail.com" class="remove-link-deco" title="Email us">Email</a>
-                    </address>
-
-                    <a href="tel:+6512345678" class="remove-link-deco" title="Call us">Phone</a>
-                </div>
-
             </div>
-
-            <!-- Application's Name -->
-            <div class="row my-5">
-                <div class="col-12 text-center " style="font-size: 1rem;">&copy; Earth Savers 2021</div>
-            </div>
-
         </div>
-    </footer>
+    </div>
 
-    <!-- Scripts -->
+    <section class="ftco-counter ftco-intro" id="section-counter">
+        <div class="container">
+            <div class="row no-gutters">
+
+                <div class="col-md d-flex justify-content-center counter-wrap ftco-animate" ">
+                    <div class="block-18 color-2 align-items-stretch">
+                        <div class="text">
+                            <h3 class="mb-4">Donate Money</h3>
+                            <p>Even the all-powerful Pointing has no control about the blind texts.</p>
+                            <p><a href="#" class="btn btn-white px-3 py-2 mt-2">Donate Now</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                    <div class="block-18 color-3 align-items-stretch">
+                        <div class="text">
+                            <h3 class="mb-4">Be a Volunteer</h3>
+                            <p>Even the all-powerful Pointing has no control about the blind texts.</p>
+                            <p><a href="#" class="btn btn-white px-3 py-2 mt-2">Be A Volunteer</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 d-flex services p-3 py-4 d-block">
+                        <div class="icon d-flex mb-3"><span class="flaticon-donation-1" style="color:#00ff21"></span></div>
+                        <div class="media-body pl-4">
+                            <h3 class="heading">Make Donation</h3>
+                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 d-flex services p-3 py-4 d-block">
+                        <div class="icon d-flex mb-3"><span class="flaticon-charity" style="color:#00ff21"></span></div>
+                        <div class="media-body pl-4">
+                            <h3 class="heading">Become A Volunteer</h3>
+                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 d-flex services p-3 py-4 d-block">
+                        <div class="icon d-flex mb-3"><span class="flaticon-donation" style="color:#00ff21"></span></div>
+                        <div class="media-body pl-4">
+                            <h3 class="heading">Sponsorship</h3>
+                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ftco-section bg-light">
+        <div class="container-fluid">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-5 heading-section ftco-animate text-center">
+                    <h2 class="mb-4">Our Causes</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 ftco-animate">
+                    <div class="carousel-cause owl-carousel">
+                        <div class="item">
+                            <div class="cause-entry">
+                                <a href="#" class="img" style="background-image: url(../assets/volunteer/images/cause-1.jpg); "></a>
+                                <div class="text p-3 p-md-4">
+                                    <h3><a href="#">Clean water for the urban area</a></h3>
+                                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
+                                    <span class="donation-time mb-3 d-block">Last donation 1w ago</span>
+                                    <span class="fund-raised d-block">$12,000 raised of $30,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="cause-entry">
+                                <a href="#" class="img" style="background-image: url(../assets/volunteer/images/cause-2.jpg); "></a>
+                                <div class="text p-3 p-md-4">
+                                    <h3><a href="#">Clean water for the urban area</a></h3>
+                                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
+                                    <span class="donation-time mb-3 d-block">Last donation 1w ago</span>
+                                    <span class="fund-raised d-block">$12,000 raised of $30,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="cause-entry">
+                                <a href="#" class="img" style="background-image: url(../assets/volunteer/images/cause-3.jpg); "></a>
+                                <div class="text p-3 p-md-4">
+                                    <h3><a href="#">Clean water for the urban area</a></h3>
+                                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
+                                    <span class="donation-time mb-3 d-block">Last donation 1w ago</span>
+
+                                    <span class="fund-raised d-block">$12,000 raised of $30,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="cause-entry">
+                                <a href="#" class="img" style="background-image: url(../assets/volunteer/images/cause-4.jpg); "></a>
+                                <div class="text p-3 p-md-4">
+                                    <h3><a href="#">Clean water for the urban area</a></h3>
+                                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
+                                    <span class="donation-time mb-3 d-block">Last donation 1w ago</span>
+                                    <span class="fund-raised d-block">$12,000 raised of $30,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="cause-entry">
+                                <a href="#" class="img" style="background-image: url(../assets/volunteer/images/cause-5.jpg); "></a>
+                                <div class="text p-3 p-md-4">
+                                    <h3><a href="#">Clean water for the urban area</a></h3>
+                                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
+                                    <span class="donation-time mb-3 d-block">Last donation 1w ago</span>
+                                    <span class="fund-raised d-block">$12,000 raised of $30,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="cause-entry">
+                                <a href="#" class="img" style="background-image: url(../assets/volunteer/images/cause-6.jpg); "></a>
+                                <div class="text p-3 p-md-4">
+                                    <h3><a href="#">Clean water for the urban area</a></h3>
+                                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
+                                    <span class="donation-time mb-3 d-block">Last donation 1w ago</span>
+                                    <span class="fund-raised d-block">$12,000 raised of $30,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-gallery">
+        <div class="d-md-flex">
+            <a href="assets/images/cause-2.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(../assets/volunteer/images/cause-2.jpg);">
+                <div class="icon d-flex justify-content-center align-items-center">
+                    <span class="icon-search"></span>
+                </div>
+            </a>
+            <a href="assets/images/cause-3.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(../assets/volunteer/images/cause-3.jpg);">
+                <div class="icon d-flex justify-content-center align-items-center">
+                    <span class="icon-search"></span>
+                </div>
+            </a>
+            <a href="assets/images/cause-4.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(../assets/volunteer/images/cause-4.jpg);">
+                <div class="icon d-flex justify-content-center align-items-center">
+                    <span class="icon-search"></span>
+                </div>
+            </a>
+            <a href="assets/images/cause-5.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(../assets/volunteer/images/cause-5.jpg);">
+                <div class="icon d-flex justify-content-center align-items-center">
+                    <span class="icon-search"></span>
+                </div>
+            </a>
+        </div>
+        <div class="d-md-flex">
+            <a href="assets/images/cause-6.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(../assets/volunteer/images/cause-6.jpg);">
+                <div class="icon d-flex justify-content-center align-items-center">
+                    <span class="icon-search"></span>
+                </div>
+            </a>
+            <a href="assets/images/image_3.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(../assets/volunteer/images/image_3.jpg);">
+                <div class="icon d-flex justify-content-center align-items-center">
+                    <span class="icon-search"></span>
+                </div>
+            </a>
+            <a href="assets/images/image_1.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(../assets/volunteer/images/image_1.jpg);">
+                <div class="icon d-flex justify-content-center align-items-center">
+                    <span class="icon-search"></span>
+                </div>
+            </a>
+            <a href="assets/images/image_2.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(../assets/volunteer/images/image_2.jpg);">
+                <div class="icon d-flex justify-content-center align-items-center">
+                    <span class="icon-search"></span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="ftco-section bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section ftco-animate text-center">
+                    <h2 class="mb-4">Our Latest Events</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry align-self-stretch">
+                        <a href="blog-single.html" class="block-20" style="background-image: url('../assets/volunteer/images/event-1.jpg'); ">
+                        </a>
+                        <div class="text p-4 d-block">
+                            <div class="meta mb-3">
+                                <div><a href="#">Sep. 10, 2018</a></div>
+                                <div><a href="#">Admin</a></div>
+                            </div>
+                            <h3 class="heading mb-4"><a href="#">World Wide Donation</a></h3>
+                            <p class="time-loc"><span class="mr-2"><i class="icon-clock-o" style="color:#00ff21"></i> 10:30AM-03:30PM</span> <span><i class="icon-map-o" style="color:#00ff21"></i> Venue Main Campus</span></p>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                            <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry align-self-stretch">
+                        <a href="blog-single.html" class="block-20" style="background-image: url('../assets/volunteer/images/event-2.jpg'); ">
+                        </a>
+                        <div class="text p-4 d-block">
+                            <div class="meta mb-3">
+                                <div><a href="#">Sep. 10, 2018</a></div>
+                                <div><a href="#">Admin</a></div>
+
+                            </div>
+                            <h3 class="heading mb-4"><a href="#">World Wide Donation</a></h3>
+                            <p class="time-loc"><span class="mr-2"><i class="icon-clock-o" style="color:#00ff21"></i> 10:30AM-03:30PM</span> <span><i class="icon-map-o" style="color:#00ff21"></i> Venue Main Campus</span></p>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                            <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry align-self-stretch">
+                        <a href="blog-single.html" class="block-20" style="background-image: url('../assets/volunteer/images/event-3.jpg'); ">
+                        </a>
+                        <div class="text p-4 d-block">
+                            <div class="meta mb-3">
+                                <div><a href="#">Sep. 10, 2018</a></div>
+                                <div><a href="#">Admin</a></div>
+
+                            </div>
+                            <h3 class="heading mb-4"><a href="#">World Wide Donation</a></h3>
+                            <p class="time-loc"><span class="mr-2"><i class="icon-clock-o" style="color:#00ff21"></i> 10:30AM-03:30PM</span> <span><i class="icon-map-o" style="color:#00ff21"></i> Venue Main Campus</span></p>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                            <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section-3 img" style="background-image: url(../assets/volunteer/images/bg_3.jpg); ">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row d-md-flex">
+                <div class="col-md-6 d-flex ftco-animate">
+                    <div class="img img-2 align-self-stretch" style="background-image: url(../assets/volunteer/images/bg_4.jpg);"></div>
+                </div>
+                <div class="col-md-6 volunteer pl-md-5 ftco-animate">
+                    <h3 class="mb-3">Be a volunteer</h3>
+                    <form action="#" class="volunter-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Send Message" class="btn btn-white py-3 px-5">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+
     <!-- Vendor JS Files -->
     <script src="../assets/vendor/aos/aos.js"></script>
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="../assets/vendor/php-email-form/validate.js"></script>
-
-    <!-- Others -->
     <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <!-- external scripts -->
+    <script src="../assets/volunteer/scripts/jquery.min.js"></script>
+    <script src="../assets/volunteer/scripts/jquery-migrate-3.0.1.min.js"></script>
+    <script src="../assets/volunteer/scripts/popper.min.js"></script>
+    <script src="../assets/volunteer/scripts/bootstrap.min.js"></script>
+    <script src="../assets/volunteer/scripts/jquery.easing.1.3.js"></script>
+    <script src="../assets/volunteer/scripts/jquery.waypoints.min.js"></script>
+    <script src="../assets/volunteer/scripts/jquery.stellar.min.js"></script>
+    <script src="../assets/volunteer/scripts/owl.carousel.min.js"></script>
+    <script src="../assets/volunteer/scripts/jquery.magnific-popup.min.js"></script>
+    <script src="../assets/volunteer/scripts/aos.js"></script>
+    <script src="../assets/volunteer/scripts/jquery.animateNumber.min.js"></script>
+    <script src="../assets/volunteer/scripts/bootstrap-datepicker.js"></script>
+    <script src="../assets/volunteer/scripts/jquery.timepicker.min.js"></script>
+    <script src="../assets/volunteer/scripts/scrollax.min.js"></script>
+    <script src="../assets/volunteer/scripts/main.js"></script>
 
     <!-- Scripts -->
     <script src="../assets/scripts/script.js"></script>
