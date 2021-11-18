@@ -27,15 +27,7 @@ try {
 	}
 	
 	let category;
-	let timeValue = 15;
-	let que_count = 0;
-	let que_numb = 1;
-	let userScore = 0;
-	let counter;
-	let counterLine;
-	let widthValue = 0;
-	const restart_quiz = result_box.querySelector(".buttons .restart");
-	const quit_quiz = result_box.querySelector(".buttons .quit");
+	const leave_quiz = cat_box.querySelector(".buttons .quit");
 	function selectCat(id){
 		category = id;
 		info_box.classList.remove("activeInfo"); //hide info box
@@ -45,6 +37,19 @@ try {
 		startTimer(15); //calling startTimer function
 		startTimerLine(0); //calling startTimerLine function
 	}
+	leave_quiz.onclick = () => {
+		window.location.reload(); //reload the current window
+	}
+	let timeValue = 15;
+	let que_count = 0;
+	let que_numb = 1;
+	let userScore = 0;
+	let counter;
+	let counterLine;
+	let widthValue = 0;
+	const restart_quiz = result_box.querySelector(".buttons .restart");
+	const quit_quiz = result_box.querySelector(".buttons .quit");
+	
 	// if restartQuiz button clicked
 	restart_quiz.onclick = () => {
 			quiz_box.classList.add("activeQuiz"); //show quiz box
@@ -203,10 +208,6 @@ try {
 		//creating a new span tag and passing the question number and total question
 		let totalQueCounTag = '<span><p>' + index + '</p> of <p>' + questions[category].length + '</p> Questions</span>';
 		bottom_ques_counter.innerHTML = totalQueCounTag; //adding new span tag inside bottom_ques_counter
-	}
-
-	function test(id){
-		alert(id);
 	}
 } catch {
 	console.log("This page isn't the quiz page, quiz script will not be executed.")
