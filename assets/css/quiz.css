@@ -1,0 +1,23 @@
+.btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: rgb(22, 205, 230);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+  }
+  
+  .btn:hover {
+    border-color: black;
+  }
+  
+  .btn.correct {
+    background-color: rgb(36, 224, 146);
+    color: black;
+  }
+  
+  .btn.wrong {
+    background-color: red;
+  }
+  

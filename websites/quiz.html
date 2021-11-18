@@ -29,6 +29,7 @@
     <!-- Self-Defined -->
     <link href="../assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="../assets/css/button.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/quiz.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -98,8 +99,8 @@
 
                 <!-- Caption -->
                 <div class="carousel-caption d-md-block">
-                    <h1>text here</h1>
-                    <p>Learn about ongoing events and how you can contribute.</p>
+                    <h1>Quiz</h1>
+                    <p>Test your understanding</p>
                 </div>
 
             </div>
@@ -107,7 +108,24 @@
         </div>
     </div>
 
-    <h2 style="text-align: center; padding-top: 10px;"><b>Quiz</b></h2>
+    <div class="container border">
+        <div class="container" id="question-container">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="flex-column">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <button id="start-btn" class="btn-primary col-2">Start</button>
+            <button id="next-btn" class="btn-primary col-2">Next</button>
+        </div>
+
+    </div>
+
+    
 
     <!-- Footer -->
     <footer class="d-flex align-items-center justify-content-center glassmorphism-footer" style="color: white;">
@@ -170,5 +188,6 @@
 
     <!-- Scripts -->
     <script src="../assets/scripts/script.js"></script>
+    <script src="../assets/scripts/quiz.js"></script>
 </body>
 </html>
