@@ -1,4 +1,4 @@
-var APIKEY = "617ffebf63fbb2763ab02509";
+var APIKEY3 = "617ffebf63fbb2763ab02509";
 
 $("#registered").hide();
 $("#invalid").hide();
@@ -33,7 +33,7 @@ $("#register-btn").on("click", function () {
       "method": "POST",
       "headers": {
         "content-type": "application/json",
-        "x-apikey": APIKEY,
+        "x-apikey": APIKEY3,
         "cache-control": "no-cache"
       },
       "processData": false,

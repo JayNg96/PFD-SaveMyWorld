@@ -82,10 +82,38 @@
                             <li><a id="register-dropdown" href="../account/register.html">Register</a></li>
                         </ul>
                     </li>
+                    <li>
+                        <div class="cart-btn">
+                            <span class="nav-icon">
+                                <i class="fa fa-cart-plus" style="color: rgb(255, 255, 255);"></i>
+                            </span>
+
+                            <div class="cart-items">0</div>
+                        </div>
+                    </li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
         </div>
+        <!-- Cart -->
+        <div class="cart-overlay">
+            <div class="cart">
+                <span class="close-cart"><i class="fa fa-window-close"></i></span>
+
+                <h2>Your Cart</h2>
+
+                <div class="cart-content"></div>
+
+                <!-- Calculations -->
+                <div class="cart-footer">
+                    <h3>Cart Total: $<span class="cart-total">0</span></h3>
+                    <h3>Reward Points Attainable: <span class="cart-point">0</span></h3>
+                    <h3>Reward Points Earned: <span class="cart-totalpoint">0</span></h3>
+                    <button class="checkout-cart banner-btn">checkout</button>
+                </div>
+            </div>
+        </div>
+   
     </header><!-- End Header -->
     <!-- Page Header-->
     <header class="masthead" style="background-image: url('../../assets/images/biodiversity-bg.jpg')">
@@ -131,13 +159,15 @@
                     <p>Not only is the loss of biodiversity caused through direct attacks on the ecosystems, but changes to the environment such as climate change, light pollution and noise pollution can affect biodiversity as well. Changes in global temperature due to climate change result in diminishing ice packs which are habitats of polar bears, penguins and other arctic animals. As the ice melts, it increases the sea level, which will affect and perhaps destroy ecosystems on coastlines. Changes in temperatures will also cause shifts in mating cycles, especially for migratory animals that rely on changing seasons to indicate their migration and reproductive timing. </p>
                     <a href="#!"><img class="img-fluid" src="../../assets/images/noisepollution.jpg" alt="..." style="width:200%" /></a>
                     <p>On the other hand, noise and light pollution disrupts the natural patterns of wildlife. Studies have shown that loud noises cause caterpillars’ hearts to beat faster and bluebirds to have fewer chicks. Animals use sound for a variety of reasons, including to navigate, find food, attract mates, and avoid predators. Noise pollution makes it difficult for them to accomplish these tasks, which affects their ability to survive. In another study, light pollution has been determined as another driver of insect decline. Insects are drawn from their usual activities towards artificial lights and thus, breeding is not as efficient as before which could lead to a drop in insect numbers which are also an important food source to other animals. </p>
-                    
+
                     <h2 class="section-heading">How does it affect us?</h2>
-                    <p>Biodiversity loss endangers human well-being by affecting soil and water, which are fundamental to food production. For example, imbalances in ecosystems can 
-                        lead to the emergence of pests that damage crops. Disruptions in the food chain may greatly affect not only ecosystems but also humanity's ability to feed an 
-                        ever-growing population. For example, losing diverse insect species will decrease plant pollination. Additionally, this may decrease humanity's ability to 
-                        produce medicine, as extinction claims more and more key plant species. Biodiversity also protects against natural disasters, such as grasses that have evolved 
-                        specifically to resist the spread of wildfires.</p>
+                    <p>
+                        Biodiversity loss endangers human well-being by affecting soil and water, which are fundamental to food production. For example, imbalances in ecosystems can
+                        lead to the emergence of pests that damage crops. Disruptions in the food chain may greatly affect not only ecosystems but also humanity's ability to feed an
+                        ever-growing population. For example, losing diverse insect species will decrease plant pollination. Additionally, this may decrease humanity's ability to
+                        produce medicine, as extinction claims more and more key plant species. Biodiversity also protects against natural disasters, such as grasses that have evolved
+                        specifically to resist the spread of wildfires.
+                    </p>
                     <p></p>
 
                     <h2 class="section-heading">What can we do?</h2>
@@ -201,6 +231,7 @@
     <script src="../../assets/vendor/php-email-form/validate.js"></script>
 
     <!-- Others -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
@@ -208,5 +239,6 @@
 
     <!-- Scripts -->
     <script src="../../assets/scripts/script.js"></script>
+    <script src="../../assets/scripts/shop.js"></script>
 </body>
 </html>

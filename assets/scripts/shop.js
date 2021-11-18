@@ -5,7 +5,7 @@ const client = contentful.createClient({
 });
 //RestDB
 const APIKEY = '6028a9575ad3610fb5bb5fe3';
-const APIKEY2 = '617ffebf63fbb2763ab02509'
+const APIKEY2 = '617ffebf63fbb2763ab02509';
 console.log(client);
 // variables
 const cartBtn = document.querySelector(".cart-btn");

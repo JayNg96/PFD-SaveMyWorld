@@ -74,10 +74,36 @@
                             <li><a id="register-dropdown" href="register.html">Register</a></li>
                         </ul>
                     </li>
-                   
+                    <li>
+                        <div class="cart-btn">
+                            <span class="nav-icon">
+                                <i class="fa fa-cart-plus" style="color: rgb(255, 255, 255);"></i>
+                            </span>
+
+                            <div class="cart-items">0</div>
+                        </div>
+                    </li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
+        </div>
+        <!-- Cart -->
+        <div class="cart-overlay">
+            <div class="cart">
+                <span class="close-cart"><i class="fa fa-window-close"></i></span>
+
+                <h2>Your Cart</h2>
+
+                <div class="cart-content"></div>
+
+                <!-- Calculations -->
+                <div class="cart-footer">
+                    <h3>Cart Total: $<span class="cart-total">0</span></h3>
+                    <h3>Reward Points Attainable: <span class="cart-point">0</span></h3>
+                    <h3>Reward Points Earned: <span class="cart-totalpoint">0</span></h3>
+                    <button class="checkout-cart banner-btn">checkout</button>
+                </div>
+            </div>
         </div>
     </header><!-- End Header -->
 
@@ -186,5 +212,6 @@
     <!-- Scripts -->
     <script src="../../assets/scripts/script.js"></script>
     <script src="../../assets/scripts/login.js"></script>
+    <script src="../../assets/scripts/shop.js"></script>
 </body>
 </html>
