@@ -15,10 +15,12 @@ try {
 	// if startQuiz button clicked
 	start_btn.onclick = () => {
 			info_box.classList.add("activeInfo"); //show info box
+			$("#ready-text").hide();
 		}
 		// if exitQuiz button clicked
 	exit_btn.onclick = () => {
 			info_box.classList.remove("activeInfo"); //hide info box
+			$("#ready-text").show();
 		}
 		// if continueQuiz button clicked
 	continue_btn.onclick = () => {
@@ -30,7 +32,7 @@ try {
 	const leave_quiz = cat_box.querySelector(".buttons .quit");
 	function selectCat(id){
 		category = id;
-		info_box.classList.remove("activeInfo"); //hide info box
+		cat_box.classList.remove("activeCat"); //hide info box
 		quiz_box.classList.add("activeQuiz"); //show quiz box
 		showQuetions(0); //calling showQestions function
 		queCounter(1); //passing 1 parameter to queCounter
@@ -146,18 +148,18 @@ try {
 		quiz_box.classList.remove("activeQuiz"); //hide quiz box
 		result_box.classList.add("activeResult"); //show result box
 		const scoreText = result_box.querySelector(".score_text");
-		if(userScore > 3) { // if user scored more than 3
+		if(userScore/questions[category].length >= 0.75) { // if user scored more than 3
 			//creating a new span tag and passing the user score number and total question number
-			let scoreTag = '<span>and congrats! ??, You got <p>' + userScore + '</p> out of <p>' + questions[category].length + '</p></span><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You have earned ' + userScore + ' reward points!</p>';
+			let scoreTag = '<span>and congrats!, You got <p>' + userScore + '</p> out of <p>' + questions[category].length + '</p></span><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You have earned ' + userScore + ' reward points!</p>';
 			scoreText.innerHTML = scoreTag; //adding new span tag inside score_Text
 			totalPoints += userScore;
 			userPoints.innerHTML = parseFloat(totalPoints.toFixed(0));
 			Storage.savePoint(totalPoints.toFixed(0));
-		} else if(userScore > 1) { // if user scored more than 1
-			let scoreTag = '<span>and nice ??, You got <p>' + userScore + '</p> out of <p>' + questions[category].length + '</p></span>';
+		} else if(userScore/questions[category].length >= 0.5) { // if user scored more than 1
+			let scoreTag = '<span>and nice!, You got <p>' + userScore + '</p> out of <p>' + questions[category].length + '</p></span>';
 			scoreText.innerHTML = scoreTag;
 		} else { // if user scored less than 1
-			let scoreTag = '<span>and sorry ??, You got only <p>' + userScore + '</p> out of <p>' + questions[category].length + '</p></span>';
+			let scoreTag = '<span>and sorry, You got only <p>' + userScore + '</p> out of <p>' + questions[category].length + '</p></span>';
 			scoreText.innerHTML = scoreTag;
 		}
 	}

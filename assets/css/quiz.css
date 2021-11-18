@@ -9,6 +9,12 @@
      color: #fff;
      background: #00ffd5;
 }
+
+.quiz-container{
+    position: relative;
+    height: 550px;
+}
+
  .start_btn, .info_box, .cat_box, .quiz_box, .result_box {
      position: absolute;
      top: 50%;
@@ -26,7 +32,7 @@
      font-size: 25px;
      font-weight: 500;
      color: #dd7d50;
-     padding: 15px 30px;
+     padding: 15px 70px;
      outline: none;
      border: none;
      background: #fff;
@@ -116,6 +122,23 @@
 .cat_box .category{
     padding: 1rem;
 }
+.cat-list button {
+    font-size: 25px;
+    font-weight: 500;
+    color: #dd7d50;
+    padding: 15px 70px;
+    margin: 20px;
+    outline: none;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+}
+
+.cat-list button:hover {
+    background: #dd7d50;
+    color: #fff;
+}
+
  .quiz_box {
      width: 550px;
      background: #fff;

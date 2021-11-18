@@ -109,9 +109,12 @@
     </div>
 
     <div class="quiz-container">
+        <div class="section-title section-padding">
+            <h2 id="ready-text">Are you ready?</h2>
+        </div>
         <!-- start of quiz box -->
         <!-- start quiz button -->
-        <div class="start_btn"><button>Quiz to Earn Points</button></div>
+        <div class="start_btn"><button>Start!</button></div>
         <!-- Info Box -->
         <div class="info_box">
            <div class="info-title"><span>Some Rules of this Quiz</span></div>
@@ -130,8 +133,8 @@
         <!-- Category Box -->
         <div class="cat_box">
             <div class="cat-title"><span>Select Quiz Category</span></div>
-            <div class="cat-list">
-               <button class="category col-3" id="cat1" onClick="selectCat(this.id)">environment</button>
+            <div class="row cat-list">
+               <button class="category col-3" id="cat1" onClick="selectCat(this.id)">Environment</button>
                <button class="category col-3" id="cat2" onClick="selectCat(this.id)">3rs</button>
             </div>
             <div class="buttons">
@@ -141,7 +144,7 @@
         <!-- Quiz Box -->
         <div class="quiz_box">
            <header>
-              <div class="title">Shopification Quiz Application</div>
+              <div class="title">Quiz</div>
               <div class="timer">
                  <div class="time_left_txt">Time Left</div>
                  <div class="timer_sec">15</div>
@@ -161,7 +164,7 @@
               <div class="total_que">
                  <!-- Here I've inserted Question Count Number from JavaScript -->
               </div>
-              <button class="next_btn">Next</button>
+                <button class="next_btn">Next</button>
            </footer>
         </div>
         <!-- Result Box -->
@@ -225,6 +228,13 @@
 
         </div>
     </footer>
+    <style>
+        .section-padding h2{
+            font-size: 70px;
+            top: 20%;
+            padding: 30px;
+        }
+    </style>
 
     <!-- Scripts -->
     <!-- Vendor JS Files -->
@@ -242,5 +252,6 @@
     <!-- Scripts -->
     <script src="../assets/scripts/script.js"></script>
     <script src="../assets/scripts/quiz.js"></script>
+    <script src="../assets/vendor/animations/index.min.js"></script>
 </body>
 </html>
