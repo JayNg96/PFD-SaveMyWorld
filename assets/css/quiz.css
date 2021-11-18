@@ -32,15 +32,15 @@
      font-size: 25px;
      font-weight: 500;
      color: #dd7d50;
-     padding: 15px 70px;
+     padding: 30px 100px;
      outline: none;
      border: none;
      background: #fff;
      cursor: pointer;
 }
  .start_btn button:hover {
-     background: #dd7d50;
-     color: #fff;
+    background: #dd7d50;
+    color: #fff;
 }
  .info_box {
      width: 540px;
@@ -116,27 +116,60 @@
 }
 .cat_box .cat-list{
     display: flex;
-    justify-content: center;
     justify-content: space-around;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
+
 .cat_box .category{
     padding: 1rem;
 }
+
 .cat-list button {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
-    color: #dd7d50;
+    color: #fff;
     padding: 15px 70px;
-    margin: 20px;
     outline: none;
-    border: none;
-    background: #fff;
+    background: #dd7d50;
     cursor: pointer;
+    border: none;
+    border-radius: 10px;
 }
 
 .cat-list button:hover {
-    background: #dd7d50;
-    color: #fff;
+    background: #fff;
+    color: #dd7d50;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #dd7d50;
+    transition: all 0.3s ease;
+    transform: scale() perspective(10px);
+}
+
+/**#45b2dd
+background-color: #AD310B;
+-webkit-transition: background-color 1000ms linear;
+-ms-transition: background-color 1000ms linear;
+transition: background-color 1000ms linear;**/
+
+.cat_box .buttons {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cat_box .buttons button {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    border-style: solid;
+    border-color: #dd7d50;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
  .quiz_box {
@@ -201,6 +234,7 @@
      height: 3px;
      background: #dd7d50;
 }
+
  .section {
      padding: 25px 30px 20px 30px;
      background: #fff;
@@ -267,7 +301,7 @@
      background: #f8d7da;
      border-color: #a42834;
 }
- quiz-footer {
+ .quiz_box footer {
      height: 60px;
      padding: 0 30px;
      display: flex;
@@ -275,18 +309,22 @@
      justify-content: space-between;
      border-top: 1px solid lightgrey;
 }
- footer .total_que span {
+.quiz_box footer .total_que span {
      display: flex;
+     align-items: center;
      user-select: none;
 }
- footer .total_que span p {
-     font-weight: 500;
-     padding: 0 5px;
+.quiz_box footer .total_que span p {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    padding: 5px 5px;
+    padding-top: 35px;
 }
- footer .total_que span p:first-child {
+.quiz_box footer .total_que span p:first-child {
      padding-left: 0px;
 }
- footer button {
+.quiz_box footer button {
      height: 40px;
      padding: 0 13px;
      font-size: 18px;
@@ -304,10 +342,10 @@
      transform: scale(0.95);
      transition: all 0.3s ease;
 }
- footer button:hover {
+.quiz_box footer button:hover {
      background: #e6c27f;
 }
- footer button.show {
+.quiz_box footer button.show {
      opacity: 1;
      pointer-events: auto;
      transform: scale(1);
@@ -337,6 +375,7 @@
 }
  .result_box .score_text span {
      display: flex;
+     justify-content: center;
      margin: 10px 0;
      font-size: 18px;
      font-weight: 500;

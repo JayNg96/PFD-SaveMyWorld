@@ -150,16 +150,16 @@ try {
 		const scoreText = result_box.querySelector(".score_text");
 		if(userScore/questions[category].length >= 0.75) { // if user scored more than 3
 			//creating a new span tag and passing the user score number and total question number
-			let scoreTag = '<span>and congrats!, You got <p>' + userScore + '</p> out of <p>' + questions[category].length + '</p></span><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You have earned ' + userScore + ' reward points!</p>';
+			let scoreTag = '<span>Well done! You got <p>' + userScore + '</p> out of <p>' + questions[category].length + '</p></span>';/**<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You have earned ' + userScore + ' reward points!</p>';**/
 			scoreText.innerHTML = scoreTag; //adding new span tag inside score_Text
 			totalPoints += userScore;
 			userPoints.innerHTML = parseFloat(totalPoints.toFixed(0));
 			Storage.savePoint(totalPoints.toFixed(0));
 		} else if(userScore/questions[category].length >= 0.5) { // if user scored more than 1
-			let scoreTag = '<span>and nice!, You got <p>' + userScore + '</p> out of <p>' + questions[category].length + '</p></span>';
+			let scoreTag = '<span>Nice! You got <p>' + userScore + '</p> out of <p>' + questions[category].length + '</p></span>';
 			scoreText.innerHTML = scoreTag;
 		} else { // if user scored less than 1
-			let scoreTag = '<span>and sorry, You got only <p>' + userScore + '</p> out of <p>' + questions[category].length + '</p></span>';
+			let scoreTag = '<span>Try again! You got only <p>' + userScore + '</p> out of <p>' + questions[category].length + '</p></span>';
 			scoreText.innerHTML = scoreTag;
 		}
 	}
@@ -219,34 +219,53 @@ try {
 let questions = {
 	cat1: [{
 		numb: 1,
-		question: "What does HTML stand for?",
-		answer: "Hyper Text Markup Language",
-		options: ["Hyper Text Preprocessor", "Hyper Text Markup Language", "Hyper Text Multiple Language", "Hyper Tool Multi Language"]
+		question: "When is Earth Day?",
+		answer: "April 22nd",
+		options: ["April 22nd", "December 21st", "August 12th", "October 31st"]
 	}, 
 	{
 		numb: 2,
-		question: "What does CSS stand for?",
-		answer: "Cascading Style Sheet",
-		options: ["Common Style Sheet", "Colorful Style Sheet", "Computer Style Sheet", "Cascading Style Sheet"]
-	}],
+		question: "What is the largest rainforest in the world?",
+		answer: "The Amazon Rainforest",
+		options: ["The Congo Rainforest", "Daintree Rainforest", "The Amazon Rainforest", "Southeast Asian Rainforest"]
+	},
+	{
+		numb: 3,
+		question: "What are the causes of loss of biodiversity?",
+		answer: "All of the Above",
+		options: ["Pollution", "Climate Change", "Human Activity", "All of the Above"]
+	},
+	{
+		numb: 4,
+		question: "How much food is wasted globally in a year?",
+		answer: "1.3 billion tons",
+		options: ["11.6 million tons", "60.4 million tons", "120 million tons", "1.3 billion tons"]
+	},
+	{
+		numb: 5,
+		question: "What can we do to stop climate change?",
+		answer: "Walk, cycle or take public transport",
+		options: ["Eat less vegetables", "Throw away more food", "Walk, cycle or take public transport", "All of the above"]
+	},
+],
 
 	cat2: [{
 		numb: 1,
-		question: "What does PHP stand for?",
-		answer: "Hypertext Preprocessor",
-		options: ["Hypertext Preprocessor", "Hypertext Programming", "Hypertext Preprogramming", "Hometext Preprocessor"]
+		question: "What do the 3Rs stand for?",
+		answer: "Reduce, Recycle, Reuse",
+		options: ["Rescue, Reduce, Recess", "Reduce, Recycle, Reuse", "Reuse, Revise, Recycle", "Recycle, Return, Rot"]
 	}, 
 	{
 		numb: 2,
-		question: "What does SQL stand for?",
-		answer: "Structured Query Language",
-		options: ["Stylish Question Language", "Stylesheet Query Language", "Statement Question Language", "Structured Query Language"]
+		question: "How do we reduce waste?",
+		answer: "Use a reusable bag/cup",
+		options: ["Use more disposable items", "Do not purchase in bulk", "Use a reusable bag/cup", "All of the above"]
 	}, 
 	{
 		numb: 3,
-		question: "What does XML stand for?",
-		answer: "eXtensible Markup Language",
-		options: ["eXtensible Markup Language", "eXecutable Multiple Language", "eXTra Multi-Program Language", "eXamine Multiple Language"]
+		question: "Recycling paper can save which natural resource?",
+		answer: "Trees",
+		options: ["Rocks", "Trees", "Air", "Coal"]
 	}]
 };
 //* ---------------------- end of quiz.html JS ---------------------- *//
