@@ -7,6 +7,7 @@ const answerButtonsElement = document.querySelector('#answer-buttons')
 let shuffledQuestions, currentQuestionIndex
 $("#next-btn").hide()
 $("#question-container").hide()
+$("#game-end").hide()
 
 const startQuiz = () => {
     shuffledQuestions = questions.sort(() => Math.random() - .5)
@@ -118,8 +119,15 @@ const questions = [
 startButton.addEventListener('click', startQuiz);
 
 nextButton.addEventListener('click', () => {
-    currentQuestionIndex++
-    setNextQuestion()
+    if(currentQuestionIndex < questions.length-1){
+        currentQuestionIndex++;
+        setNextQuestion()
+    }
+    else{
+        $("#next-btn").hide()
+        $("#question-container").hide()
+        $("#game-end").show()
+    }
 })
 
 
