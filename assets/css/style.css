@@ -444,7 +444,7 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
 
     /* Carousel */
     .carousel .carousel-item {
-        height: 450px;
+        height: 600px;
     }
 }
 
@@ -555,7 +555,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled {
-    background: linear-gradient(45deg, #1de099, #1dc8cd);
+    background: linear-gradient(45deg, #056660, #1dc8cd);
     height: 70px;
     transition: all 0.5s;
 }
