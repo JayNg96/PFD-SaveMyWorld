@@ -108,6 +108,14 @@
     font-size: 20px;
     font-weight: 600;
 }
+.cat_box .cat-list{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.cat_box .category{
+    padding: 1rem;
+}
  .quiz_box {
      width: 550px;
      background: #fff;
