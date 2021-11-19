@@ -5,8 +5,6 @@ We all know the importance of saving our planet. Scientists have warned us of se
 Each of us can help to protect our planet in simple ways. We can follow the three "R's" (Reduce, Reuse and Recycle) to conserve natural resources. Volunteers are needed to clean up the community, e.g. beaches. Resources such as water and energy have to be conserved and used wisely. The use of plastic especially disposable wares and containers, is a big problem we need to resolve. The use of non-toxic chemicals in the home and office will create a safe environment. The proper disposal of harmful chemicals can ensure cleaner air and water.
 
 The challenge is whether we can use technology to help us in our effort to save our planet. Technology can educate both the young and old and help them understand the importance and value of our natural resources. Technology can aid us in our collaborative effort to protect the Earth.
-## Table of Contents
-To be added when everything is finalised
 ## GitHub
 ### GitHub Repository
 Link: https://github.com/JayNg96/PFD-SaveMyWorld
@@ -14,7 +12,7 @@ Link: https://github.com/JayNg96/PFD-SaveMyWorld
 Link: https://jayng96.github.io/PFD-SaveMyWorld/
 ## Wireframe
 ### Adobe XD
-Link: 
+Link: [Adobe XD File](https://connectnpedu-my.sharepoint.com/:u:/g/personal/s10194188_connect_np_edu_sg/EdbElO7cnXhOjrYkVklJGCEBSvOAzUYFUaiobKQrnh8fCg?e=iE8ROi)
 ## Team Members
 * 👨‍💻 Alexander [Front-End Developer]
 * 👨‍💻 Jian Wei [Full Stack Developer]
