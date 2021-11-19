@@ -10,50 +10,55 @@
     <link rel="icon" type="image/png" href="../assets/images/logo.png">
 
     <!-- CSS -->
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-    <!-- Awesome Fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Awesome Fonts -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Yeseva+One&display=swap" rel="stylesheet">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Yeseva+One&display=swap" rel="stylesheet">
 
-    <!-- Vendor CSS Files -->
-    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <!-- Vendor CSS Files -->
+        <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+        <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-    <!-- Self-Defined -->
-    <link href="../assets/css/style.css" rel="stylesheet" type="text/css">
-    <link href="../assets/css/button.css" rel="stylesheet" type="text/css">
-    <link href="../assets/css/quiz.css" rel="stylesheet" type="text/css">
+        <!-- Self-Defined -->
+        <link href="../assets/css/style.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/button.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/quiz.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <!--
-    Title: Bootstrap
-    Author: Bootstrap
-    Date: 2021
-    Code version: 5.1
-    Availability: https://getbootstrap.com/docs/5.1/getting-started/introduction/
+        Title: Bootstrap
+        Author: Bootstrap
+        Date: 2021
+        Code version: 5.1
+        Availability: https://getbootstrap.com/docs/5.1/getting-started/introduction/
     -->
+
     <!-- Navigation Bar -->
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center header-transparent">
         <div class="container d-flex justify-content-between align-items-center">
 
+            <!-- Website's Name -->
             <div id="logo">
                 <h1><a href="../index.html">EARTHERS</a></h1>
-                <!-- Uncomment below if you prefer to use an image logo -->
+
                 <!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a> -->
             </div>
 
             <nav id="navbar" class="navbar">
                 <ul>
+                    <!-- Home -->
                     <li><a class="nav-link scrollto" href="../index.html">Home</a></li>
+
+                    <!-- Environmental Issues -->
                     <li class="dropdown">
                         <a href="environmentalissues/environmentalissues.html"><span>Environmental Issues</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
@@ -65,6 +70,8 @@
                             <li><a href="environmentalissues/plasticpollution.html">Plastic Pollution</a></li>
                         </ul>
                     </li>
+
+                    <!-- Waste Management -->
                     <li class="dropdown">
                         <a href="#"><span>Waste Management</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
@@ -72,9 +79,17 @@
                             <li><a href="wastemanagement/playyourpart.html">Play Your Part</a></li>
                         </ul>
                     </li>
+
+                    <!-- Volunteer Events -->
                     <li><a class="nav-link scrollto" href="volunteer.html">Volunteer Events</a></li>
+
+                    <!-- Quiz -->
                     <li><a class="nav-link scrollto active" href="quiz.html">Quiz</a></li>
+
+                    <!-- Shop -->
                     <li><a class="nav-link scrollto" href="shop.html">Shop</a></li>
+
+                    <!-- Account -->
                     <li class="dropdown">
                         <a href="#"><span>Account</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
@@ -82,12 +97,45 @@
                             <li><a id="register-dropdown" href="account/register.html">Register</a></li>
                         </ul>
                     </li>
+
+                    <!-- Cart -->
+                    <li>
+                        <div class="cart-btn">
+                            <span class="nav-icon">
+                                <i class="fa fa-cart-plus" style="color: rgb(255, 255, 255);"></i>
+                            </span>
+
+                            <div class="cart-items">0</div>
+                        </div>
+                    </li>
+
                 </ul>
+
                 <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav><!-- .navbar -->
+            </nav>
         </div>
-    </header><!-- End Header -->
-    <!-- Banner -->
+
+        <!-- Cart Details -->
+        <div class="cart-overlay">
+            <div class="cart">
+                <span class="close-cart"><i class="fa fa-window-close"></i></span>
+
+                <h2>Your Cart</h2>
+
+                <div class="cart-content"></div>
+
+                <!-- Calculations -->
+                <div class="cart-footer">
+                    <h3>Cart Total: $<span class="cart-total">0</span></h3>
+                    <h3>Reward Points Attainable: <span class="cart-point">0</span></h3>
+                    <h3>Reward Points Earned: <span class="cart-totalpoint">0</span></h3>
+                    <button class="checkout-cart banner-btn">checkout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quiz Banner -->
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
 
@@ -95,7 +143,6 @@
 
                 <!-- Image -->
                 <img src="../assets/images/learningbanner.jpg" class="d-block w-100" alt="Learning Banner">
-
 
                 <!-- Caption -->
                 <div class="carousel-caption d-md-block" style="padding-bottom: 5%;">
@@ -116,16 +163,20 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 
+    <!-- Quiz -->
     <div class="quiz-container">
         <div class="section-title section-padding">
             <h2 id="ready-text">Are you ready?</h2>
         </div>
-        <!-- start of quiz box -->
-        <!-- start quiz button -->
+
+        <!-- start of quiz box and button -->
         <div class="start_btn"><button>Start!</button></div>
+
         <!-- Info Box -->
         <div class="info_box">
+
            <div class="info-title"><span>Some Rules of this Quiz</span></div>
+
            <div class="info-list">
               <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
               <div class="info">2. Once you select your answer, it can't be undone.</div>
@@ -133,61 +184,87 @@
               <div class="info">4. You can't exit from the Quiz while you're playing.</div>
               <div class="info">5. You'll earn points on the basis of your correct answers.</div>
            </div>
+
            <div class="buttons">
               <button class="quit">Exit Quiz</button>
               <button class="restart">Continue</button>
            </div>
+
         </div>
+
         <!-- Category Box -->
         <div class="cat_box">
+
             <div class="cat-title"><span>Select Quiz Category</span></div>
+
             <div class="cat-list">
                <button class="category col-4" id="cat1" onClick="selectCat(this.id)">Environment</button>
                <button class="category col-4" id="cat2" onClick="selectCat(this.id)">The 3Rs</button>
             </div>
+
             <div class="buttons">
                <button class="quit">Exit Quiz</button>
             </div>
-         </div>
+
+        </div>
+
         <!-- Quiz Box -->
         <div class="quiz_box">
+
            <header>
-              <div class="title">Quiz</div>
-              <div class="timer">
-                 <div class="time_left_txt">Time Left</div>
-                 <div class="timer_sec">15</div>
-              </div>
+
+                <div class="title">Quiz</div>
+
+                <div class="timer">
+                    <div class="time_left_txt">Time Left</div>
+                    <div class="timer_sec">15</div>
+                </div>
+
               <div class="time_line"></div>
+
            </header>
+
            <div class="section">
-              <div class="que_text">
-                 <!-- Here I've inserted questions from JavaScript -->
-              </div>
-              <div class="option_list">
-                 <!-- Here I've inserted options from JavaScript -->
-              </div>
+
+                <div class="que_text">
+                    <!-- Here I've inserted questions from JavaScript -->
+                </div>
+                
+                <div class="option_list">
+                    <!-- Here I've inserted options from JavaScript -->
+                </div>
            </div>
-           <!-- footer of Quiz Box -->
-           <footer>
-              <div class="total_que">
-                 <!-- Here I've inserted Question Count Number from JavaScript -->
-              </div>
+
+            <!-- Footer of Quiz Box -->
+            <footer>
+
+                <div class="total_que">
+                    <!-- Here I've inserted Question Count Number from JavaScript -->
+                </div>
+
                 <button class="next_btn">Next</button>
-           </footer>
+
+            </footer>
+
         </div>
         <!-- Result Box -->
         <div class="result_box">
-           <div class="icon">
-              <i class="fa fa-quora"></i>
-           </div>
-           <div class="complete_text">You've completed the Quiz!</div>
-           <div class="score_text">
-              <!-- Here I've inserted Score Result from JavaScript -->
-           </div>
-           <div class="buttons">
-              <button class="restart">Replay Quiz</button>
-              <button class="quit">Quit Quiz</button>
-           </div>
+
+            <div class="icon">
+                <i class="fa fa-quora"></i>
+            </div>
+
+            <div class="complete_text">You've completed the Quiz!</div>
+
+            <div class="score_text">
+                <!-- Here I've inserted Score Result from JavaScript -->
+            </div>
+
+            <div class="buttons">
+                <button class="restart">Replay Quiz</button>
+                <button class="quit">Quit Quiz</button>
+            </div>
+
         </div>
     </div>
 
@@ -196,16 +273,19 @@
         <div class="container">
             <div class="row my-5 px-0">
 
-                <!-- Developer's Names & Links -->
+                <!-- Team's Name & Links -->
                 <div class="col-6">
-                    Earth Savers<br><br>
+                    Earthers<br><br>
                     Connect with us<br><br>
 
-                    <a href="https://www.linkedin.com/school/ngee-ann-polytechnic/?originalSubdomain=sg" target="_blank"><img src="../assets/images/linkedin.png" alt="LinkedIn logo" width="32" height="32" title="LinkedIn"></a>
-                    <a href="https://github.com/JayNg96/PFD-SaveMyWorld" target="_blank"><img src="../assets/images/github-light.png" alt="GitHub logo" width="32" height="32" title="GitHub"></a>
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/school/ngee-ann-polytechnic/?originalSubdomain=sg" target="_blank"><img src="/assets/images/linkedin.png" alt="LinkedIn logo" width="32" height="32" title="LinkedIn"></a>
+                    
+                    <!-- GitHub -->
+                    <a href="https://github.com/JayNg96/PFD-SaveMyWorld" target="_blank"><img src="/assets/images/github-light.png" alt="GitHub logo" width="32" height="32" title="GitHub"></a>
                 </div>
 
-                <!-- GitHub & API Links -->
+                <!-- Developer's Names & Roles -->
                 <div class="col-3">
                     <b>Team</b>  <br> <br>
 
@@ -229,15 +309,16 @@
 
             </div>
 
-            <!-- Application's Name -->
+            <!-- Website's Name -->
             <div class="row my-5">
-                <div class="col-12 text-center " style="font-size: 1rem;">&copy; Earth Savers 2021</div>
+                <div class="col-12 text-center " style="font-size: 1rem;">&copy; Earthers 2021</div>
             </div>
 
         </div>
     </footer>
+
     <style>
-        .section-padding h2{
+        .section-padding h2 {
             font-size: 55px;
             top: 20%;
             padding: 30px;
@@ -245,21 +326,21 @@
     </style>
 
     <!-- Scripts -->
-    <!-- Vendor JS Files -->
-    <script src="../assets/vendor/aos/aos.js"></script>
-    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="../assets/vendor/php-email-form/validate.js"></script>
+        <!-- Vendor JS Files -->
+        <script src="../assets/vendor/aos/aos.js"></script>
+        <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="../assets/vendor/php-email-form/validate.js"></script>
 
-    <!-- Others -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <!-- Others -->
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-    <!-- Scripts -->
-    <script src="../assets/scripts/script.js"></script>
-    <script src="../assets/scripts/quiz.js"></script>
-    <script src="../assets/vendor/animations/index.min.js"></script>
+        <!-- Scripts -->
+        <script src="../assets/scripts/script.js"></script>
+        <script src="../assets/scripts/quiz.js"></script>
+        <script src="../assets/vendor/animations/index.min.js"></script>
 </body>
 </html>
