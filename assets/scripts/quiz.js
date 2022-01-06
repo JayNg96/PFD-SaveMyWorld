@@ -3,7 +3,6 @@
 try {
 	const start_btn = document.querySelector(".start_btn button");
 	const info_box = document.querySelector(".info_box");
-	const cat_box = document.querySelector(".cat_box");
 	const exit_btn = info_box.querySelector(".buttons .quit");
 	const continue_btn = info_box.querySelector(".buttons .restart");
 	const quiz_box = document.querySelector(".quiz_box");
@@ -23,24 +22,15 @@ try {
 			$("#ready-text").show();
 		}
 		// if continueQuiz button clicked
-	continue_btn.onclick = () => {
-		info_box.classList.remove("activeInfo"); //hide info box
-		cat_box.classList.add("activeCat"); //show quiz box
-	}
-	
 	let category;
-	const leave_quiz = cat_box.querySelector(".buttons .quit");
 	function selectCat(id){
-		category = id;
-		cat_box.classList.remove("activeCat"); //hide info box
+		category = id
+		info_box.classList.remove("activeInfo"); //hide info box
 		quiz_box.classList.add("activeQuiz"); //show quiz box
 		showQuetions(0); //calling showQestions function
 		queCounter(1); //passing 1 parameter to queCounter
 		startTimer(15); //calling startTimer function
 		startTimerLine(0); //calling startTimerLine function
-	}
-	leave_quiz.onclick = () => {
-		window.location.reload(); //reload the current window
 	}
 	let timeValue = 15;
 	let que_count = 0;

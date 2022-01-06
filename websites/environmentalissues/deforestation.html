@@ -200,6 +200,94 @@
         </div>
     </article>
 
+    <div class="quiz-container">
+        <div class="section-title section-padding">
+            <h2 id="ready-text">Are you ready?</h2>
+        </div>
+
+        <!-- start of quiz box and button -->
+        <div class="start_btn"><button>Start!</button></div>
+
+        <!-- Info Box -->
+        <div class="info_box">
+
+           <div class="info-title"><span>Some Rules of this Quiz</span></div>
+
+           <div class="info-list">
+              <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+              <div class="info">2. Once you select your answer, it can't be undone.</div>
+              <div class="info">3. You can't select any option once time goes off.</div>
+              <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+              <div class="info">5. You'll earn points on the basis of your correct answers.</div>
+           </div>
+
+           <div class="buttons">
+              <button class="quit">Exit Quiz</button>
+              <button class="restart" id="cat1" onClick="selectCat(this.id)">Continue</button>
+           </div>
+
+        </div>
+
+        <!-- Quiz Box -->
+        <div class="quiz_box">
+
+           <header>
+
+                <div class="title">Quiz</div>
+
+                <div class="timer">
+                    <div class="time_left_txt">Time Left</div>
+                    <div class="timer_sec">15</div>
+                </div>
+
+              <div class="time_line"></div>
+
+           </header>
+
+           <div class="section">
+
+                <div class="que_text">
+                    <!-- Here I've inserted questions from JavaScript -->
+                </div>
+                
+                <div class="option_list">
+                    <!-- Here I've inserted options from JavaScript -->
+                </div>
+           </div>
+
+            <!-- Footer of Quiz Box -->
+            <footer>
+
+                <div class="total_que">
+                    <!-- Here I've inserted Question Count Number from JavaScript -->
+                </div>
+
+                <button class="next_btn">Next</button>
+
+            </footer>
+
+        </div>
+        <!-- Result Box -->
+        <div class="result_box">
+
+            <div class="icon">
+                <i class="fa fa-quora"></i>
+            </div>
+
+            <div class="complete_text">You've completed the Quiz!</div>
+
+            <div class="score_text">
+                <!-- Here I've inserted Score Result from JavaScript -->
+            </div>
+
+            <div class="buttons">
+                <button class="restart">Replay Quiz</button>
+                <button class="quit">Quit Quiz</button>
+            </div>
+
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="d-flex align-items-center justify-content-center glassmorphism-footer" style="color: white;">
         <div class="container">
