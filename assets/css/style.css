@@ -1071,7 +1071,7 @@ h1, h2, h3, h4, h5, h6 {
 /* About Us Section
 --------------------------------*/
     #about {
-        background: url("/assets/images/plantatree.jpg") center top no-repeat;
+        background: url("../images/plantatree.jpg") center top no-repeat;
         padding: 60px 0;
         overflow: hidden;
         background-size: cover;
@@ -1140,7 +1140,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Product Features Section
 --------------------------------*/
 #features {
-    background: url("/assets/images/features.jpg") center top no-repeat;
+    background: url("../images/features.jpg") center top no-repeat;
     padding: 60px 0 0 0;
     overflow: hidden;
     background-size: cover;
@@ -1209,7 +1209,7 @@ h1, h2, h3, h4, h5, h6 {
 /* FAQ Section
 --------------------------------*/
 #faq {
-    background: url("/assets/images/call-to-action-bg.jpg") center top no-repeat;
+    background: url("../images/call-to-action-bg.jpg") center top no-repeat;
     padding: 60px 0;
     overflow: hidden;
     background-size: cover;
