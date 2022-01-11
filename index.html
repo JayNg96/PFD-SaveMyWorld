@@ -273,18 +273,18 @@
 
         </section>
 
-        <!-- ======= About Us / FAQ Section ======= -->
-        <section id="about" class="section-bg">
+        <!-- ======= FAQ Section ======= -->
+        <section id="about" class="section-bg" style="background-image: url(/assets/images/call-to-action-bg.jpg);">
             <div class="container-fluid" data-aos="fade-up">
                 
                 <div class="section-header">
 
-                    <h3 class="section-title">Frequently Asked Questions (FAQs)</h3>
+                    <h3 class="section-title" style="color: white;"><b>Frequently Asked Questions (FAQs)</b></h3>
 
                     <span class="section-divider"></span>
 
-                    <p class="section-description">
-                        To find out more about us, you can either click on the box or search for frequently asked questions. 
+                    <p class="section-description" style="color: whitesmoke; padding-bottom: 0%;">
+                        To find out more about us, you can either click on the box or search for Frequently Asked Questions. 
                     </p>
                    
                     <!-- 
@@ -293,21 +293,22 @@
                         Bootstrap (https://getbootstrap.com/docs/5.1/getting-started/introduction/)                    
                     -->
 
-                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="🔎 Search frequently asked questions here">
+                    <!-- Search Box -->
+                    <input type="text" id="myInput" onkeyup="myFunction()" class="rounded-pill glassmorphism-search" style="text-align: center; color: white;" placeholder="🔎 What would you like to ask about?">
 
                     <!-- Alert -->
-                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <div class="alert alert-warning alert-dismissible fade show img-rounded" role="alert">
                         <strong>⚠ If your queries are not listed, please do not hesitate to contact us as we would be happy to assist you.</strong>
 
                         <!-- Alert close button -->
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
 
+                    <!-- Search Results -->
                     <ul id="myUL">
-                        
                         <!-- FAQ 1: Why was the Earthers website created? -->
                         <li>
-                            <a href="#" class="btn btn-warning" style="text-align: left;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                            <a class="btn img-rounded" style="text-align: left;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
                                 FAQ 1: Why was the Earthers website created?
                             </a>
                             
@@ -322,7 +323,7 @@
                         
                         <!-- FAQ 2: When was Earthers website created? -->
                         <li>
-                            <a href="#" class="btn btn-warning" style="text-align: left;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                            <a class="btn img-rounded" style="text-align: left;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
                                 FAQ 2: When was Earthers website created?
                             </a>
                             
@@ -337,7 +338,7 @@
 
                         <!-- FAQ 3: What are Earther's contact points and social media channels? -->
                         <li>
-                            <a href="#" class="btn btn-warning" style="text-align: left;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                            <a class="btn img-rounded" style="text-align: left;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
                                 FAQ 3: What are Earther's contact points and social media channels?
                             </a>
                             
@@ -352,7 +353,7 @@
 
                         <!-- FAQ 4 -->
                         <li>
-                            <a href="#" class="btn btn-warning" style="text-align: left;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">FAQ 4</a>
+                            <a class="btn img-rounded" style="text-align: left;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">FAQ 4</a>
                             
                             <div class="collapse" id="collapseExample4">
                                 <div class="card card-body rounded" style="text-align: left;">
@@ -365,7 +366,7 @@
 
                         <!-- FAQ 5 -->
                         <li>
-                            <a href="#" class="btn btn-warning" style="text-align: left;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">FAQ 5</a>
+                            <a class="btn img-rounded" style="text-align: left;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">FAQ 5</a>
                             
                             <div class="collapse" id="collapseExample5">
                                 <div class="card card-body rounded" style="text-align: left;">
@@ -373,8 +374,6 @@
                                 </div>
                             </div>
                         </li>
-
-                        <br>
 
                     </ul>
 

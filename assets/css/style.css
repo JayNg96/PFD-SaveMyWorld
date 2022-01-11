@@ -82,6 +82,13 @@
     backdrop-filter: blur( 18.0px );
 }
 
+.glassmorphism-search {
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 10px 0 rgba( 31, 38, 135, 0.20 );
+    backdrop-filter: blur( 20.0px );
+    -webkit-backdrop-filter: blur( 10.0px );
+}
+
 /* Cards */
 .card {
     color: #000;
@@ -1221,4 +1228,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #myUL li a:hover:not(.header) {
   background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+::placeholder {
+    color: white;
 }
