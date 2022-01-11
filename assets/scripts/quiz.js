@@ -207,29 +207,124 @@ try {
 //* ---------------------- quiz questions JS ---------------------- *//
 // creating an array and passing the number, questions, options, and answers
 let questions = {
-	cat1: [{
+	airPollution: [{
 		numb: 1,
-		question: "When is Earth Day?",
-		answer: "April 22nd",
-		options: ["April 22nd", "December 21st", "August 12th", "October 31st"]
+		question: "Which is the most air polluted country?",
+		answer: "Bangladesh",
+		options: ["Singapore", "Beijing", "Bangladesh", "USA"]
 	}, 
 	{
 		numb: 2,
-		question: "What is the largest rainforest in the world?",
-		answer: "The Amazon Rainforest",
-		options: ["The Congo Rainforest", "Daintree Rainforest", "The Amazon Rainforest", "Southeast Asian Rainforest"]
+		question: "What effects of air pollution on the human body?",
+		answer: "All of the above",
+		options: ["vunerability to infections and diseases", "Damage to reproductive functions", "Increased risk of stroke and dementia", "All of the above"]
 	},
 	{
 		numb: 3,
-		question: "What are the causes of loss of biodiversity?",
-		answer: "All of the Above",
-		options: ["Pollution", "Climate Change", "Human Activity", "All of the Above"]
+		question: "What are the major causes of air pollution",
+		answer: "All of the above",
+		options: ["Combustion of fossil fuels", "Emissions from vehicles", "Deforestation", "All of the above"]
 	},
 	{
 		numb: 4,
-		question: "How much food is wasted globally in a year?",
+		question: "What is an example of a greenhouse gas?",
+		answer: "A and B",
+		options: ["Carbon Monoxide", "Carbon Dioxide", "Oxygen", "All of the above"]
+	},
+	{
+		numb: 5,
+		question: "Which is not a effect of air pollution on the environment?",
+		answer: "Ecosystem remains unchanged",
+		options: ["Climate Change", "Ozone layer gets damaged", "Ecosystem remains unchanged", "Habitats get destroyed"]
+	},
+],
+
+	deforestation: [{
+		numb: 1,
+		question: "What is the estimated annual rate of deforestation?",
+		answer: "1.3 million km2 per decade",
+		options: ["41.7 million km2 per decade", "1.3 billion km2 per decade", "1.3 million km2 per decade", "6.9 million km2 per decade"]
+	}, 
+	{
+		numb: 2,
+		question: "Which forest is considered the 'lungs' of the planet?",
+		answer: "The Amazon Rainforest",
+		options: ["The Congo Rainforest", "Daintree Rainforest", "The Amazon Rainforest", "Southeast Asian Rainforest"]
+	},
+	{  
+		numb: 3,
+		question: "Deforestation is the second leading cause of global warming in the world.",
+		answer: "True",
+		options: ["True", "False"]
+	},
+	{
+		numb: 4,
+		question: "What are the effects of deforestation",
+		answer: "All of the above",
+		options: ["Climate Change", "Loss of Biodiversity", "Food Insecurity", "All of the above"]
+	},
+	{
+		numb: 5,
+		question: "What can be done to stop deforestation?",
+		answer: "Plant more trees",
+		options: ["Use more paper", "Buy products containing palm oil", "Plant more trees", "All of the above"]
+	},
+],
+
+	foodWaste: [{
+		numb: 6,
+		question: "How many tons of food is wasted each year?",
 		answer: "1.3 billion tons",
-		options: ["11.6 million tons", "60.4 million tons", "120 million tons", "1.3 billion tons"]
+		options: ["April 22nd", "December 21st", "August 12th", "October 31st"]
+	}, 
+	{  
+		numb: 2,
+		question: "If we produce food that doesn’t get eaten, what else is wasted?",
+		answer: "All of the above",
+		options: ["Wildlife Habitats", "Water", "Energy", "All of the above"]
+	},
+	{
+		numb: 3,
+		question: "When food waste is sent to landfills, it decomposes to produce what gas more deadly than carbon dioxide?",
+		answer: "Methane",
+		options: ["Oxygen", "Methane", "Carbon Monoxide", "All of the above"]
+	},
+	{
+		numb: 4,
+		question: "What food when wasted, represents the biggest waste of energy?",
+		answer: "Beef",
+		options: ["Milk", "Poultry", "Corn", "Beef"]
+	},
+	{
+		numb: 5,
+		question: "What can be done to prevent food waste?",
+		answer: "Donate unsold food",
+		options: ["Donate unsold food", "Throw away more food", "Order more take out", "All of the above"]
+	},
+],
+	globalWarming: [{
+		numb: 1,
+		question: "Air pollution is one of the causes of climate change",
+		answer: "True",
+		options: ["True", "False"]
+	}, 
+	{
+		numb: 2,
+		question: "What is the greenhouse effect?",
+		answer: "Gases in the atmosphere trapping heat increasing global temperatures",
+		options: ["The name of climate change legislation passed by Congress", "Painting the house green", "Gases in the atmosphere trapping heat increasing global temperatures", "Option 4"]
+	},
+	{
+		numb: 3,
+		question: "What are the effects of climate change?",
+		answer: "All of the Above",
+		options: ["Increase in global temperatures", "Rising sea levels", "Loss in biodiversity", "All of the Above"]
+	},
+	{
+		numb: 4,
+		question: "When are sea levels predicted to rise between 1 and 2.3 feet?",
+		answer: "2050",
+		options: ["2043", "2050", "2078", "2100"]
 	},
 	{
 		numb: 5,
@@ -239,23 +334,68 @@ let questions = {
 	},
 ],
 
-	cat2: [{
+	lossOfBiodiversity: [{
 		numb: 1,
-		question: "What do the 3Rs stand for?",
-		answer: "Reduce, Recycle, Reuse",
-		options: ["Rescue, Reduce, Recess", "Reduce, Recycle, Reuse", "Reuse, Revise, Recycle", "Recycle, Return, Rot"]
+		question: "How does loss of biodiversity affect us?",
+		answer: "Decrease our ability to produce medicine",
+		options: ["Provides us with more food", "Protects us against natural disasters", "Decrease our ability to produce medicine", "Loss of biodiversity does not affect humans"]
 	}, 
 	{
 		numb: 2,
-		question: "How do we reduce waste?",
-		answer: "Use a reusable bag/cup",
-		options: ["Use more disposable items", "Do not purchase in bulk", "Use a reusable bag/cup", "All of the above"]
-	}, 
+		question: "Which land-based ecosystem has the most biodiversity",
+		answer: "Tropical Rainforests",
+		options: ["Deserts", "Tropical Rainforests", "Tundras", "Grasslands"]
+	},
 	{
 		numb: 3,
-		question: "Recycling paper can save which natural resource?",
-		answer: "Trees",
-		options: ["Rocks", "Trees", "Air", "Coal"]
-	}]
+		question: "What are the causes of loss of biodiversity?",
+		answer: "All of the Above",
+		options: ["Pollution", "Climate Change", "Human Activity", "All of the Above"]
+	},
+	{
+		numb: 4,
+		question: "The status of a 'threatened species' means:",
+		answer: "they are likely to become endangered",
+		options: ["they are almost extinct", "they are likely to become endangered", "they are extinct", "their numbers are increasing"]
+	},
+	{
+		numb: 5,
+		question: "Which of the following is not a type of biodiversity",
+		answer: "Individual",
+		options: ["Species", "Genetic", "Ecosystem", "Individual"]
+	},
+],
+
+	plasticPollution: [{
+		numb: 1,
+		question: "How many million tons of plastic are dumped in our oceans every year?",
+		answer: "8 million tons",
+		options: ["1 million tons", "8 million tons", "20 million tons", "50 million tons"]
+	}, 
+	{
+		numb: 2,
+		question: "Single-use plastic accounts for ___% of the plastic produced each year",
+		answer: "40",
+		options: ["5", "10", "25", "40"]
+	},
+	{
+		numb: 3,
+		question: "What happens to plastic waste left in the environment?",
+		answer: "It never fully goes away, it breaks into little pieces",
+		options: ["It is biodegradable so it eventually disintegrates", "It never fully goes away, it breaks into little pieces", "There is no such things as plastic waste as they are all recycled"]
+	},
+	{
+		numb: 4,
+		question: "Why is plastic dangerous for marine life",
+		answer: "All of the above",
+		options: ["They mistake it for food and cannot digest it", "They get tangled in it which hinders their movement", "Bacteria on plastic can give coral diseases", "All of the above"]
+	},
+	{
+		numb: 5,
+		question: "What can we do to stop plastic pollution?",
+		answer: "Bring your own reusable bag",
+		options: ["Buy more plastic water bottles", "Order more takeout", "Purchase brand new items", "Bring your own reusable bag"]
+	},
+],
 };
 //* ---------------------- end of quiz.html JS ---------------------- *//
