@@ -1071,8 +1071,12 @@ h1, h2, h3, h4, h5, h6 {
 /* About Us Section
 --------------------------------*/
     #about {
+        background: url("/assets/images/plantatree.jpg") center top no-repeat;
         padding: 60px 0;
         overflow: hidden;
+        background-size: cover;
+        position: relative;
+        box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
     }
 
     #about .about-img {
@@ -1133,12 +1137,14 @@ h1, h2, h3, h4, h5, h6 {
         padding-bottom: 10px;
     }
 
-/* Product Featuress Section
+/* Product Features Section
 --------------------------------*/
 #features {
-    background: #fff;
+    background: url("/assets/images/features.jpg") center top no-repeat;
     padding: 60px 0 0 0;
     overflow: hidden;
+    background-size: cover;
+    position: relative;
 }
 
     #features .features-img {
@@ -1198,6 +1204,17 @@ h1, h2, h3, h4, h5, h6 {
 
 #features .section-description {
     padding-bottom: 10px;
+}
+
+/* FAQ Section
+--------------------------------*/
+#faq {
+    background: url("/assets/images/call-to-action-bg.jpg") center top no-repeat;
+    padding: 60px 0;
+    overflow: hidden;
+    background-size: cover;
+    position: relative;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
 }
 
 /* References: W3Schools (https://www.w3schools.com/howto/howto_js_filter_lists.asp) */
