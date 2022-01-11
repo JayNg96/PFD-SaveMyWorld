@@ -1209,7 +1209,7 @@ h1, h2, h3, h4, h5, h6 {
 /* FAQ Section
 --------------------------------*/
 #faq {
-    background: url("../images/call-to-action-bg.jpg") center top no-repeat;
+    background: url("../assets/images/call-to-action-bg.jpg") center top no-repeat;
     padding: 60px 0;
     overflow: hidden;
     background-size: cover;
