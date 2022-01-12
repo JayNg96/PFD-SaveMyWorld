@@ -33,28 +33,35 @@
 
 <body>
     <!--
-    Title: Bootstrap
-    Author: Bootstrap
-    Date: 2021
-    Code version: 5.1
-    Availability: https://getbootstrap.com/docs/5.1/getting-started/introduction/
+        Title: Bootstrap
+        Author: Bootstrap
+        Date: 2021
+        Code version: 5.1
+        Availability: https://getbootstrap.com/docs/5.1/getting-started/introduction/
     -->
     <!-- Navigation Bar -->
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center header-transparent">
         <div class="container d-flex justify-content-between align-items-center">
 
+            <!-- Website's Name -->
             <div id="logo">
-                <h1><a href="../../index.html">EARTHERS</a></h1>
-                <!-- Uncomment below if you prefer to use an image logo -->
+                <h1><a href="index.html">EARTHERS</a></h1>
+
                 <!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a> -->
             </div>
 
             <nav id="navbar" class="navbar">
                 <ul>
+                    <!-- Home -->
                     <li><a class="nav-link scrollto" href="../../index.html">Home</a></li>
+
+                    <!-- News Feed -->
+                    <li><a class="nav-link scrollto" href="../newsfeed.html">Newsfeed</a></li>
+
+                    <!-- Environmental Issues -->
                     <li class="dropdown">
-                        <a href="../environmentalissues/environmentalissues.html"><span>Environmental Issues</span> <i class="bi bi-chevron-down"></i></a>
+                        <a href="#"><span>Environmental Issues</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="../environmentalissues/foodwaste.html">Food Waste</a></li>
                             <li><a href="../environmentalissues/deforestation.html">Deforestation</a></li>
@@ -64,6 +71,8 @@
                             <li><a href="../environmentalissues/plasticpollution.html">Plastic Pollution</a></li>
                         </ul>
                     </li>
+
+                    <!-- Waste Management -->
                     <li class="dropdown">
                         <a href="#"><span>Waste Management</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
@@ -71,9 +80,17 @@
                             <li><a href="../wastemanagement/playyourpart.html">Play Your Part</a></li>
                         </ul>
                     </li>
-                    <li><a class="nav-link scrollto" href="../volunteer.html">Volunteer Events</a></li>
-                    <li><a class="nav-link scrollto" href="../quiz.html">Quiz</a></li>
-                    <li><a class="nav-link scrollto" href="../shop.html">Shop</a></li>
+
+                    <!-- Support Us -->
+                    <li class="dropdown">
+                        <a href="#"><span>Support Us</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="../supportus/volunteer.html">Volunteer Events</a></li>
+                            <li><a href="../supportus/shop.html">Shop</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Account -->
                     <li class="dropdown">
                         <a href="#"><span>Account</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
@@ -81,6 +98,8 @@
                             <li><a id="register-dropdown" href="../account/register.html">Register</a></li>
                         </ul>
                     </li>
+
+                    <!-- Cart -->
                     <li>
                         <div class="cart-btn">
                             <span class="nav-icon">
@@ -90,9 +109,11 @@
                             <div class="cart-items">0</div>
                         </div>
                     </li>
+
                 </ul>
+
                 <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav><!-- .navbar -->
+            </nav>
         </div>
 
         <!-- Cart Details -->
@@ -113,23 +134,22 @@
                 </div>
             </div>
         </div>
-   
-    </header><!-- End Header -->
 
+    </header><!-- End Header -->
     <!-- Page Header-->
     <header class="masthead" style="background-image: url('../../assets/images/3rs-bg.jpg')">
         <div class="container position-relative px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
-                    
-                        <!-- Alert -->
-                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                            <strong>⚠ Work in progress. To be fully implemented in term 2.</strong>
 
-                            <!-- Alert close button -->
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                    
+                    <!-- Alert -->
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>⚠ Work in progress. To be fully implemented in term 2.</strong>
+
+                        <!-- Alert close button -->
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+
                     <div class="post-heading">
                         <h1>Reduce, Reuse and Recycle </h1>
                         <h2 class="subheading">The 3Rs play a crucial role by preventing waste generation at its source and bringing along numerous benefits.</h2>
@@ -172,6 +192,7 @@
                 </div>
             </div>
         </div>
+
     </article>
 
     <!-- Footer -->
@@ -186,7 +207,7 @@
 
                     <!-- LinkedIn -->
                     <a href="https://www.linkedin.com/school/ngee-ann-polytechnic/?originalSubdomain=sg" target="_blank"><img src="../../assets/images/linkedin.png" alt="LinkedIn logo" width="32" height="32" title="LinkedIn"></a>
-                    
+
                     <!-- GitHub -->
                     <a href="https://github.com/JayNg96/PFD-SaveMyWorld" target="_blank"><img src="../../assets/images/github-light.png" alt="GitHub logo" width="32" height="32" title="GitHub"></a>
                 </div>
@@ -240,5 +261,7 @@
     <!-- Scripts -->
     <script src="../../assets/scripts/script.js"></script>
     <script src="../../assets/scripts/shop.js"></script>
+
+    </script>
 </body>
 </html>
