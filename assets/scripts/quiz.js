@@ -272,10 +272,10 @@ let questions = {
 ],
 
 	foodWaste: [{
-		numb: 6,
+		numb: 1,
 		question: "How many tons of food is wasted each year?",
 		answer: "1.3 billion tons",
-		options: ["April 22nd", "December 21st", "August 12th", "October 31st"]
+		options: ["50,000 tons", "3 billion tons", "1.3 billion tons", "100,000 tons"]
 	}, 
 	{  
 		numb: 2,
