@@ -1,7 +1,5 @@
-
-@import url('https://fonts.googleapis.com/css?family=Lora');
-@import url("https://fonts.googleapis.com/css?family=Merriweather");
-
+@import url(https://fonts.googleapis.com/css?family=Lora);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
 
 * {
     box-sizing: border-box;
@@ -13,80 +11,76 @@
     --mainBlack: #222;
     --mainGrey: #ececec;
     --mainSpacing: 0.1rem;
-    --mainTransition: all 0.3s linear;
+    --mainTransition: all 0.3s linear
 }
 
 /* Header */
 .header {
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    color: #fff;
     width: auto;
     padding-top: 10vh;
     padding-bottom: 50vh;
     padding-left: 10vh;
-    padding-right: 10vh;
-}
-
-.centralise {
-    display: flex;
-    justify-content: center;
+    padding-right: 10vh
 }
 
 .flex-column {
-    flex-direction: column !important;
+    flex-direction: column !important
 }
 
 /* Articles */
 .section-padding {
-    padding: 30px;
+    padding: 30px
 }
 
-/* Center and scale the image nicely */
+/* Center and scale the image */
 .bg {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover
 }
 
 /* Removes link colours */
-.remove-link-deco, .remove-link-deco:hover {
-    color: white;
+.remove-link-deco,
+.remove-link-deco:hover {
+    color: #fff
 }
 
 /* Reference for .glassmorphism: https://glassmorphism.com/ */
 .glassmorphism {
-    background: rgba( 255, 255, 255, 0.35 );
-    box-shadow: 0 8px 10px 0 rgba( 31, 38, 135, 0.20 );
-    backdrop-filter: blur( 10.0px );
-    -webkit-backdrop-filter: blur( 10.0px );
+    background: rgba(255, 255, 255, .35);
+    box-shadow: 0 8px 10px 0 rgba(31, 38, 135, .2);
+    backdrop-filter: blur( 10px);
+    -webkit-backdrop-filter: blur( 10px)
 }
 
 .glassmorphism-dropdown {
-    background: rgba( 255, 255, 255, 0.75 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 10.0px );
-    -webkit-backdrop-filter: blur( 10.0px );
+    background: rgba(255, 255, 255, .75);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .37);
+    backdrop-filter: blur( 10px);
+    -webkit-backdrop-filter: blur( 10px)
 }
 
 .glassmorphism-header {
-    background: rgba( 0, 26, 82, 0.75 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 18.0px );
-    -webkit-backdrop-filter: blur( 18.0px );
+    background: rgba(0, 26, 82, .75);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .37);
+    backdrop-filter: blur( 18px);
+    -webkit-backdrop-filter: blur( 18px)
 }
 
 .glassmorphism-footer {
     background: #056660;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 18.0px );
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .37);
+    backdrop-filter: blur( 18px)
 }
 
 .glassmorphism-search {
-    background: rgba( 255, 255, 255, 0.35 );
-    box-shadow: 0 8px 10px 0 rgba( 31, 38, 135, 0.20 );
-    backdrop-filter: blur( 20.0px );
-    -webkit-backdrop-filter: blur( 10.0px );
+    background: rgba(255, 255, 255, .35);
+    box-shadow: 0 8px 10px 0 rgba(31, 38, 135, .2);
+    backdrop-filter: blur( 20px);
+    -webkit-backdrop-filter: blur( 10px)
 }
 
 /* Cards */
@@ -96,28 +90,28 @@
     text-align: center;
     padding: 20px;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 20px
 }
 
 /* Responsive Youtube thumbnail 
 Source: https://avexdesigns.com/blog/responsive-youtube-embed */
 .videoWrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%;
     height: 0;
-    padding-top: 10px;
+    padding-top: 10px
 }
 
-    .videoWrapper iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
 
 .img-rounded {
-    border-radius: 10px;
+    border-radius: 10px
 }
 
 /* --------------- Navbar (Cart) ---------------- */
@@ -125,7 +119,7 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
     position: sticky;
     display: flex;
     align-items: center;
-    z-index: 1;
+    z-index: 1
 }
 
 .navbar-center {
@@ -135,16 +129,16 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1.5rem;
+    padding: 0 1.5rem
 }
 
 .nav-icon {
-    font-size: 1.5rem;
+    font-size: 1.5rem
 }
 
 .cart-btn {
     position: relative;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .cart-items {
@@ -154,30 +148,32 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
     background: var(--primaryColor);
     padding: 0 5px;
     border-radius: 30%;
-    color: var(--mainWhite);
+    color: var(--mainWhite)
 }
+
 /* --------------- End of Navbar (Cart) ---------------- */
 /* --------------- Banner(shop.html)---------------- */
-.hero, .reward-hero {
+.hero,
+.reward-hero {
     min-height: calc(100vh - 60px);
-    background: url("../Images/banner-bcg.jpeg") center/cover no-repeat;
+    background: url(../Images/banner-bcg.jpeg) center/cover no-repeat;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
 
 .banner {
     text-align: center;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, .8);
     display: inline-block;
-    padding: 4.5rem;
+    padding: 4.5rem
 }
 
 .banner-title {
     font-size: 3.4rem;
     text-transform: uppercase;
     letter-spacing: var(--mainSpacing);
-    margin-bottom: 3rem;
+    margin-bottom: 3rem
 }
 
 .banner-btn {
@@ -190,21 +186,21 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
     border: 1px solid #1c4007;
     transition: var(--mainTransition);
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: none
 }
 
-    .banner-btn:hover {
-        background: transparent;
-        color: #1c4007;
-    }
+.banner-btn:hover {
+    background: 0 0;
+    color: #1c4007
+}
 /* --------------- End of Banner(shop.html) ---------------- */
 /* --------------- Shop(shop.html) ---------------- */
 .reward-hero {
-    background: url("../Images/rewardbanner.jpg") center/cover no-repeat;
+    background: url(../Images/rewardbanner.jpg) center/cover no-repeat
 }
 
-.products, .redeems {
-    padding: 4rem 0;
+.products {
+    padding: 4rem 0
 }
 
 .section-title h2 {
@@ -212,77 +208,73 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
     font-size: 2.5rem;
     margin-bottom: 5rem;
     text-transform: capitalize;
-    letter-spacing: var(--mainSpacing);
+    letter-spacing: var(--mainSpacing)
 }
 
-.products-center, .redeems-center {
+.products-center {
     width: 90vw;
     margin: 0 auto;
     max-width: 1170px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-column-gap: 1.5rem;
-    grid-row-gap: 2rem;
+    grid-row-gap: 2rem
 }
 
 .img-container {
     position: relative;
     overflow: hidden;
     border-style: solid;
-    border-color: rgb(231, 226, 221);
+    border-color: #e7e2dd
 }
 
-.bag-btn, .redeemBag-btn {
+.bag-btn {
     position: absolute;
     top: 70%;
     right: 0;
-    background-color:#3dba18;
+    background-color: #3dba18;
     border: none;
     text-transform: uppercase;
-    padding: 0.5rem 0.75rem;
+    padding: .5rem .75rem;
     letter-spacing: var(--mainSpacing);
-    font-weight: bold;
+    font-weight: 700;
     transition: var(--mainTransition);
     transform: translateX(101%);
-    cursor: pointer;
+    cursor: pointer
 }
 
-    .bag-btn:hover, .redeemBag-btn:hover {
-        color: var(--mainWhite);
-    }
-
-.fa-shopping-cart {
-    margin-right: 0.5rem;
+.bag-btn:hover {
+    color: var(--mainWhite)
 }
 
-.img-container:hover .bag-btn, .img-container:hover .redeemBag-btn {
-    transform: translateX(0);
+.img-container:hover .bag-btn {
+    transform: translateX(0)
 }
 
-.product-img, .redeem-img {
+.product-img {
     display: block;
     width: 100%;
     min-height: 400px;
-    transition: var(--mainTransition);
+    transition: var(--mainTransition)
 }
 
-.img-container:hover .product-img, .img-container:hover .redeem-img {
-    opacity: 0.5;
+.img-container:hover .product-img {
+    opacity: .5
 }
 
-.product h3, .redeem h3 {
+.product h3 {
     text-transform: capitalize;
     font-size: 1.1rem;
     margin-top: 1rem;
     letter-spacing: var(--mainSpacing);
-    text-align: center;
+    text-align: center
 }
 
-.product h4, .redeem h4 {
-    margin-top: 0.7rem;
+.product h4 {
+    margin-top: .7rem;
     letter-spacing: var(--mainSpacing);
     color: #1fa035;
-    text-align: center;
+    text-align: center
 }
 /* --------------- End Of Shop(shop.html) ---------------- */
 /* --------------- Cart ---------------- */
@@ -292,11 +284,11 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
     right: 0;
     width: 100%;
     height: 100%;
-    background: transparent;
+    background: 0 0;
     transition: var(--mainTransition);
-    background: rgb(0, 157, 81, 0.5);
+    background: rgb(0, 157, 81, .5);
     z-index: 999;
-    visibility: hidden;
+    visibility: hidden
 }
 
 .cart {
@@ -308,30 +300,22 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
     overflow: scroll;
     background: var(--mainWhite);
     z-index: 3;
-    background: rgb(231, 226, 221);
+    background: #e7e2dd;
     padding: 1.5rem;
     transition: var(--mainTransition);
-    transform: translateX(100%);
-}
-
-.showCart {
-    transform: translateX(0);
-}
-
-.transparentBcg {
-    visibility: visible;
+    transform: translateX(100%)
 }
 
 .close-cart {
     font-size: 1.7rem;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .cart h2 {
     text-transform: capitalize;
     text-align: center;
     letter-spacing: var(--mainSpacing);
-    margin-bottom: 2rem;
+    margin-bottom: 2rem
 }
 /*---------- Cart Item -------------------- */
 .cart-item {
@@ -339,49 +323,46 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
     align-items: center;
     grid-template-columns: auto 1fr auto;
     grid-column-gap: 1.5rem;
-    margin: 1.5rem 0;
+    margin: 1.5rem 0
 }
 
-    .cart-item img {
-        width: 75px;
-        height: 75px;
-    }
+.cart-item img {
+    width: 75px;
+    height: 75px
+}
 
-    .cart-item h4 {
-        font-size: 0.85rem;
-        text-transform: capitalize;
-        letter-spacing: var(--mainSpacing);
-    }
+.cart-item h4 {
+    font-size: .85rem;
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing)
+}
 
-    .cart-item h5 {
-        margin: 0.5rem 0;
-        letter-spacing: var(--mainSpacing);
-    }
-
-.item-amount {
-    text-align: center;
+.cart-item h5 {
+    margin: .5rem 0;
+    letter-spacing: var(--mainSpacing)
 }
 
 .remove-item {
     color: grey;
-    cursor: pointer;
+    cursor: pointer
 }
 
-.fa-chevron-up, .fa-chevron-down {
+.fa-chevron-down,
+.fa-chevron-up {
     color: #1c4007;
-    cursor: pointer;
+    cursor: pointer
 }
 /*---------- End of Cart Item -------------------- */
 .cart-footer {
     margin-top: 2rem;
     letter-spacing: var(--mainSpacing);
-    text-align: center;
+    text-align: center
 }
 
-    .cart-footer h3 {
-        text-transform: capitalize;
-        margin-bottom: 1rem;
-    }
+.cart-footer h3 {
+    text-transform: capitalize;
+    margin-bottom: 1rem
+}
 /* --------------- End of Cart(index.html) ---------------- */
 /* --------------- lottie loading ---------------- */
 #lottie-loading-container {
@@ -389,83 +370,76 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(236, 228, 218);
-    padding: 100%;
+    background-color: #ece4da;
+    padding: 100%
 }
 /* --------------- end of lottie loading ---------------- */
 /* --------------- log in page --------------- */
-.login-container{
+.login-container {
     margin-left: 20%;
     margin-right: 20%;
-    padding: 30px;
+    padding: 30px
 }
 
-.login-btn{
-    text-align: center;
+.login-btn {
+    text-align: center
 }
 
-.login-form{
-    margin:20px;
+.login-form {
+    margin: 20px
 }
 
-#submit-login{
+#submit-login {
     margin-top: 2rem;
-    width: 20%;
+    width: 20%
 }
 
-@media screen and (max-width: 768px) {
-    #submit-login, #submit-sign-up {
-        min-width: 50%;
+@media screen and (max-width:768px) {
+    #submit-login,
+    #submit-sign-up {
+        min-width: 50%
     }
-
-    
 }
 /* --------------- end of log in page ---------------- */
 /* --------------- sign up page --------------- */
-
-.sign-up-container{
+.sign-up-container {
     margin-left: 10%;
     margin-right: 20%;
-    padding: 30px;
+    padding: 30px
 }
 
-.sign-up-btn{
-    text-align: center;
+.sign-up-btn {
+    text-align: center
 }
 
-.sign-up-form{
-    margin:20px;
+.sign-up-form {
+    margin: 20px
 }
 
-#submit-sign-up{
+#submit-sign-up {
     margin-top: 2rem;
-    width: 20%;
+    width: 20%
 }
 /* --------------- end of sign up page ---------------- */
 /* --------------- responsive webpage css ----------------- */
-@media screen and (min-width: 768px) {
+@media screen and (min-width:768px) {
     .cart {
         width: 30vw;
-        min-width: 450px;
+        min-width: 450px
     }
 
-    /* Carousel */
     .carousel .carousel-item {
-        height: 600px;
+        height: 600px
     }
 }
 
-@media (max-width: 440px) {
+@media (max-width:440px) {
     .logo {
-        width: 90%;
+        width: 90%
     }
 
     .banner-title {
-        font-size: 15px;
-    }
-
-    #menuText {
-        display: none;
+        font-size: 15px
     }
 }
 /* --------------- end of responsive webpage css ----------------- */
@@ -480,35 +454,41 @@ Source: https://avexdesigns.com/blog/responsive-youtube-embed */
 --------------------------------------------------------------*/
 body {
     background: #fff;
-    color: #666666;
+    color: #666;
     font-family: "Open Sans", sans-serif;
-    overflow-x: hidden;
+    overflow-x: hidden
 }
 
 a {
     color: #1dc8cd;
     text-decoration: none;
-    transition: 0.5s;
+    transition: .5s
 }
 
-a:hover, a:active, a:focus {
+a:active,
+a:focus,
+a:hover {
     color: #1dc9ce;
-    outline: none;
-    text-decoration: none;
+    outline: 0;
+    text-decoration: none
 }
 
 p {
     padding: 0;
-    margin: 0 0 30px 0;
+    margin: 0 0 30px 0
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Montserrat", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Montserrat, sans-serif;
     font-weight: 400;
     margin: 0 0 20px 0;
-    padding: 0;
+    padding: 0
 }
-
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -523,48 +503,41 @@ h1, h2, h3, h4, h5, h6 {
     visibility: hidden;
     opacity: 0;
     width: 64px;
-    height: 34px;
+    height: 34px
 }
 
 .back-to-top i {
     line-height: 0;
-    font-size: 20px;
+    font-size: 20px
 }
 
 .back-to-top:focus {
     background: linear-gradient(45deg, #1de099, #1dc8cd);
     color: #fff;
-    outline: none;
+    outline: 0
 }
 
 .back-to-top:hover {
     background: #1dc8cd;
-    color: #fff;
+    color: #fff
 }
 
 .back-to-top.active {
     visibility: visible;
-    opacity: 1;
+    opacity: 1
 }
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
     height: 90px;
-    transition: all 0.5s;
+    transition: all .5s;
     z-index: 997;
-    background: linear-gradient(45deg, #1de099, #1dc8cd);
+    background: linear-gradient(45deg, #1de099, #1dc8cd)
 }
 
 #header.header-transparent {
-    background: transparent;
-}
-
-#header.header-scrolled {
-    background: linear-gradient(45deg, #056660, #1dc8cd);
-    height: 70px;
-    transition: all 0.5s;
+    background: 0 0
 }
 
 #header #logo h1 {
@@ -572,26 +545,26 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0;
     display: inline-block;
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 300;
     letter-spacing: 3px;
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 
-#header #logo h1 a, #header #logo h1 a:hover {
-    color: #fff;
+#header #logo h1 a,
+#header #logo h1 a:hover {
+    color: #fff
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
     #header #logo h1 {
-        font-size: 28px;
+        font-size: 28px
     }
 
     #header #logo img {
-        max-height: 40px;
+        max-height: 40px
     }
 }
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -599,7 +572,7 @@ h1, h2, h3, h4, h5, h6 {
 * Desktop Navigation 
 */
 .navbar {
-    padding: 0;
+    padding: 0
 }
 
 .navbar ul {
@@ -607,37 +580,39 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     display: flex;
     list-style: none;
-    align-items: center;
+    align-items: center
 }
 
 .navbar li {
-    position: relative;
+    position: relative
 }
 
 .navbar > ul > li {
     white-space: nowrap;
-    padding: 10px 0 10px 24px;
+    padding: 10px 0 10px 24px
 }
 
-.navbar a, .navbar a:focus {
+.navbar a,
+.navbar a:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: "Montserrat", sans-serif;
-    color: rgba(255, 255, 255, 0.8);
+    font-family: Montserrat, sans-serif;
+    color: rgba(255, 255, 255, .8);
     font-size: 15px;
     padding: 0 2px;
     white-space: nowrap;
-    transition: 0.3s;
-    letter-spacing: 0.4px;
-    position: relative;
+    transition: .3s;
+    letter-spacing: .4px;
+    position: relative
 }
 
-    .navbar a i, .navbar a:focus i {
-        font-size: 12px;
-        line-height: 0;
-        margin-left: 5px;
-    }
+.navbar a i,
+.navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px
+}
 
 .navbar > ul > li > a:before {
     content: "";
@@ -649,16 +624,21 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #fff;
     visibility: hidden;
     transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s
 }
 
-.navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
+.navbar .active:before,
+.navbar a:hover:before,
+.navbar li:hover > a:before {
     visibility: visible;
-    transform: scaleX(1);
+    transform: scaleX(1)
 }
 
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-    color: #fff;
+.navbar .active,
+.navbar .active:focus,
+.navbar a:hover,
+.navbar li:hover > a {
+    color: #fff
 }
 
 .navbar .dropdown ul {
@@ -672,77 +652,77 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
     visibility: hidden;
     background: #fff;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-    transition: 0.3s;
+    box-shadow: 0 0 30px rgba(127, 137, 161, .25);
+    transition: .3s
 }
 
 .navbar .dropdown ul li {
-    min-width: 200px;
+    min-width: 200px
 }
 
 .navbar .dropdown ul a {
     padding: 10px 20px;
     font-size: 14px;
     text-transform: none;
-    color: #333333;
+    color: #333
 }
 
 .navbar .dropdown ul a i {
-    font-size: 12px;
+    font-size: 12px
 }
 
-.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-    color: #1dc8cd;
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul li:hover > a {
+    color: #1dc8cd
 }
 
 .navbar .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
-    visibility: visible;
+    visibility: visible
 }
 
 .navbar .dropdown .dropdown ul {
     top: 0;
     left: calc(100% - 30px);
-    visibility: hidden;
+    visibility: hidden
 }
 
 .navbar .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: 100%;
-    visibility: visible;
+    visibility: visible
 }
 
-@media (max-width: 1366px) {
+@media (max-width:1366px) {
     .navbar .dropdown .dropdown ul {
-        left: -90%;
+        left: -90%
     }
 
     .navbar .dropdown .dropdown:hover > ul {
-        left: -100%;
+        left: -100%
     }
 }
 
-/**
-* Mobile Navigation 
-*/
+/** Mobile Navigation **/
 .mobile-nav-toggle {
     color: #fff;
     font-size: 28px;
     cursor: pointer;
     display: none;
     line-height: 0;
-    transition: 0.5s;
+    transition: .5s
 }
 
-@media (max-width: 991px) {
+@media (max-width:991px) {
     .mobile-nav-toggle {
-        display: block;
+        display: block
     }
 
     .navbar ul {
-        display: none;
+        display: none
     }
 }
 
@@ -753,15 +733,15 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(26, 26, 26, 0.9);
-    transition: 0.3s;
-    z-index: 999;
+    background: rgba(26, 26, 26, .9);
+    transition: .3s;
+    z-index: 999
 }
 
 .navbar-mobile .mobile-nav-toggle {
     position: absolute;
     top: 15px;
-    right: 15px;
+    right: 15px
 }
 
 .navbar-mobile ul {
@@ -774,29 +754,30 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px 0;
     background-color: #fff;
     overflow-y: auto;
-    transition: 0.3s;
+    transition: .3s
 }
 
 .navbar-mobile > ul > li {
-    padding: 0;
+    padding: 0
 }
 
-.navbar-mobile a:hover:before, .navbar-mobile li:hover > a:before, .navbar-mobile .active:before {
-    visibility: hidden;
-}
-
-.navbar-mobile a, .navbar-mobile a:focus {
-    padding: 10px 20px;
-    font-size: 15px;
-    color: #333333;
-}
-
-    .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-        color: #1dc8cd;
+    .navbar-mobile .active:before,
+    .navbar-mobile a:hover:before,
+    .navbar-mobile li:hover > a:before {
+        visibility: hidden
     }
 
-.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
-    margin: 15px;
+.navbar-mobile a,
+.navbar-mobile a:focus {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #333
+}
+
+.navbar-mobile .active,
+.navbar-mobile a:hover,
+.navbar-mobile li:hover > a {
+    color: #1dc8cd
 }
 
 .navbar-mobile .dropdown ul {
@@ -808,64 +789,65 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
     visibility: visible;
     background: #fff;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    box-shadow: 0 0 30px rgba(127, 137, 161, .25)
 }
 
 .navbar-mobile .dropdown ul li {
-    min-width: 200px;
+    min-width: 200px
 }
 
 .navbar-mobile .dropdown ul a {
-    padding: 10px 20px;
+    padding: 10px 20px
 }
 
 .navbar-mobile .dropdown ul a i {
-    font-size: 12px;
+    font-size: 12px
 }
 
-.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-    color: #1dc8cd;
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul li:hover > a {
+    color: #1dc8cd
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
-    display: block;
+display: block
 }
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
     width: 100%;
     height: 100vh;
-    background:url("../images/home.gif") center top no-repeat;
-    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    background: url(../images/home.gif) center top no-repeat;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, .5);
     background-size: cover;
-    position: relative;
+    position: relative
 }
 
-@media (min-width: 1025px) {
+@media (min-width:1025px) {
     #hero {
-        background-attachment: fixed;
+        background-attachment: fixed
     }
 }
 
-@media (max-height: 640px) {
+@media (max-height:640px) {
     #hero {
-        height: 120vh;
+        height: 120vh
     }
 }
 
 #hero .hero-text {
     position: absolute;
     left: 0;
-    top: 60px;
+    top: 25%;
     right: 0;
     height: calc(50% - 60px);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    flex-direction: column;
+    flex-direction: column
 }
 
 #hero h2 {
@@ -874,13 +856,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 48px;
     font-weight: 400;
     line-height: 56px;
-    color: #fff;
+    color: #fff
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
     #hero h2 {
         font-size: 28px;
-        line-height: 36px;
+        line-height: 36px
     }
 }
 
@@ -888,107 +870,51 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     margin-bottom: 20px;
     padding: 0 15px;
-    font-size: 24px;
+    font-size: 24px
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
     #hero p {
         font-size: 18px;
         line-height: 24px;
-        margin-bottom: 20px;
+        margin-bottom: 20px
     }
 }
 
 #hero .btn-get-started {
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 1px;
     display: inline-block;
     padding: 8px 28px;
     border-radius: 50px;
-    transition: 0.5s;
+    transition: .5s;
     margin: 10px;
     border: 2px solid #fff;
-    color: #fff;
+    color: #fff
 }
 
 #hero .btn-get-started:hover {
     color: #1dc8cd;
-    background: #fff;
-}
-
-#hero .product-screens {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    text-align: center;
-    width: 100%;
-    height: 50%;
-}
-
-#hero .product-screens img {
-    box-shadow: 0px -2px 19px 4px rgba(0, 0, 0, 0.29);
-}
-
-#hero .product-screens .product-screen-1 {
-    position: absolute;
-    z-index: 30;
-    left: calc(50% + 54px);
-    bottom: 0;
-    top: 30px;
-}
-
-#hero .product-screens .product-screen-2 {
-    position: absolute;
-    z-index: 20;
-    left: calc(50% - 154px);
-    bottom: 0;
-    top: 90px;
-}
-
-#hero .product-screens .product-screen-3 {
-    position: absolute;
-    z-index: 10;
-    left: calc(50% - 374px);
-    bottom: 0;
-    top: 150px;
-}
-
-@media (max-width: 767px) {
-    #hero .product-screens .product-screen-1 {
-        position: static;
-        padding-top: 30px;
-    }
-
-    #hero .product-screens .product-screen-2, #hero .product-screens .product-screen-3 {
-        display: none;
-    }
+    background: #fff
 }
 
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
-/*section {
-    overflow: hidden;
-}*/
-
-/* Sections Header
---------------------------------*/
 .section-header .section-title {
     font-size: 32px;
     color: #111;
     text-align: center;
-    font-weight: 400;
+    font-weight: 400
 }
 
 .section-header .section-description {
     text-align: center;
     padding-bottom: 40px;
     color: #777;
-    font-style: italic;
+    font-style: italic
 }
 
 .section-header .section-divider {
@@ -996,114 +922,45 @@ h1, h2, h3, h4, h5, h6 {
     width: 60px;
     height: 3px;
     background: #1dc8cd;
-    background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
+    background: linear-gradient(0deg, #1dc8cd 0, #55fabe 100%);
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
-/* Section with background
---------------------------------*/
 .section-bg {
-    background: #eff5f5;
+    background: #eff5f5
+}
+/* About Us Section */
+#about {
+    padding: 60px 0;
+    overflow: hidden
 }
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-    padding: 20px 0;
-    min-height: 40px;
-    margin-top: 92px;
+#about .about-img {
+    height: 510px;
+    overflow: hidden
 }
 
-@media (max-width: 992px) {
-    .breadcrumbs {
-        margin-top: 68px;
-    }
+#about .about-img img {
+    margin-left: -15px;
+    max-width: 100%
 }
 
-.breadcrumbs h2 {
-    font-size: 24px;
-    font-weight: 300;
-    margin: 0;
-}
-
-@media (max-width: 992px) {
-    .breadcrumbs h2 {
-        margin: 0 0 10px 0;
-    }
-}
-
-.breadcrumbs ol {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 14px;
-}
-
-.breadcrumbs ol li + li {
-    padding-left: 10px;
-}
-
-.breadcrumbs ol li + li::before {
-    display: inline-block;
-    padding-right: 10px;
-    color: #6c757d;
-    content: "/";
-}
-
-@media (max-width: 768px) {
-    .breadcrumbs .d-flex {
-        display: block !important;
-    }
-
-    .breadcrumbs ol {
-        display: block;
-    }
-
-    .breadcrumbs ol li {
-        display: inline-block;
-    }
-}
-
-/* About Us Section
---------------------------------*/
-    #about {
-        background: url("../images/plantatree.jpg") center top no-repeat;
-        padding: 60px 0;
-        overflow: hidden;
-        background-size: cover;
-        position: relative;
-        box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
-    }
-
+@media (max-width:768px) {
     #about .about-img {
-        height: 510px;
-        overflow: hidden;
-    }
-
-    #about .about-img img {
-        margin-left: -15px;
-        max-width: 100%;
-    }
-
-@media (max-width: 768px) {
-    #about .about-img {
-        height: auto;
+        height: auto
     }
 
     #about .about-img img {
         margin-left: 0;
-        padding-bottom: 30px;
+        padding-bottom: 30px
     }
 }
 
 #about .content .h2 {
     color: #333;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 24px
 }
 
 #about .content h3 {
@@ -1111,143 +968,152 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     font-size: 18px;
     line-height: 26px;
-    font-style: italic;
+    font-style: italic
 }
 
 #about .content p {
-    line-height: 26px;
+    line-height: 26px
 }
 
-    #about .content p:last-child {
-        margin-bottom: 0;
-    }
+#about .content p:last-child {
+    margin-bottom: 0
+}
 
 #about .content i {
     font-size: 20px;
     padding-right: 4px;
-    color: #1dc8cd;
+    color: #1dc8cd
 }
 
 #about .content ul {
     list-style: none;
-    padding: 0;
+    padding: 0
 }
 
-    #about .content ul li {
-        padding-bottom: 10px;
-    }
-
-/* Product Features Section
---------------------------------*/
+#about .content ul li {
+    padding-bottom: 10px
+}
+/* Product Features Section */
 #features {
-    background: url("../images/features.jpg") center top no-repeat;
     padding: 60px 0 0 0;
     overflow: hidden;
     background-size: cover;
-    position: relative;
+    position: relative
 }
 
     #features .features-img {
         text-align: center;
-        padding-top: 20px;
+        padding-top: 20px
     }
 
-@media (min-width: 769px) {
+@media (min-width:769px) {
     #features .features-img {
         padding-top: 120px;
-        margin-top: -200px;
+        margin-top: -200px
     }
 }
 
 #features .features-img img {
-    max-width: 100%;
+    max-width: 100%
 }
 
 #features .box {
     margin-bottom: 15px;
-    text-align: center;
+    text-align: center
 }
 
 #features .icon {
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
 #features .icon i {
-    color: #666666;
+    color: #666;
     font-size: 40px;
-    transition: 0.5s;
+    transition: .5s
 }
 
 #features .icon i:before {
     background: #1dc8cd;
-    background: linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
+    background: linear-gradient(45deg, #1dc8cd 0, #55fabe 100%);
     background-clip: border-box;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent
 }
 
 #features .title {
     font-weight: 300;
     margin-bottom: 15px;
-    font-size: 22px;
+    font-size: 22px
 }
 
-    #features .title a {
-        color: #111;
-    }
+#features .title a {
+    color: #111
+}
 
 #features .description {
     font-size: 14px;
     line-height: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
 #features .section-description {
-    padding-bottom: 10px;
+    padding-bottom: 10px
+}
+/* FAQ Section */
+.faq-heading {
+    border-bottom: #777;
+    padding: 20px 60px
 }
 
-/* FAQ Section
---------------------------------*/
-#faq {
-    background: url("../images/call-to-action-bg.jpg") center top no-repeat;
-    padding: 60px 0;
-    overflow: hidden;
-    background-size: cover;
-    position: relative;
-    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+.faq-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column
 }
 
-/* References: W3Schools (https://www.w3schools.com/howto/howto_js_filter_lists.asp) */
-#myInput {
-  width: 100%; /* Full-width */
-  font-size: 16px; /* Increase font-size */
-  padding: 12px 20px 12px; /* Add some padding */
-  border: 1px solid #ddd; /* Add a grey border */
-  margin-bottom: 12px; /* Add some space below the input */
+.hr-line {
+    width: 60%;
+    margin: auto
 }
 
-#myUL {
-  /* Remove default list styling */
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.faq-page {
+    color: #444;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: 0;
+    transition: .4s;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 400;
 }
 
-#myUL li a {
-  border: 1px solid #ddd; /* Add a border to all links */
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6; /* Grey background color */
-  padding: 12px; /* Add some padding */
-  text-decoration: none; /* Remove default text underline */
-  font-size: 18px; /* Increase the font-size */
-  color: black; /* Add a black text color */
-  display: block; /* Make it into a block element to fill the whole list */
+.faq-body {
+    margin: auto;
+    width: 50%;
+    font-size: 20px
 }
 
-#myUL li a:hover:not(.header) {
-  background-color: #eee; /* Add a hover effect to all links, except for headers */
+.faq-body p {
+    padding-top: 3%;
+    font-size: 15px
 }
 
-::placeholder {
-    color: white;
+.faq-page:hover {
+    background-color: #f9f9f9
+}
+
+.faq-body {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden
+}
+
+.faq-page:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px
 }
