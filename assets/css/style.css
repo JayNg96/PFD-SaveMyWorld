@@ -950,8 +950,7 @@
 }
 /* Product Features Section --------------------------------*/
  #features {
-    background: url("../images/windmill.jpg") center top no-repeat; 
-    padding: 60px 0 0 0;
+     padding: 60px 0 0 0;
      overflow: hidden;
      background-size: cover;
      position: relative;
@@ -1028,7 +1027,7 @@
      transition: .4s;
      margin: auto;
      font-size: 20px;
-     font-weight: bold;
+     font-weight: 450;
 }
  .faq-body {
      margin: auto;
