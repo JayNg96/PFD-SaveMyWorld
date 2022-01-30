@@ -700,7 +700,7 @@
  #hero {
      width: 100%;
      height: 100vh;
-     background: url("../images/home.gif") center top no-repeat;
+     background: url("../images/plantgif.gif") center top no-repeat;
      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
      background-size: cover;
      position: relative;
@@ -896,10 +896,10 @@
 }
 /* About Us Section --------------------------------*/
  #about {
-     padding: 60px 0;
-     overflow: hidden;
-     background-size: cover;
-     position: relative;
+    padding: 60px 0;
+    overflow: hidden;
+    background-size: cover;
+    position: relative;
 }
  #about .about-img {
      height: 510px;
@@ -950,7 +950,8 @@
 }
 /* Product Features Section --------------------------------*/
  #features {
-     padding: 60px 0 0 0;
+    background: url("../images/windmill.jpg") center top no-repeat; 
+    padding: 60px 0 0 0;
      overflow: hidden;
      background-size: cover;
      position: relative;
