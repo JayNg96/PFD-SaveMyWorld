@@ -28,8 +28,7 @@
 
         <!-- Self-Defined -->
         <link href="../assets/css/style.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="../assets/css/newsletter-reset.css">
-        <link rel="stylesheet" href="../assets/css/newsletter-style.css">
+        <link href="../assets/css/newsletter-style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -139,30 +138,20 @@
     </header>
 
     <!-- Banner -->
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-
-            <div class="carousel-item active">
-
-                <!-- Image -->
-                <img src="../assets/images/environmentalissuesbanner.jpg" class="d-block w-100" alt="Newsfeed Banner">
-
-
-                <!-- Caption -->
-                <div class="carousel-caption d-md-block" style="padding-bottom: 5%;">
-                    <h1><b>Newsfeed</b></h1>
-                    <p><i>View the latest online resources on saving the earth!</i></p>
-                </div>
-
-            </div>
-
+    <section id="hero2">
+        <!-- Header Text -->
+        <div class="hero-text" data-aos="zoom-out" style="padding-top: 20%;">
+            <h2 style="text-shadow: 2px 2px rgb(3 3 3 / 0.89)"><b>Newsfeed</b></h2>
+            <p style="text-shadow: 2px 2px rgb(3 3 3 / 0.89)">View the latest online resources on saving the earth!</p>
+            <a href="#about" class="btn-get-started scrollto">Browse</a>
         </div>
-    </div>
+
+    </section>
 
     <main id="main">
 
         <!-- ======= Earther's Twitter Timeline Section ======= -->
-        <section id="about" class="section-bg" style="color: white; background-image: url('../assets/images/recycle1.jpg'); box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.7);">
+        <section id="about" class="section-bg" style="color: white; background-color:#242D3B">
             <div class="container-fluid" data-aos="fade-up">
 
                 <!-- Earther's Twitter -->
@@ -187,7 +176,7 @@
         </section>
 
         <!-- ======= Recommended Social Media Posts Section ======= -->
-        <section id="about" class="section-bg" style="color: white; background-image: url('../assets/images/recycle2.jpg'); box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.7);">
+        <section id="about" class="section-bg" style="color: white; background-color: #242D3B;); box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);">
             <div class="container-fluid" data-aos="fade-up">
 
                 <div class="section-header">
@@ -202,9 +191,9 @@
                 </div>
 
                 <!-- References:
-                    https://www.indiatoday.in/information/story/how-to-embed-an-instagram-post-step-by-step-guide-1719445-2020-09-07
-                    https://publish.twitter.com/#
-            -->
+                        https://www.indiatoday.in/information/story/how-to-embed-an-instagram-post-step-by-step-guide-1719445-2020-09-07
+                        https://publish.twitter.com/#
+                -->
                 <div class="row row-cols-1 row-cols-md-2 g-4" style="padding:0 2% 2% 2%">
 
                     <!-- Instagram -->
@@ -230,53 +219,7 @@
                 </div>
         </section>
 
-        <!-- ======= Newsletters & Fun Facts ======= -->
-        <section id="about" class="section-bg" style="color: white; background-image: url('../assets/images/fundraising.jpg'); box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.7);">
-            <div class="container-fluid" data-aos="fade-up">
 
-                <div class="section-header">
-
-                    <h3 class="section-title" style="color: white;"><b>Newsletters & Fun Facts</b></h3>
-
-                    <span class="section-divider"></span>
-
-                    <p class="section-description" style="font-style: normal; color: white;">
-                        Check out our latest newsletter & fun fact!
-                    </p>
-                </div>
-
-                <div class="row row-cols-1 row-cols-md-2 g-4" style="padding:0 2% 2% 2%">
-
-                    <!-- Newsletter -->
-                    <div class="col">
-                        <div class="card h-100">
-
-                            <img src="../assets/images/newsletter.png" class="img-fluid" alt="Newsletter">
-
-                            <br>
-
-                            <a href="#" class="btn btn-dark text-center">Subscribe (Monthly Newsletter)</a>
-
-                        </div>
-                    </div>
-
-                    <!-- Fun Fact -->
-                    <div class="col">
-                        <div class="card h-100">
-
-                            <img src="../assets/images/funfacts.png" class="img-fluid" alt="Fun Fact">
-
-                            <br>
-
-                            <a href="#" class="btn btn-dark text-center">Subscribe (Monthly Fun Facts)</a>
-
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
         <div class="container-fluid" data-aos="fade-up">
 
             <div class="section-header">
@@ -370,14 +313,6 @@
 
         </div>
     </footer>
-
-    <style>
-        .section-padding h2 {
-            font-size: 55px;
-            top: 20%;
-            padding: 30px;
-        }
-    </style>
 
     <!-- Scripts -->
     <!-- Vendor JS Files -->

@@ -2047,15 +2047,6 @@ a.text-light:focus, a.text-light:hover {
     }
 }
 
-body {
-    font-family: Overpass,Arial,sans-serif;
-    background: #fff;
-    font-size: 16px;
-    line-height: 1.8;
-    font-weight: 300;
-    color: gray
-}
-
 a {
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
@@ -2356,20 +2347,20 @@ a {
     position: relative
 }
 
-    .gallery:after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        content: '';
-        background: rgba(0,0,0,.2);
-        -moz-transition: all .3s ease;
-        -o-transition: all .3s ease;
-        -webkit-transition: all .3s ease;
-        -ms-transition: all .3s ease;
-        transition: all .3s ease
-    }
+.gallery:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: rgba(0,0,0,.2);
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease
+}
 
 @media (max-width:767.98px) {
     .gallery {
