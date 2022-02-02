@@ -93,43 +93,6 @@ Link: [Adobe XD File](https://connectnpedu-my.sharepoint.com/:u:/g/personal/s101
 ### Online Documentation
 * [W3Schools](https://www.w3schools.com/)
 * [Stack Overflow](https://stackoverflow.com/)
-# Team's Progress
-## Sprint 1 - Version 1.0 (24 October 2021)
-* Worked on inception deck
-* Created and configured GitHub
-  * Setup GitHub Pages to host our website
-  * Added necessary files before coding can begin
-* Created website's wireframes using Adobe XD
-* Created website's logo
-## Sprint 2 - Version 1.1 (31 October 2021)
-* Implemented website structure by creating HTML, CSS & JavaScript files for all pages
-* Made use of BootStrap 5.1 framework for the website
-* Find content, images and videos for our websites
-* Implemented content, images and videos into:
-  * Home page
-  * Reduce, reuse, & recycle page
-  * Play your part page
-* Implemented basic backend features
-  * Login & Signup
-  * Shop
-## Sprint 3 - Version 1.2 (14 November 2021)
-* Implemented remaining backend features
-  * Quiz
-  * Website animated elements
-  * Enhancements to Shop page
-* Implemented remaining content, images and videos into remaining pages
-  * Environmental Issues
-  * Volunteer Events
-* Revamped website's design to make it more attractive, intuitive, & seamless
-* Modified files into respective folders to make it neater
-## Sprint 4 - Version 1.3 (17 November 2021)
-* Completed 
-  * Proposed features in inception deck
-  * References
-* Modified website's colour scheme to suit better with the theme of saving the earth
-* Fixed bugs
-  * Sign up not registering to restDB
-  * Broken links due to the move of files to its respective folders
 # Acknowledgements
 ## References
 * All of our references can be viewed at:
