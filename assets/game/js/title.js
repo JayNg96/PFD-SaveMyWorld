@@ -45,7 +45,7 @@ title.render = function() {
   title.render_button("Tutorial", title.tutorial_button_area);
   title.render_button("Play", title.play_button_area);
   
-  bitfont.render("by Clint Bellanger", 392, 220, bitfont.JUSTIFY_RIGHT);
+  bitfont.render("EARTHERS", 392, 220, bitfont.JUSTIFY_RIGHT);
 }
 
 title.render_button = function(caption, button_area) {

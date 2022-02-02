@@ -697,7 +697,7 @@
      display: block;
 }
 /*-------------------------------------------------------------- # Hero Section --------------------------------------------------------------*/
- #hero {
+#hero {
      width: 100%;
      height: 100vh;
      background: url("../images/plantgif.gif") center top no-repeat;
@@ -705,113 +705,127 @@
      background-size: cover;
      position: relative;
 }
+
+#hero2 {
+    width: 100%;
+    height: 100vh;
+    background: url("../images/mailbg.jpg") center top no-repeat;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    position: relative;
+}
+
  @media (min-width: 1025px) {
-     #hero {
+    #hero,#hero2 {
          background-attachment: fixed;
+    }
+    #hero,#hero2 {
+        background-attachment: fixed;
     }
 }
  @media (max-height: 640px) {
-     #hero {
-         height: 120vh;
+    #hero, #hero2 {
+        height: 120vh;
     }
+
 }
- #hero .hero-text {
-     position: absolute;
-     left: 0;
-     top: 60px;
-     right: 0;
-     height: calc(50% - 60px);
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     text-align: center;
-     flex-direction: column;
+#hero .hero-text, #hero2 .hero-text {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    right: 0;
+    height: calc(50% - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
 }
- #hero h2 {
-     margin: 30px 0 10px 0;
-     padding: 0 15px;
-     font-size: 48px;
-     font-weight: 400;
-     line-height: 56px;
-     color: #fff;
+#hero h2, #hero2 h2 {
+    margin: 30px 0 10px 0;
+    padding: 0 15px;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    color: #fff;
 }
  @media (max-width: 768px) {
-     #hero h2 {
-         font-size: 28px;
-         line-height: 36px;
+    #hero h2, #hero2 h2 {
+        font-size: 28px;
+        line-height: 36px;
     }
 }
- #hero p {
-     color: #fff;
-     margin-bottom: 20px;
-     padding: 0 15px;
-     font-size: 24px;
+#hero p, #hero2 p {
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    font-size: 24px;
 }
  @media (max-width: 768px) {
-     #hero p {
-         font-size: 18px;
-         line-height: 24px;
-         margin-bottom: 20px;
+    #hero p, #hero2 p {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 20px;
     }
 }
- #hero .btn-get-started {
-     font-family: "Montserrat", sans-serif;
-     font-weight: 400;
-     font-size: 16px;
-     letter-spacing: 1px;
-     display: inline-block;
-     padding: 8px 28px;
-     border-radius: 50px;
-     transition: 0.5s;
-     margin: 10px;
-     border: 2px solid #fff;
-     color: #fff;
+#hero .btn-get-started, #hero2 .btn-get-started {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
 }
- #hero .btn-get-started:hover {
+#hero .btn-get-started:hover,#hero2 .btn-get-started:hover {
      color: #1dc8cd;
      background: #fff;
 }
- #hero .product-screens {
-     position: absolute;
-     left: 0;
-     right: 0;
-     bottom: 0;
-     overflow: hidden;
-     text-align: center;
-     width: 100%;
-     height: 50%;
+#hero .product-screens, #hero2 .product-screens {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: 50%;
 }
- #hero .product-screens img {
+ #hero .product-screens img, #hero2 .product-screens img {
      box-shadow: 0px -2px 19px 4px rgba(0, 0, 0, 0.29);
 }
- #hero .product-screens .product-screen-1 {
+ #hero .product-screens .product-screen-1, #hero2 .product-screens .product-screen-1 {
      position: absolute;
      z-index: 30;
      left: calc(50% + 54px);
      bottom: 0;
      top: 30px;
 }
- #hero .product-screens .product-screen-2 {
+#hero .product-screens .product-screen-2, #hero2 .product-screens .product-screen-2 {
      position: absolute;
      z-index: 20;
      left: calc(50% - 154px);
      bottom: 0;
      top: 90px;
 }
- #hero .product-screens .product-screen-3 {
+#hero .product-screens .product-screen-3, #hero2 .product-screens .product-screen-3 {
      position: absolute;
      z-index: 10;
      left: calc(50% - 374px);
      bottom: 0;
      top: 150px;
 }
- @media (max-width: 767px) {
-     #hero .product-screens .product-screen-1 {
-         position: static;
-         padding-top: 30px;
+@media (max-width: 767px) {
+    #hero .product-screens .product-screen-1, #hero2 .product-screens .product-screen-1 {
+        position: static;
+        padding-top: 30px;
     }
-     #hero .product-screens .product-screen-2, #hero .product-screens .product-screen-3 {
-         display: none;
+    #hero .product-screens .product-screen-2, #hero2 .product-screens .product-screen-2 {
+        display: none;
     }
 }
 /*-------------------------------------------------------------- # Sections --------------------------------------------------------------*/
@@ -1053,4 +1067,3 @@
      float: right;
      margin-left: 5px 
 }
- 
