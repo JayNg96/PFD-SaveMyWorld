@@ -23,7 +23,8 @@ $("#register-btn").on("click", function () {
     let jsondata = {
       "username":username,
       "password":password,
-      "cart":""
+      "cart":"",
+      "event": ""
     };
 
     let settings = {

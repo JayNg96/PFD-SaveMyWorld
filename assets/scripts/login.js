@@ -32,6 +32,7 @@ $("#login-btn").on("click", function () {
               sessionStorage.setItem("username", response[j].username);
               sessionStorage.setItem("password", response[j].password)
               sessionStorage.setItem("cart", response[j].cart);
+              sessionStorage.setItem("event", response[j].event);
               window.location.replace("../../index.html");
             }
             else
