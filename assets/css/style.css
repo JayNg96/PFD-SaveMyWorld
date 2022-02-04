@@ -350,7 +350,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(236, 228, 218);
+    background-color: #101010;
     padding: 100%;
 }
 /* --------------- end of lottie loading ---------------- */
@@ -1121,9 +1121,4 @@ h6 {
     color: #777;
     float: right;
     margin-left: 5px
-}
-.twitter-timeline {
-    -moz-box-shadow: 3px 3px 3px #ccc;
-    -webkit-box-shadow: 3px 3px 3px #ccc;
-    box-shadow: 3px 3px 3px rgb(3 3 3 / 0.7)
 }

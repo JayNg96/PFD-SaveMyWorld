@@ -23,6 +23,7 @@ try {
 	}
 	// if continueQuiz button clicked
 	let category;
+
 	function selectCat(id) {
 		category = id
 		info_box.classList.remove("activeInfo"); //hide info box
@@ -140,7 +141,7 @@ try {
 		const scoreText = result_box.querySelector(".score_text");
 		if (userScore / questions[category].length >= 0.75) { // if user scored more than 3
 			//creating a new span tag and passing the user score number and total question number
-			let scoreTag = '<span>Well done! You got <p>' + userScore + '</p> out of <p>' + questions[category].length + '</p></span>';/**<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You have earned ' + userScore + ' reward points!</p>';**/
+			let scoreTag = '<span>Well done! You got <p>' + userScore + '</p> out of <p>' + questions[category].length + '</p></span>'; /**<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You have earned ' + userScore + ' reward points!</p>';**/
 			scoreText.innerHTML = scoreTag; //adding new span tag inside score_Text
 			totalPoints += userScore;
 			userPoints.innerHTML = parseFloat(totalPoints.toFixed(0));
@@ -196,8 +197,7 @@ try {
 					clearInterval(counterLine); //clear counterLine
 				}
 			}
-		}
-		else {
+		} else {
 			console.log("test2")
 			counterLine = setInterval(timer, 29);
 

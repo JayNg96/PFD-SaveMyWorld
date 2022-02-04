@@ -275,26 +275,26 @@ class Storage {
 		let password = sessionStorage.getItem("password");
 
 		/* ------------------- Add to cart database if logged in ------------------- */
-		if(loginStatus == "loggedIn"){
+		if (loginStatus == "loggedIn") {
 			let jsondata = {
-                "username": username,
-                "password": password,
+				"username": username,
+				"password": password,
 				"cart": JSON.stringify(cart),
-            };
+			};
 			console.log(userId);
 
 			var settings = {
 				"async": true,
-			"crossDomain": true,
-			"url": `https://savetheearth-c589.restdb.io/rest/registered-accounts/${userId}`,
-			"method": "PUT",
-			"headers": {
-				"content-type": "application/json",
-				"x-apikey": APIKEY2,
-				"cache-control": "no-cache"
-			},
-			"processData": false,
-			"data": JSON.stringify(jsondata)
+				"crossDomain": true,
+				"url": `https://savetheearth-c589.restdb.io/rest/registered-accounts/${userId}`,
+				"method": "PUT",
+				"headers": {
+					"content-type": "application/json",
+					"x-apikey": APIKEY2,
+					"cache-control": "no-cache"
+				},
+				"processData": false,
+				"data": JSON.stringify(jsondata)
 			}
 
 			$.ajax(settings).done(function (response) {
@@ -304,10 +304,9 @@ class Storage {
 		}
 	}
 	static getCart() {
-		if(loginStatus == "loggedIn" && sessionStorage.getItem("cart").length != 0){
+		if (loginStatus == "loggedIn" && sessionStorage.getItem("cart").length != 0) {
 			return JSON.parse(sessionStorage.getItem("cart"));
-		}
-		else{
+		} else {
 			return localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
 		}
 	}
@@ -315,7 +314,7 @@ class Storage {
 		console.log(cart);
 
 		localStorage.setItem("cart", JSON.stringify(cart));
-		
+
 	}
 }
 document.addEventListener("DOMContentLoaded", () => {
@@ -333,8 +332,3 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 //* ---------------------- end of shop.html JS ---------------------- *//
 
-//* ---------------------- loading JS ---------------------- *//
-/**setTimeout(function () {
-	document.getElementById("lottie-loading-container").style.display = "none"
-}, 3000);**/
-//* ---------------------- end of loading JS ---------------------- *//
