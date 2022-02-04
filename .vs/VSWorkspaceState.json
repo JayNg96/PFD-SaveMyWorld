@@ -1,10 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\assets",
+    "\\assets\\css",
     "\\websites",
     "\\websites\\account",
     "\\websites\\environmentalissues"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\websites\\environmentalissues\\airpollution.html",
   "PreviewInSolutionExplorer": false
 }
