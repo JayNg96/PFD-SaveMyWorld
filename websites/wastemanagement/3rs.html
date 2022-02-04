@@ -1,232 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-      <title>3Rs</title>
-      <!-- Favicon -->
-      <link rel="icon" type="image/png" href="../../assets/images/logo.png">
-      <!-- CSS -->
-      <!-- Bootstrap -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-      <!-- Awesome Fonts -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <!-- Google Fonts -->
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Yeseva+One&display=swap" rel="stylesheet">
-      <!-- Vendor CSS Files -->
-      <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
-      <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-      <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-      <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-      <!-- Self-Defined -->
-      <link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
-      <link href="../../assets/css/article.css" rel="stylesheet" type="text/css">
-   </head>
-   <body>
-       <!--
-       Title: Bootstrap
-       Author: Bootstrap
-       Date: 2021
-       Code version: 5.1
-       Availability: https://getbootstrap.com/docs/5.1/getting-started/introduction/
-       -->
-       <!-- Navigation Bar -->
-       <!-- ======= Header ======= -->
-       <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-           <div class="container d-flex justify-content-between align-items-center">
-               <!-- Website's Name -->
-               <div id="logo">
-                   <h1><a href="index.html">EARTHERS</a></h1>
-                   <!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a> -->
-               </div>
-               <nav id="navbar" class="navbar">
-                   <ul>
-                       <!-- Home -->
-                       <li><a class="nav-link scrollto" href="../../index.html">Home</a></li>
-                       <!-- News Feed -->
-                       <li><a class="nav-link scrollto" href="../newsfeed.html">Newsfeed</a></li>
-                       <!-- Environmental Issues -->
-                       <li class="dropdown">
-                           <a href="#"><span>Environmental Issues</span> <i class="bi bi-chevron-down"></i></a>
-                           <ul>
-                               <li><a href="../environmentalissues/foodwaste.html">Food Waste</a></li>
-                               <li><a href="../environmentalissues/deforestation.html">Deforestation</a></li>
-                               <li><a href="../environmentalissues/airpollution.html">Air Pollution</a></li>
-                               <li><a href="../environmentalissues/globalwarming.html">Global Warming</a></li>
-                               <li><a href="../environmentalissues/lossofbiodiversity.html">Loss of Biodiversity</a></li>
-                               <li><a href="../environmentalissues/plasticpollution.html">Plastic Pollution</a></li>
-                           </ul>
-                       </li>
-                       <!-- Waste Management -->
-                       <li class="dropdown">
-                           <a href="#" class="active"><span>Waste Management</span> <i class="bi bi-chevron-down"></i></a>
-                           <ul>
-                               <li><a href="../wastemanagement/3rs.html" class="active">3Rs</a></li>
-                               <li><a href="../wastemanagement/playyourpart.html">Play Your Part</a></li>
-                               <li><a href="../../assets/game/game.html">Recycling Game</a></li>
-                           </ul>
-                       </li>
-                       <!-- Support Us -->
-                       <li class="dropdown">
-                           <a href="#"><span>Support Us</span> <i class="bi bi-chevron-down"></i></a>
-                           <ul>
-                               <li><a href="../supportus/volunteer.html">Volunteer Events</a></li>
-                               <li><a href="../supportus/shop.html">Shop</a></li>
-                           </ul>
-                       </li>
-                       <!-- Account -->
-                       <li class="dropdown">
-                           <a href="#"><span>Account</span> <i class="bi bi-chevron-down"></i></a>
-                           <ul>
-                               <li><a id="login-dropdown" href="../account/login.html">Login</a></li>
-                               <li><a id="register-dropdown" href="../account/register.html">Register</a></li>
-                           </ul>
-                       </li>
-                       <!-- Cart -->
-                       <li>
-                           <div class="cart-btn">
-                               <span class="nav-icon">
-                                   <i class="fa fa-cart-plus" style="color: rgb(255, 255, 255);"></i>
-                               </span>
-                               <div class="cart-items">0</div>
-                           </div>
-                       </li>
-                   </ul>
-                   <i class="bi bi-list mobile-nav-toggle"></i>
-               </nav>
-           </div>
-           <!-- Cart Details -->
-           <div class="cart-overlay">
-               <div class="cart">
-                   <span class="close-cart"><i class="fa fa-window-close"></i></span>
-                   <h2><b>Your Cart</b></h2>
-                   <div class="cart-content"></div>
-                   <!-- Calculations -->
-                   <div class="cart-footer">
-                       <h3>Cart Total: $<span class="cart-total">0</span></h3>
-                       <h3>Reward Points Attainable: <span class="cart-point">0</span></h3>
-                       <h3>Reward Points Earned: <span class="cart-totalpoint">0</span></h3>
-                       <button class="checkout-cart banner-btn rounded-pill"><b>checkout</b></button>
-                   </div>
-               </div>
-           </div>
-       </header>
-       <!-- End Header -->
-       <!-- Page Header-->
-       <header class="masthead" style="background-image: url('../../assets/images/3rs-bg.jpg')">
-           <div class="container position-relative px-4 px-lg-5">
-               <div class="row gx-4 gx-lg-5 justify-content-center">
-                   <div class="col-md-10 col-lg-8 col-xl-7">
-                       <div class="post-heading">
-                           <h1>Reduce, Reuse and Recycle </h1>
-                           <h2 class="subheading">The 3Rs play a crucial role by preventing waste generation at its source and bringing along numerous benefits.</h2>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </header>
-       <!-- Post Content-->
-       <article class="mb-4">
-           <div class="container px-4 px-lg-5">
-               <div class="row gx-4 gx-lg-5 justify-content-center">
-                   <div class="col-md-10 col-lg-8 col-xl-7" id="bodyP">
-                       <h2 class="section-heading">Reduce</h2>
-                       <img src="../../assets/images/reduce.png" class="img-fluid" alt="reduce">
-                       <p>
-                           The best way to manage waste is to avoid producing it in the first place.
-                           This can be accomplished by shopping carefully and adhering to a few guidelines:
-                       </p>
-                       <p>
-                           <li>When printing materials, always make two-sided copies.</li>
-                           <li>Purchase in bulk. Larger, economy-size products require less packaging.</li>
-                           <li>Avoid using disposable items like paper plates, cups, napkins. Throwaways contribute to the problem and increase costs because they must be replaced repeatedly.</li>
-                       </p>
-                       <h2 class="section-heading">Reuse</h2>
-                       <img src="../../assets/images/reuse.png" class="img-fluid" alt="reuse">
-                       <p>
-                           Reusing products makes both economic and environmental sense. Creativity is sometimes required!
-                           Reusing products for the same purpose is a good idea. Recycle paper and plastic bags, and fix broken appliances, furniture, and toys.
-                           Old clothes, appliances, toys, and furniture can be sold at garage sales or donated to charities.
-                           Bring own containers or say “no” to unnecessary plastic when getting takeaway food.
-                       </p>
-                       <h2 class="section-heading">Recycle</h2>
-                       <img src="../../assets/images/recycle.png" class="img-fluid" alt="recycle">
-                       <p>
-                           Recycling is the process of converting waste materials into new materials and objects, and we can start by:
-                           <li>Reusing products makes both economic and environmental sense. Creativity is sometimes required!</li>              
-                           <li>Reusing products for the same purpose is a good idea. Recycle paper and plastic bags, and fix broken appliances, furniture, and toys.</li>             
-                           <li>Old clothes, appliances, toys, and furniture can be sold at garage sales or donated to charities.</li>
-                           <li>Bring own containers or say “no” to unnecessary plastic when getting takeaway food.</li>
-                           <br />
-                       </p>
-                   </div>
-               </div>
-           </div>
-       </article>
-       <!-- lottie loading animation -->
-       <div id="lottie-loading-container">
-           <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_grdyYQ.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-           <h1 style="text-align: center; letter-spacing: 2px; color:#b9e498;">Loading</h1>
-       </div>
-       <!-- end of lottie loading animation -->
-       <!-- Back to top button -->
-       <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-chevron-up"></i></a>
-       <!-- Footer -->
-       <footer class="d-flex align-items-center justify-content-center glassmorphism-footer" style="color: white;">
-           <div class="container">
-               <div class="row my-5 px-0">
-                   <!-- Team's Name & Links -->
-                   <div class="col-6">
-                       <b>Earthers</b><br><br>
-                       Connect with us<br><br>
-                       <!-- LinkedIn -->
-                       <a href="https://www.linkedin.com/school/ngee-ann-polytechnic/?originalSubdomain=sg" target="_blank"><img src="../../assets/images/linkedin.png" alt="LinkedIn logo" width="32" height="32" title="LinkedIn"></a>
-                       <!-- GitHub -->
-                       <a href="https://github.com/JayNg96/PFD-SaveMyWorld" target="_blank"><img src="../../assets/images/github-light.png" alt="GitHub logo" width="32" height="32" title="GitHub"></a>
-                       <!-- Twitter -->
-                       <a href="https://twitter.com/Earthers13" target="_blank"><img src="../../assets/images/twitter.png" alt="GitHub logo" width="32" height="32" title="GitHub"></a>
-                   </div>
-                   <!-- Developer's Names & Roles -->
-                   <div class="col-3">
-                       <b>Team</b>  <br> <br>
-                       <p>👨‍💻 Alexander [Front-End Developer]</p>
-                       <p>👨‍💻 Jian Wei [Full Stack Developer]</p>
-                       <p>👨‍💻 Jun Keat [Back-End Developer]</p>
-                       <p>🖼️ Herman [Content Specialist]</p>
-                       <p>🖼️ Mitchell [Content Specialist]</p>
-                   </div>
-                   <!-- Contact Link -->
-                   <div class="col-3" id="contact">
-                       <b>Contact Us</b> <br><br>
-                       <address>
-                           <a href="mailto:earthsavers@mail.com" class="remove-link-deco" title="Email us">earthsavers@mail.com</a>
-                       </address>
-                       <a href="tel:+6512345678" class="remove-link-deco" title="Call us">+65 1234 5678</a>
-                   </div>
-               </div>
-               <!-- Website's Name -->
-               <div class="row my-5">
-                   <div class="col-12 text-center " style="font-size: 1rem;">&copy; Earthers 2022</div>
-               </div>
-           </div>
-       </footer>
-       <!-- Scripts -->
-       <!-- Vendor JS Files -->
-       <script src="../../assets/vendor/aos/aos.js"></script>
-       <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-       <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
-       <script src="../../assets/vendor/php-email-form/validate.js"></script>
-       <!-- Others -->
-       <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
-       <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-       <!-- Scripts -->
-       <script src="../../assets/scripts/script.js"></script>
-       <script src="../../assets/scripts/shop.js"></script>
-       </script>
-   </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3Rs</title>
+    <link rel="icon" type="image/png" href="../../assets/images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/article.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent"><div class="container d-flex justify-content-between align-items-center"><div id="logo"><h1><a href="index.html">EARTHERS</a></h1></div><nav id="navbar" class="navbar"><ul><li><a class="nav-link scrollto" href="../../index.html">Home</a></li><li><a class="nav-link scrollto" href="../newsfeed.html">Newsfeed</a></li><li class="dropdown"><a href="#"><span>Environmental Issues</span> <i class="bi bi-chevron-down"></i></a><ul><li><a href="../environmentalissues/foodwaste.html">Food Waste</a></li><li><a href="../environmentalissues/deforestation.html">Deforestation</a></li><li><a href="../environmentalissues/airpollution.html">Air Pollution</a></li><li><a href="../environmentalissues/globalwarming.html">Global Warming</a></li><li><a href="../environmentalissues/lossofbiodiversity.html">Loss of Biodiversity</a></li><li><a href="../environmentalissues/plasticpollution.html">Plastic Pollution</a></li></ul></li><li class="dropdown"><a href="#" class="active"><span>Waste Management</span> <i class="bi bi-chevron-down"></i></a><ul><li><a href="../wastemanagement/3rs.html" class="active">3Rs</a></li><li><a href="../wastemanagement/playyourpart.html">Play Your Part</a></li><li><a href="../../assets/game/game.html">Recycling Game</a></li></ul></li><li class="dropdown"><a href="#"><span>Support Us</span> <i class="bi bi-chevron-down"></i></a><ul><li><a href="../supportus/volunteer.html">Volunteer Events</a></li><li><a href="../supportus/shop.html">Shop</a></li></ul></li><li class="dropdown"><a href="#"><span>Account</span> <i class="bi bi-chevron-down"></i></a><ul><li><a id="login-dropdown" href="../account/login.html">Login</a></li><li><a id="register-dropdown" href="../account/register.html">Register</a></li></ul></li><li><div class="cart-btn"><span class="nav-icon"><i class="fa fa-cart-plus" style="color:#fff"></i></span><div class="cart-items">0</div></div></li></ul><i class="bi bi-list mobile-nav-toggle"></i></nav></div><div class="cart-overlay"><div class="cart"><span class="close-cart"><i class="fa fa-window-close"></i></span><h2><b>Your Cart</b></h2><div class="cart-content"></div><div class="cart-footer"><h3>Cart Total: $<span class="cart-total">0</span></h3><h3>Reward Points Attainable: <span class="cart-point">0</span></h3><h3>Reward Points Earned: <span class="cart-totalpoint">0</span></h3><button class="checkout-cart banner-btn rounded-pill"><b>checkout</b></button></div></div></div></header><header class="masthead" style="background-image:url(../../assets/images/3rs-bg.jpg)"><div class="container position-relative px-4 px-lg-5"><div class="row gx-4 gx-lg-5 justify-content-center"><div class="col-md-10 col-lg-8 col-xl-7"><div class="post-heading"><h1>Reduce, Reuse and Recycle</h1><h2 class="subheading">The 3Rs play a crucial role by preventing waste generation at its source and bringing along numerous benefits.</h2></div></div></div></div></header><article class="mb-4"><div class="container px-4 px-lg-5"><div class="row gx-4 gx-lg-5 justify-content-center"><div class="col-md-10 col-lg-8 col-xl-7" id="bodyP"><h2 class="section-heading">Reduce</h2><img src="../../assets/images/reduce.png" class="img-fluid" alt="reduce"><p>The best way to manage waste is to avoid producing it in the first place. This can be accomplished by shopping carefully and adhering to a few guidelines:</p><p><li>When printing materials, always make two-sided copies.</li><li>Purchase in bulk. Larger, economy-size products require less packaging.</li><li>Avoid using disposable items like paper plates, cups, napkins. Throwaways contribute to the problem and increase costs because they must be replaced repeatedly.</li></p><h2 class="section-heading">Reuse</h2><img src="../../assets/images/reuse.png" class="img-fluid" alt="reuse"><p>Reusing products makes both economic and environmental sense. Creativity is sometimes required! Reusing products for the same purpose is a good idea. Recycle paper and plastic bags, and fix broken appliances, furniture, and toys. Old clothes, appliances, toys, and furniture can be sold at garage sales or donated to charities. Bring own containers or say “no” to unnecessary plastic when getting takeaway food.</p><h2 class="section-heading">Recycle</h2><img src="../../assets/images/recycle.png" class="img-fluid" alt="recycle"><p>Recycling is the process of converting waste materials into new materials and objects, and we can start by:<li>Reusing products makes both economic and environmental sense. Creativity is sometimes required!</li><li>Reusing products for the same purpose is a good idea. Recycle paper and plastic bags, and fix broken appliances, furniture, and toys.</li><li>Old clothes, appliances, toys, and furniture can be sold at garage sales or donated to charities.</li><li>Bring own containers or say “no” to unnecessary plastic when getting takeaway food.</li><br></p></div></div></div></article><div id="lottie-loading-container"><lottie-player src="https://assets2.lottiefiles.com/packages/lf20_grdyYQ.json" background="transparent" speed="1" style="width:300px;height:300px" loop autoplay></lottie-player><h1 style="text-align:center;letter-spacing:2px;color:#b9e498">Loading</h1></div><a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-chevron-up"></i></a><footer class="d-flex align-items-center justify-content-center glassmorphism-footer" style="color:#fff"><div class="container"><div class="row my-5 px-0"><div class="col-6"><b>Earthers</b><br><br>Connect with us<br><br><a href="https://www.linkedin.com/school/ngee-ann-polytechnic/?originalSubdomain=sg" target="_blank"><img src="../../assets/images/linkedin.png" alt="LinkedIn logo" width="32" height="32" title="LinkedIn"></a> <a href="https://github.com/JayNg96/PFD-SaveMyWorld" target="_blank"><img src="../../assets/images/github-light.png" alt="GitHub logo" width="32" height="32" title="GitHub"></a> <a href="https://twitter.com/Earthers13" target="_blank"><img src="../../assets/images/twitter.png" alt="GitHub logo" width="32" height="32" title="GitHub"></a></div><div class="col-3"><b>Team</b><br><br><p>👨‍💻 Alexander [Front-End Developer]</p><p>👨‍💻 Jian Wei [Full Stack Developer]</p><p>👨‍💻 Jun Keat [Back-End Developer]</p><p>🖼️ Herman [Content Specialist]</p><p>🖼️ Mitchell [Content Specialist]</p></div><div class="col-3" id="contact"><b>Contact Us</b><br><br><address><a href="mailto:earthsavers@mail.com" class="remove-link-deco" title="Email us">earthsavers@mail.com</a></address><a href="tel:+6512345678" class="remove-link-deco" title="Call us">+65 1234 5678</a></div></div><div class="row my-5"><div class="col-12 text-center" style="font-size:1rem">&copy; Earthers 2022</div></div></div></footer>
+    <script src="../../assets/vendor/aos/aos.js"></script>
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../../assets/vendor/php-email-form/validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="../../assets/scripts/script.js"></script>
+    <script src="../../assets/scripts/shop.js"></script>
+</body>
 </html>
