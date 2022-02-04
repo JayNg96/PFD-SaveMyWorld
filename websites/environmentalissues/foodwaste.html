@@ -2,317 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Food Waste</title>
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="../../assets/images/logo.png">
-    <!-- CSS -->
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <!-- Awesome Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Yeseva+One&display=swap" rel="stylesheet">
-    <!-- Vendor CSS Files -->
     <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <!-- Self-Defined -->
     <link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="../../assets/css/quiz.css" rel="stylesheet" type="text/css">
     <link href="../../assets/css/article.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <!--
-       Title: Bootstrap
-       Author: Bootstrap
-       Date: 2021
-       Code version: 5.1
-       Availability: https://getbootstrap.com/docs/5.1/getting-started/introduction/
-       -->
-    <!-- Navigation Bar -->
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-        <div class="container d-flex justify-content-between align-items-center">
-            <!-- Website's Name -->
-            <div id="logo">
-                <h1><a href="index.html">EARTHERS</a></h1>
-                <!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a> -->
-            </div>
-            <nav id="navbar" class="navbar">
-                <ul>
-                    <!-- Home -->
-                    <li><a class="nav-link scrollto" href="../../index.html">Home</a></li>
-                    <!-- News Feed -->
-                    <li><a class="nav-link scrollto" href="../newsfeed.html">Newsfeed</a></li>
-                    <!-- Environmental Issues -->
-                    <li class="dropdown">
-                        <a href="#" class="active"><span>Environmental Issues</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="../environmentalissues/foodwaste.html" class="active">Food Waste</a></li>
-                            <li><a href="../environmentalissues/deforestation.html">Deforestation</a></li>
-                            <li><a href="../environmentalissues/airpollution.html">Air Pollution</a></li>
-                            <li><a href="../environmentalissues/globalwarming.html">Global Warming</a></li>
-                            <li><a href="../environmentalissues/lossofbiodiversity.html">Loss of Biodiversity</a></li>
-                            <li><a href="../environmentalissues/plasticpollution.html">Plastic Pollution</a></li>
-                        </ul>
-                    </li>
-                    <!-- Waste Management -->
-                    <li class="dropdown">
-                        <a href="#"><span>Waste Management</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="../wastemanagement/3rs.html">3Rs</a></li>
-                            <li><a href="../wastemanagement/playyourpart.html">Play Your Part</a></li>
-                            <li><a href="../../assets/game/game.html">Recycling Game</a></li>
-                        </ul>
-                    </li>
-                    <!-- Support Us -->
-                    <li class="dropdown">
-                        <a href="#"><span>Support Us</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="../supportus/volunteer.html">Volunteer Events</a></li>
-                            <li><a href="../supportus/shop.html">Shop</a></li>
-                        </ul>
-                    </li>
-                    <!-- Account -->
-                    <li class="dropdown">
-                        <a href="#"><span>Account</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a id="login-dropdown" href="../account/login.html">Login</a></li>
-                            <li><a id="register-dropdown" href="../account/register.html">Register</a></li>
-                        </ul>
-                    </li>
-                    <!-- Cart -->
-                    <li>
-                        <div class="cart-btn">
-                            <span class="nav-icon">
-                                <i class="fa fa-cart-plus" style="color: rgb(255, 255, 255);"></i>
-                            </span>
-                            <div class="cart-items">0</div>
-                        </div>
-                    </li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav>
-        </div>
-        <!-- Cart Details -->
-        <div class="cart-overlay">
-            <div class="cart">
-                <span class="close-cart"><i class="fa fa-window-close"></i></span>
-                <h2><b>Your Cart</b></h2>
-                <div class="cart-content"></div>
-                <!-- Calculations -->
-                <div class="cart-footer">
-                    <h3>Cart Total: $<span class="cart-total">0</span></h3>
-                    <h3>Reward Points Attainable: <span class="cart-point">0</span></h3>
-                    <h3>Reward Points Earned: <span class="cart-totalpoint">0</span></h3>
-                    <button class="checkout-cart banner-btn rounded-pill"><b>checkout</b></button>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- End Header -->
-    <!-- Page Header-->
-    <header class="masthead" style="background-image: url('../../assets/images/foodwaste-bg.jpg')">
-        <div class="container position-relative px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-md-10 col-lg-8 col-xl-7">
-                    <div class="post-heading">
-                        <h1>Global Food Waste And Its Environmental Impact</h1>
-                        <h2 class="subheading">Global food waste is a far-reaching problem with tremendous financial, ethical and environmental costs. </h2>
-                        <span class="meta">
-                            Header and Subheader by
-                            <a href="https://en.reset.org/knowledge/global-food-waste-and-its-environmental-impact-09122018">Olio</a>
-                            on September 2018
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- Post Content-->
-    <main>
-        <div>
-            <section id="1">
-                <h2>Food waste</h2>
-                <img class="img-fluid" src="../../assets/images/foodwaste2-img.png" alt="..." />
-                <p>The US Food and Agriculture Organization estimated in 2013 that roughly one-third of the world's food was wasted each year. Since then, it has grown into a major problem that many entities around the world are attempting to resolve.</p>
-                <p>The amount of food lost is approximately 1.3 billion tons, which is sufficient to feed 3 billion people. Given that there are 690 million people suffering from malnutrition, it is clear that there is more than enough food for everyone. Aside from the human tragedy, the damage caused by producing this food is one of the major environmental problems facing on our planet.</p>
-                <p>Food waste varies by country, but some is lost during each stage of the food chain including on farms and fishing boats, in processing and distribution, in retail, in restaurants, and at home. The majority of the loss occurs in the pre-retail stage in developing countries, whereas developed countries waste more at the retail and consumer levels. In the United States, for example, households waste approximately 43% of all food.</p>
-                <p>Individuals can also contribute to the reduction of food waste. Individuals can shop more efficiently as consumers and avoid allowing items to sit past their expiration date. Governments are addressing the issue as well; in 2015, the Obama administration pledged to cut food waste in half by 2030. Too Good To Go, a company that connects people with retailers to help them pick up food that would otherwise go to waste, is leading the charge in the entrepreneurial world.</p>
-                <p>
-                    Article credit to
-                    <a href="https://earth.org/drawn-up-biggest-environmental-problems-of-2021/">Earth.org</a>
-                </p>
-            </section>
-            <section id="2">
-                <h2>Environmentally catastrophic</h2>
-                <p>Food waste is really, really bad for the environment. It takes a land mass larger than China to grow the food each year that is ultimately never eaten – land that has been deforested, species that have been driven to extinction, indigenous populations that have been moved, soil that has been degraded – all to produce food that we then just throw away. In addition, food that is never eaten accounts for 25% of all fresh water consumption globally. Gulp.</p>
-                <p>Not only are all of the resources that went into creating the uneaten food wasted (land, water, labour, energy, manufacturing, packaging, etc), but when food waste goes to landfill, which is where the vast majority of it ends up, it decomposes without access to oxygen and creates methane, which is 23x more deadly than carbon dioxide.</p>
-                <p>Every which way you look at it food waste is a major culprit in destroying our planet, and in fact if food waste were a country, it would be the third largest emitter of greenhouse gases after China and the USA.</p>
-                <p>It’s easy for many people to dismiss food waste as someone else’s problem (“I don’t waste any food”) or to focus solely on the more visibly shocking examples of waste (unharvested fields of produce ploughed back into the earth, supermarket skip waste).</p>
-                <p>However the reality is that in the ‘developed’ world, more than 50% of food waste takes place in our homes. In contrast, less than 2% of food waste takes place at the retail store level (though supermarket practices are directly responsible for much food waste elsewhere in the supply chain.)</p>
-            </section>
-            <section id="3">
-                <h2>Morally wrong</h2>
-                <p>Meanwhile 800 million people go to bed hungry every night. That is 1 in 9 people on the planet who are starving or malnourished. Each and every one of them could be sufficiently fed on less than a quarter of the food that is wasted in the USA, UK and Europe each year.</p>
-                <p>Because we have a globalised food supply system, demand for food in the West can drive up the price of food grown for export in developing countries, as well as displace the growth of crops to feed native populations and drive accelerated degradation of natural habitats.</p>
-                <blockquote class="blockquote">Respect for food is a respect for life, for who we are and what we do.</blockquote>
-                <p>And, hunger is not just a problem that’s happening ‘somewhere else’ – in the UK for example, over 1 million people accessed a food bank last year, whilst in the USA 40 million Americans live in food poverty.</p>
-            </section>
-            <section id="4">
-                <h2>What Can We Do About It?</h2>
-                <p><span style="font-weight:bold">Help reduce loss in handling, storage, processing and transport.</span> In low-income countries, the keys lie in better training for farmers and public and private investments in infrastructure. Improved technologies in refrigeration and reliable, renewable energy sources can have a significant impact.</p>
-                <p><span style="font-weight:bold">Share the surplus.</span> Supermarkets in industrialised nations can, and often do, donate unsold goods. UK retailer Tesco, for example, works with software platform FareShare FoodCloud to notify local charities about surplus food available for pickup.</p>
-                <img class="img-fluid" src="../../assets/images/foodwaste1-img.jpg" alt="..." />
-                <span class="caption text-muted"> There is food for everyone on this planet, but not everyone eats.     - Carlo Petrini.</span>
-                <p><span style="font-weight:bold">Turn waste into worth.</span> There are already quite a few initiatives transforming leftovers into new products: turning coffee cherries into flour, producing award-winning ale from leftover bread, turning restaurant scraps into bioplastics and home food waste into biogas - essentially using food scraps to produce household energy.</p>
-                <p>
-                    <span style="font-weight:bold">Change consumer behaviour.</span> Consumers can try to buy locally whenever possible (shorter supply chains equal fewer opportunities for loss), improve their meal planning, become informed about date labelling and only throw away food when it is truly inedible.
-                </p>
-                <p>
-                    Article credit to
-                    <a href="https://olioex.com/food-waste/the-problem-of-food-waste/">Olio ex</a>
-                    &middot; Images by
-                    <a href="https://olioex.com/food-waste/the-problem-of-food-waste/">The Problem Of Food Waste</a>
-                </p>
-            </section>
-            <section id="5">
-                <div class="quiz-container" style="padding-top:5%">
-                    <h2 style="text-align:center">Click on the start button below to try out our quiz!</h2>
-                    <!-- start of quiz box and button -->
-                    <div class="start_btn"><button>Commence Quiz</button></div>
-                    <!-- Info Box -->
-                    <div class="info_box">
-                        <div class="info-title"><span>Some Rules of this Quiz</span></div>
-                        <div class="info-list">
-                            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
-                            <div class="info">2. Once you select your answer, it can't be undone.</div>
-                            <div class="info">3. You can't select any option once time goes off.</div>
-                            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
-                            <div class="info">5. You'll earn points on the basis of your correct answers.</div>
-                        </div>
-                        <div class="buttons">
-                            <button class="quit">Exit Quiz</button>
-                            <button class="restart" id="foodWaste" onClick="selectCat(this.id)">Continue</button>
-                        </div>
-                    </div>
-                    <!-- Quiz Box -->
-                    <div class="quiz_box">
-                        <header>
-                            <div class="title">Quiz</div>
-                            <div class="timer">
-                                <div class="time_left_txt">Time Left</div>
-                                <div class="timer_sec">15</div>
-                            </div>
-                            <div class="time_line"></div>
-                        </header>
-                        <div class="section">
-                            <div class="que_text">
-                                <!-- Here I've inserted questions from JavaScript -->
-                            </div>
-                            <div class="option_list">
-                                <!-- Here I've inserted options from JavaScript -->
-                            </div>
-                        </div>
-                        <!-- Footer of Quiz Box -->
-                        <footer>
-                            <div class="total_que">
-                                <!-- Here I've inserted Question Count Number from JavaScript -->
-                            </div>
-                            <button class="next_btn">Next</button>
-                        </footer>
-                    </div>
-                    <!-- Result Box -->
-                    <div class="result_box">
-                        <div class="icon">
-                            <i class="fa fa-quora"></i>
-                        </div>
-                        <div class="complete_text">You've completed the Quiz!</div>
-                        <div class="score_text">
-                            <!-- Here I've inserted Score Result from JavaScript -->
-                        </div>
-                        <div class="buttons">
-                            <button class="restart">Replay Quiz</button>
-                            <button class="quit">Quit Quiz</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <nav class="section-nav">
-            <ol>
-                <li><a href="#1">Food waste</a></li>
-                <li><a href="#2">Environmentally catastrophic</a></li>
-                <li><a href="#3">Morally wrong</a></li>
-                <li><a href="#4">What Can We Do About It?</a></li>
-                <li><a href="#5">Quiz</a></li>
-            </ol>
-        </nav>
-    </main>
-    <!-- lottie loading animation -->
-    <div id="lottie-loading-container">
-        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_grdyYQ.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-        <h1 style="text-align: center; letter-spacing: 2px; color:#b9e498;">Loading</h1>
-    </div>
-    <!-- end of lottie loading animation -->
-    <!-- Back to top button -->
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-chevron-up"></i></a>
-    <!-- Footer -->
-    <footer class="d-flex align-items-center justify-content-center glassmorphism-footer" style="color: white;">
-        <div class="container">
-            <div class="row my-5 px-0">
-                <!-- Team's Name & Links -->
-                <div class="col-6">
-                    <b>Earthers</b><br><br>
-                    Connect with us<br><br>
-                    <!-- LinkedIn -->
-                    <a href="https://www.linkedin.com/school/ngee-ann-polytechnic/?originalSubdomain=sg" target="_blank"><img src="../../assets/images/linkedin.png" alt="LinkedIn logo" width="32" height="32" title="LinkedIn"></a>
-                    <!-- GitHub -->
-                    <a href="https://github.com/JayNg96/PFD-SaveMyWorld" target="_blank"><img src="../../assets/images/github-light.png" alt="GitHub logo" width="32" height="32" title="GitHub"></a>
-                    <!-- Twitter -->
-                    <a href="https://twitter.com/Earthers13" target="_blank"><img src="../../assets/images/twitter.png" alt="GitHub logo" width="32" height="32" title="GitHub"></a>
-                </div>
-                <!-- Developer's Names & Roles -->
-                <div class="col-3">
-                    <b>Team</b>  <br> <br>
-                    <p>👨‍💻 Alexander [Front-End Developer]</p>
-                    <p>👨‍💻 Jian Wei [Full Stack Developer]</p>
-                    <p>👨‍💻 Jun Keat [Back-End Developer]</p>
-                    <p>🖼️ Herman [Content Specialist]</p>
-                    <p>🖼️ Mitchell [Content Specialist]</p>
-                </div>
-                <!-- Contact Link -->
-                <div class="col-3" id="contact">
-                    <b>Contact Us</b> <br><br>
-                    <address>
-                        <a href="mailto:earthsavers@mail.com" class="remove-link-deco" title="Email us">earthsavers@mail.com</a>
-                    </address>
-                    <a href="tel:+6512345678" class="remove-link-deco" title="Call us">+65 1234 5678</a>
-                </div>
-            </div>
-            <!-- Website's Name -->
-            <div class="row my-5">
-                <div class="col-12 text-center " style="font-size: 1rem;">&copy; Earthers 2022</div>
-            </div>
-        </div>
-    </footer>
-    <!-- Scripts -->
-    <!-- Vendor JS Files -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent"><div class="container d-flex justify-content-between align-items-center"><div id="logo"><h1><a href="index.html">EARTHERS</a></h1></div><nav id="navbar" class="navbar"><ul><li><a class="nav-link scrollto" href="../../index.html">Home</a></li><li><a class="nav-link scrollto" href="../newsfeed.html">Newsfeed</a></li><li class="dropdown"><a href="#" class="active"><span>Environmental Issues</span> <i class="bi bi-chevron-down"></i></a><ul><li><a href="../environmentalissues/foodwaste.html" class="active">Food Waste</a></li><li><a href="../environmentalissues/deforestation.html">Deforestation</a></li><li><a href="../environmentalissues/airpollution.html">Air Pollution</a></li><li><a href="../environmentalissues/globalwarming.html">Global Warming</a></li><li><a href="../environmentalissues/lossofbiodiversity.html">Loss of Biodiversity</a></li><li><a href="../environmentalissues/plasticpollution.html">Plastic Pollution</a></li></ul></li><li class="dropdown"><a href="#"><span>Waste Management</span> <i class="bi bi-chevron-down"></i></a><ul><li><a href="../wastemanagement/3rs.html">3Rs</a></li><li><a href="../wastemanagement/playyourpart.html">Play Your Part</a></li><li><a href="../../assets/game/game.html">Recycling Game</a></li></ul></li><li class="dropdown"><a href="#"><span>Support Us</span> <i class="bi bi-chevron-down"></i></a><ul><li><a href="../supportus/volunteer.html">Volunteer Events</a></li><li><a href="../supportus/shop.html">Shop</a></li></ul></li><li class="dropdown"><a href="#"><span>Account</span> <i class="bi bi-chevron-down"></i></a><ul><li><a id="login-dropdown" href="../account/login.html">Login</a></li><li><a id="register-dropdown" href="../account/register.html">Register</a></li></ul></li><li><div class="cart-btn"><span class="nav-icon"><i class="fa fa-cart-plus" style="color:#fff"></i></span><div class="cart-items">0</div></div></li></ul><i class="bi bi-list mobile-nav-toggle"></i></nav></div><div class="cart-overlay"><div class="cart"><span class="close-cart"><i class="fa fa-window-close"></i></span><h2><b>Your Cart</b></h2><div class="cart-content"></div><div class="cart-footer"><h3>Cart Total: $<span class="cart-total">0</span></h3><h3>Reward Points Attainable: <span class="cart-point">0</span></h3><h3>Reward Points Earned: <span class="cart-totalpoint">0</span></h3><button class="checkout-cart banner-btn rounded-pill"><b>checkout</b></button></div></div></div></header><header class="masthead" style="background-image:url(../../assets/images/foodwaste-bg.jpg)"><div class="container position-relative px-4 px-lg-5"><div class="row gx-4 gx-lg-5 justify-content-center"><div class="col-md-10 col-lg-8 col-xl-7"><div class="post-heading"><h1>Global Food Waste And Its Environmental Impact</h1><h2 class="subheading">Global food waste is a far-reaching problem with tremendous financial, ethical and environmental costs.</h2><span class="meta">Header and Subheader by <a href="https://en.reset.org/knowledge/global-food-waste-and-its-environmental-impact-09122018">Olio</a> on September 2018</span></div></div></div></div></header><main><div><section id="1"><h2>Food waste</h2><img class="img-fluid" src="../../assets/images/foodwaste2-img.png" alt="..."><p>The US Food and Agriculture Organization estimated in 2013 that roughly one-third of the world's food was wasted each year. Since then, it has grown into a major problem that many entities around the world are attempting to resolve.</p><p>The amount of food lost is approximately 1.3 billion tons, which is sufficient to feed 3 billion people. Given that there are 690 million people suffering from malnutrition, it is clear that there is more than enough food for everyone. Aside from the human tragedy, the damage caused by producing this food is one of the major environmental problems facing on our planet.</p><p>Food waste varies by country, but some is lost during each stage of the food chain including on farms and fishing boats, in processing and distribution, in retail, in restaurants, and at home. The majority of the loss occurs in the pre-retail stage in developing countries, whereas developed countries waste more at the retail and consumer levels. In the United States, for example, households waste approximately 43% of all food.</p><p>Individuals can also contribute to the reduction of food waste. Individuals can shop more efficiently as consumers and avoid allowing items to sit past their expiration date. Governments are addressing the issue as well; in 2015, the Obama administration pledged to cut food waste in half by 2030. Too Good To Go, a company that connects people with retailers to help them pick up food that would otherwise go to waste, is leading the charge in the entrepreneurial world.</p><p>Article credit to <a href="https://earth.org/drawn-up-biggest-environmental-problems-of-2021/">Earth.org</a></p></section><section id="2"><h2>Environmentally catastrophic</h2><p>Food waste is really, really bad for the environment. It takes a land mass larger than China to grow the food each year that is ultimately never eaten – land that has been deforested, species that have been driven to extinction, indigenous populations that have been moved, soil that has been degraded – all to produce food that we then just throw away. In addition, food that is never eaten accounts for 25% of all fresh water consumption globally. Gulp.</p><p>Not only are all of the resources that went into creating the uneaten food wasted (land, water, labour, energy, manufacturing, packaging, etc), but when food waste goes to landfill, which is where the vast majority of it ends up, it decomposes without access to oxygen and creates methane, which is 23x more deadly than carbon dioxide.</p><p>Every which way you look at it food waste is a major culprit in destroying our planet, and in fact if food waste were a country, it would be the third largest emitter of greenhouse gases after China and the USA.</p><p>It’s easy for many people to dismiss food waste as someone else’s problem (“I don’t waste any food”) or to focus solely on the more visibly shocking examples of waste (unharvested fields of produce ploughed back into the earth, supermarket skip waste).</p><p>However the reality is that in the ‘developed’ world, more than 50% of food waste takes place in our homes. In contrast, less than 2% of food waste takes place at the retail store level (though supermarket practices are directly responsible for much food waste elsewhere in the supply chain.)</p></section><section id="3"><h2>Morally wrong</h2><p>Meanwhile 800 million people go to bed hungry every night. That is 1 in 9 people on the planet who are starving or malnourished. Each and every one of them could be sufficiently fed on less than a quarter of the food that is wasted in the USA, UK and Europe each year.</p><p>Because we have a globalised food supply system, demand for food in the West can drive up the price of food grown for export in developing countries, as well as displace the growth of crops to feed native populations and drive accelerated degradation of natural habitats.</p><blockquote class="blockquote">Respect for food is a respect for life, for who we are and what we do.</blockquote><p>And, hunger is not just a problem that’s happening ‘somewhere else’ – in the UK for example, over 1 million people accessed a food bank last year, whilst in the USA 40 million Americans live in food poverty.</p></section><section id="4"><h2>What Can We Do About It?</h2><p><span style="font-weight:700">Help reduce loss in handling, storage, processing and transport.</span> In low-income countries, the keys lie in better training for farmers and public and private investments in infrastructure. Improved technologies in refrigeration and reliable, renewable energy sources can have a significant impact.</p><p><span style="font-weight:700">Share the surplus.</span> Supermarkets in industrialised nations can, and often do, donate unsold goods. UK retailer Tesco, for example, works with software platform FareShare FoodCloud to notify local charities about surplus food available for pickup.</p><img class="img-fluid" src="../../assets/images/foodwaste1-img.jpg" alt="..."> <span class="caption text-muted">There is food for everyone on this planet, but not everyone eats. - Carlo Petrini.</span><p><span style="font-weight:700">Turn waste into worth.</span> There are already quite a few initiatives transforming leftovers into new products: turning coffee cherries into flour, producing award-winning ale from leftover bread, turning restaurant scraps into bioplastics and home food waste into biogas - essentially using food scraps to produce household energy.</p><p><span style="font-weight:700">Change consumer behaviour.</span> Consumers can try to buy locally whenever possible (shorter supply chains equal fewer opportunities for loss), improve their meal planning, become informed about date labelling and only throw away food when it is truly inedible.</p><p>Article credit to <a href="https://olioex.com/food-waste/the-problem-of-food-waste/">Olio ex</a> &middot; Images by <a href="https://olioex.com/food-waste/the-problem-of-food-waste/">The Problem Of Food Waste</a></p></section><section id="5"><div class="quiz-container" style="padding-top:5%"><h2 style="text-align:center">Click on the start button below to try out our quiz!</h2><div class="start_btn"><button>Commence Quiz</button></div><div class="info_box"><div class="info-title"><span>Some Rules of this Quiz</span></div><div class="info-list"><div class="info">1. You will have only <span>15 seconds</span> per each question.</div><div class="info">2. Once you select your answer, it can't be undone.</div><div class="info">3. You can't select any option once time goes off.</div><div class="info">4. You can't exit from the Quiz while you're playing.</div><div class="info">5. You'll earn points on the basis of your correct answers.</div></div><div class="buttons"><button class="quit">Exit Quiz</button> <button class="restart" id="foodWaste" onclick="selectCat(this.id)">Continue</button></div></div><div class="quiz_box"><header><div class="title">Quiz</div><div class="timer"><div class="time_left_txt">Time Left</div><div class="timer_sec">15</div></div><div class="time_line"></div></header><div class="section"><div class="que_text"></div><div class="option_list"></div></div><footer><div class="total_que"></div><button class="next_btn">Next</button></footer></div><div class="result_box"><div class="icon"><i class="fa fa-quora"></i></div><div class="complete_text">You've completed the Quiz!</div><div class="score_text"></div><div class="buttons"><button class="restart">Replay Quiz</button> <button class="quit">Quit Quiz</button></div></div></div></section></div><nav class="section-nav"><ol><li><a href="#1">Food waste</a></li><li><a href="#2">Environmentally catastrophic</a></li><li><a href="#3">Morally wrong</a></li><li><a href="#4">What Can We Do About It?</a></li><li><a href="#5">Quiz</a></li></ol></nav></main><div id="lottie-loading-container"><lottie-player src="https://assets2.lottiefiles.com/packages/lf20_grdyYQ.json" background="transparent" speed="1" style="width:300px;height:300px" loop autoplay></lottie-player><h1 style="text-align:center;letter-spacing:2px;color:#b9e498">Loading</h1></div><a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-chevron-up"></i></a><footer class="d-flex align-items-center justify-content-center glassmorphism-footer" style="color:#fff"><div class="container"><div class="row my-5 px-0"><div class="col-6"><b>Earthers</b><br><br>Connect with us<br><br><a href="https://www.linkedin.com/school/ngee-ann-polytechnic/?originalSubdomain=sg" target="_blank"><img src="../../assets/images/linkedin.png" alt="LinkedIn logo" width="32" height="32" title="LinkedIn"></a> <a href="https://github.com/JayNg96/PFD-SaveMyWorld" target="_blank"><img src="../../assets/images/github-light.png" alt="GitHub logo" width="32" height="32" title="GitHub"></a> <a href="https://twitter.com/Earthers13" target="_blank"><img src="../../assets/images/twitter.png" alt="GitHub logo" width="32" height="32" title="GitHub"></a></div><div class="col-3"><b>Team</b><br><br><p>👨‍💻 Alexander [Front-End Developer]</p><p>👨‍💻 Jian Wei [Full Stack Developer]</p><p>👨‍💻 Jun Keat [Back-End Developer]</p><p>🖼️ Herman [Content Specialist]</p><p>🖼️ Mitchell [Content Specialist]</p></div><div class="col-3" id="contact"><b>Contact Us</b><br><br><address><a href="mailto:earthsavers@mail.com" class="remove-link-deco" title="Email us">earthsavers@mail.com</a></address><a href="tel:+6512345678" class="remove-link-deco" title="Call us">+65 1234 5678</a></div></div><div class="row my-5"><div class="col-12 text-center" style="font-size:1rem">&copy; Earthers 2022</div></div></div></footer>
     <script src="../../assets/vendor/aos/aos.js"></script>
     <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="../../assets/vendor/php-email-form/validate.js"></script>
-    <!-- Others -->
     <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <!-- Scripts -->
     <script src="../../assets/scripts/script.js"></script>
     <script src="../../assets/scripts/shop.js"></script>
     <script src="../../assets/scripts/quiz.js"></script>

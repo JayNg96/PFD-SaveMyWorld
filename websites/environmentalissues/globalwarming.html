@@ -2,317 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Global Warming</title>
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="../../assets/images/logo.png">
-    <!-- CSS -->
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <!-- Awesome Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Yeseva+One&display=swap" rel="stylesheet">
-    <!-- Vendor CSS Files -->
     <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <!-- Self-Defined -->
     <link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="../../assets/css/quiz.css" rel="stylesheet" type="text/css">
     <link href="../../assets/css/article.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <!--
-       Title: Bootstrap
-       Author: Bootstrap
-       Date: 2021
-       Code version: 5.1
-       Availability: https://getbootstrap.com/docs/5.1/getting-started/introduction/
-       -->
-    <!-- Navigation Bar -->
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-        <div class="container d-flex justify-content-between align-items-center">
-            <!-- Website's Name -->
-            <div id="logo">
-                <h1><a href="index.html">EARTHERS</a></h1>
-                <!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a> -->
-            </div>
-            <nav id="navbar" class="navbar">
-                <ul>
-                    <!-- Home -->
-                    <li><a class="nav-link scrollto" href="../../index.html">Home</a></li>
-                    <!-- News Feed -->
-                    <li><a class="nav-link scrollto" href="../newsfeed.html">Newsfeed</a></li>
-                    <!-- Environmental Issues -->
-                    <li class="dropdown">
-                        <a href="#" class="active"><span>Environmental Issues</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="../environmentalissues/foodwaste.html">Food Waste</a></li>
-                            <li><a href="../environmentalissues/deforestation.html">Deforestation</a></li>
-                            <li><a href="../environmentalissues/airpollution.html">Air Pollution</a></li>
-                            <li><a href="../environmentalissues/globalwarming.html" class="active">Global Warming</a></li>
-                            <li><a href="../environmentalissues/lossofbiodiversity.html">Loss of Biodiversity</a></li>
-                            <li><a href="../environmentalissues/plasticpollution.html">Plastic Pollution</a></li>
-                        </ul>
-                    </li>
-                    <!-- Waste Management -->
-                    <li class="dropdown">
-                        <a href="#"><span>Waste Management</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="../wastemanagement/3rs.html">3Rs</a></li>
-                            <li><a href="../wastemanagement/playyourpart.html">Play Your Part</a></li>
-                            <li><a href="../../assets/game/game.html">Recycling Game</a></li>
-                        </ul>
-                    </li>
-                    <!-- Support Us -->
-                    <li class="dropdown">
-                        <a href="#"><span>Support Us</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="../supportus/volunteer.html">Volunteer Events</a></li>
-                            <li><a href="../supportus/shop.html">Shop</a></li>
-                        </ul>
-                    </li>
-                    <!-- Account -->
-                    <li class="dropdown">
-                        <a href="#"><span>Account</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a id="login-dropdown" href="../account/login.html">Login</a></li>
-                            <li><a id="register-dropdown" href="../account/register.html">Register</a></li>
-                        </ul>
-                    </li>
-                    <!-- Cart -->
-                    <li>
-                        <div class="cart-btn">
-                            <span class="nav-icon">
-                                <i class="fa fa-cart-plus" style="color: rgb(255, 255, 255);"></i>
-                            </span>
-                            <div class="cart-items">0</div>
-                        </div>
-                    </li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav>
-        </div>
-        <!-- Cart Details -->
-        <div class="cart-overlay">
-            <div class="cart">
-                <span class="close-cart"><i class="fa fa-window-close"></i></span>
-                <h2><b>Your Cart</b></h2>
-                <div class="cart-content"></div>
-                <!-- Calculations -->
-                <div class="cart-footer">
-                    <h3>Cart Total: $<span class="cart-total">0</span></h3>
-                    <h3>Reward Points Attainable: <span class="cart-point">0</span></h3>
-                    <h3>Reward Points Earned: <span class="cart-totalpoint">0</span></h3>
-                    <button class="checkout-cart banner-btn rounded-pill"><b>checkout</b></button>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- End Header -->
-    <!-- Page Header-->
-    <header class="masthead" style="background-image: url('../../assets/images/globalwarming-bg.jpg')">
-        <div class="container position-relative px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-md-10 col-lg-8 col-xl-7">
-                    <div class="post-heading">
-                        <h1>Global Warming </h1>
-                        <h2 class="subheading">Glaciers are melting, sea levels are rising, cloud forests are dying, and wildlife is scrambling to keep pace</h2>
-                        <span class="meta">
-                            Header and Subheader by
-                            <a href="https://en.reset.org/knowledge/global-food-waste-and-its-environmental-impact-09122018">Christina Nunez</a>
-                            on January, 2019
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- Post Content-->
-    <main>
-        <div>
-            <section id="1">
-                <h2>Causes and effects of climate change</h2>
-                <img class="img-fluid" src="../../assets/images/globalwarming1-img.jpg" alt="..." />
-                <p>Glaciers are melting, sea levels are rising, cloud forests are dying, and wildlife is scrambling to keep pace. It has become clear that humans have caused most of the past century's warming by releasing heat-trapping gases as we power our modern lives. Called greenhouse gases, their levels are higher now than at any time in the last 800,000 years.</p>
-                <p>We often call the result global warming, but it is causing a set of changes to the Earth's climate, or long-term weather patterns, that varies from place to place. While many people think of global warming and climate change as synonyms, scientists use “climate change” when describing the complex shifts now affecting our planet’s weather and climate systems—in part because some areas actually get cooler in the short term.</p>
-                <p>Climate change encompasses not only rising average temperatures but also extreme weather events, shifting wildlife populations and habitats, rising seas, and a range of other impacts. All of those changes are emerging as humans continue to add heat-trapping greenhouse gases to the atmosphere, changing the rhythms of climate that all living things have come to rely on.</p>
-                <p>What will we do—what can we do—to slow this human-caused warming? How will we cope with the changes we've already set into motion? While we struggle to figure it all out, the fate of the Earth as we know it—coasts, forests, farms, and snow-capped mountains—hangs in the balance.</p>
-                <span class="caption text-muted">An iceberg melts in the waters off Antarctica. Climate change has accelerated the rate of ice loss across the continent.</span>
-                <p>
-                    Photography by
-                    <a href="https://www.nationalgeographic.com/photography">Paul Nicklen</a> &middot;
-                </p>
-                <a href="#!"><img class="img-fluid" src="../../assets/images/globalwarming2-img.jpg" alt="..." /></a>
-                <span class="caption text-muted">Greenland is covered with a vast amount of ice—but the ice is melting four times faster than thought, suggesting that Greenland may be approaching a dangerous tipping point, with implications for global sea-level rise.</span>
-                <p>
-                    Photography by
-                    <a href="https://www.nationalgeographic.com/photography">Michael Melford</a> &middot;
-                </p>
-            </section>
-            <section id="2">
-                <h2>Why does this matter?</h2>
-                <p>The rapid rise in greenhouse gases is a problem because it’s changing the climate faster than some living things can adapt to. Also, a new and more unpredictable climate poses unique challenges to all life.</p>
-                <p>Historically, Earth's climate has regularly shifted between temperatures like those we see today and temperatures cold enough to cover much of North America and Europe with ice. The difference between average global temperatures today and during those ice ages is only about 9 degrees Fahrenheit (5 degrees Celsius), and the swings have tended to happen slowly, over hundreds of thousands of years.</p>
-                <p>But with concentrations of greenhouse gases rising, Earth's remaining ice sheets such as Greenland and Antarctica are starting to melt too. That extra water could raise sea levels significantly, and quickly. By 2050, sea levels are predicted to rise between one and 2.3 feet as glaciers melt.</p>
-                <p>As the mercury rises, the climate can change in unexpected ways. In addition to sea levels rising, weather can become more extreme. This means more intense major storms, more rain followed by longer and drier droughts—a challenge for growing crops—changes in the ranges in which plants and animals can live, and loss of water supplies that have historically come from glaciers.</p>
-                <p>
-                    Article credit to
-                    <a href="https://www.nationalgeographic.com/environment/article/global-warming-overview">Christina Nunez</a> &middot;
-                </p>
-            </section>
-            <section id="3">
-                <h2>What can we do to help?</h2>
-                <p><span style="font-weight:bold">Save energy at home</span>. Much of our electricity and heat is powered by coal, oil and gas. Use less energy by lowering your heating and cooling, switching to LED light bulbs and energy-efficient electric appliances, washing your laundry with cold water or hanging things to dry instead of using a dryer.</p>
-                <p><span style="font-weight:bold">Walk, cycle or take public transport</span>. The world’s roads are clogged with vehicles, most of them burning diesel or petrol. Walking or riding a bike instead of driving will reduce greenhouse gas emissions – and help your health and fitness. For longer distances, consider taking a train or bus. And carpool whenever possible.</p>
-                <p><span style="font-weight:bold">Eat more vegetables</span>. Eating more vegetables, fruits, whole grains, legumes, nuts and seeds, and less meat and dairy, can significantly lower your environmental impact. Producing plant-based foods generally results in fewer greenhouse gas emissions and requires less energy, land and water.</p>
-                <p><span style="font-weight:bold">Consider your travel</span>. Aeroplanes burn large amounts of fossil fuels, producing significant greenhouse gas emissions. That makes taking fewer flights one of the fastest ways to reduce your environmental impact. When you can, meet virtually, take a train or skip that long-distance trip altogether.</p>
-                <p><span style="font-weight:bold">Throw away less food</span>. When you throw food away, you're also wasting the resources and energy that were used to grow, produce, package and transport it. And when food rots in a landfill, it produces methane, a powerful greenhouse gas. So use what you buy and compost any leftovers.</p>
-                <p><span style="font-weight:bold">Reduce, reuse, repair & recycle</span>. Electronics, clothes and other items we buy cause carbon emissions at each point in production, from the extraction of raw materials to manufacturing and transporting goods to market. To protect our climate, buy fewer things, shop second-hand, repair what you can and recycle.</p>
-                <p><span style="font-weight:bold">Change your home's source of energy</span>.Ask your utility company if your home energy comes from oil, coal or gas. If possible, see if you can switch to renewable sources such as wind or solar. Or install solar panels on your roof to generate energy for your home.</p>
-                <p><span style="font-weight:bold">Switch to an electric vehicle</span>. If you plan to buy a car, consider going electric, with more and cheaper models coming on the market. Even if they still run on electricity produced from fossil fuels, electric cars help reduce air pollution and cause significantly fewer greenhouse gas emissions than petrol or diesel-powered vehicles.</p>
-                <p>
-                    Article credit to
-                    <a href="https://www.un.org/en/actnow/ten-actions#fly-less">un.org</a> &middot;
-                </p>
-            </section>
-            <section id="4">
-                <div class="quiz-container" style="padding-top:5%">
-                    <h2 style="text-align:center">Click on the start button below to try out our quiz!</h2>
-                    <!-- start of quiz box and button -->
-                    <div class="start_btn"><button>Commence Quiz</button></div>
-                    <!-- Info Box -->
-                    <div class="info_box">
-                        <div class="info-title"><span>Some Rules of this Quiz</span></div>
-                        <div class="info-list">
-                            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
-                            <div class="info">2. Once you select your answer, it can't be undone.</div>
-                            <div class="info">3. You can't select any option once time goes off.</div>
-                            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
-                            <div class="info">5. You'll earn points on the basis of your correct answers.</div>
-                        </div>
-                        <div class="buttons">
-                            <button class="quit">Exit Quiz</button>
-                            <button class="restart" id="globalWarming" onClick="selectCat(this.id)">Continue</button>
-                        </div>
-                    </div>
-                    <!-- Quiz Box -->
-                    <div class="quiz_box">
-                        <header>
-                            <div class="title">Quiz</div>
-                            <div class="timer">
-                                <div class="time_left_txt">Time Left</div>
-                                <div class="timer_sec">15</div>
-                            </div>
-                            <div class="time_line"></div>
-                        </header>
-                        <div class="section">
-                            <div class="que_text">
-                                <!-- Here I've inserted questions from JavaScript -->
-                            </div>
-                            <div class="option_list">
-                                <!-- Here I've inserted options from JavaScript -->
-                            </div>
-                        </div>
-                        <!-- Footer of Quiz Box -->
-                        <footer>
-                            <div class="total_que">
-                                <!-- Here I've inserted Question Count Number from JavaScript -->
-                            </div>
-                            <button class="next_btn">Next</button>
-                        </footer>
-                    </div>
-                    <!-- Result Box -->
-                    <div class="result_box">
-                        <div class="icon">
-                            <i class="fa fa-quora"></i>
-                        </div>
-                        <div class="complete_text">You've completed the Quiz!</div>
-                        <div class="score_text">
-                            <!-- Here I've inserted Score Result from JavaScript -->
-                        </div>
-                        <div class="buttons">
-                            <button class="restart">Replay Quiz</button>
-                            <button class="quit">Quit Quiz</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <nav class="section-nav">
-            <ol>
-                <li><a href="#1">Causes and effects of climate change</a></li>
-                <li><a href="#2">Why does this matter?</a></li>
-                <li><a href="#3">What can we do to help?</a></li>
-                <li><a href="#4">Quiz</a></li>
-            </ol>
-        </nav>
-    </main>
-    <!-- lottie loading animation -->
-    <div id="lottie-loading-container">
-        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_grdyYQ.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-        <h1 style="text-align: center; letter-spacing: 2px; color:#b9e498;">Loading</h1>
-    </div>
-    <!-- end of lottie loading animation -->
-    <!-- Back to top button -->
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-chevron-up"></i></a>
-    <!-- Footer -->
-    <footer class="d-flex align-items-center justify-content-center glassmorphism-footer" style="color: white;">
-        <div class="container">
-            <div class="row my-5 px-0">
-                <!-- Team's Name & Links -->
-                <div class="col-6">
-                    <b>Earthers</b><br><br>
-                    Connect with us<br><br>
-                    <!-- LinkedIn -->
-                    <a href="https://www.linkedin.com/school/ngee-ann-polytechnic/?originalSubdomain=sg" target="_blank"><img src="../../assets/images/linkedin.png" alt="LinkedIn logo" width="32" height="32" title="LinkedIn"></a>
-                    <!-- GitHub -->
-                    <a href="https://github.com/JayNg96/PFD-SaveMyWorld" target="_blank"><img src="../../assets/images/github-light.png" alt="GitHub logo" width="32" height="32" title="GitHub"></a>
-                    <!-- Twitter -->
-                    <a href="https://twitter.com/Earthers13" target="_blank"><img src="../../assets/images/twitter.png" alt="GitHub logo" width="32" height="32" title="GitHub"></a>
-                </div>
-                <!-- Developer's Names & Roles -->
-                <div class="col-3">
-                    <b>Team</b>  <br> <br>
-                    <p>👨‍💻 Alexander [Front-End Developer]</p>
-                    <p>👨‍💻 Jian Wei [Full Stack Developer]</p>
-                    <p>👨‍💻 Jun Keat [Back-End Developer]</p>
-                    <p>🖼️ Herman [Content Specialist]</p>
-                    <p>🖼️ Mitchell [Content Specialist]</p>
-                </div>
-                <!-- Contact Link -->
-                <div class="col-3" id="contact">
-                    <b>Contact Us</b> <br><br>
-                    <address>
-                        <a href="mailto:earthsavers@mail.com" class="remove-link-deco" title="Email us">earthsavers@mail.com</a>
-                    </address>
-                    <a href="tel:+6512345678" class="remove-link-deco" title="Call us">+65 1234 5678</a>
-                </div>
-            </div>
-            <!-- Website's Name -->
-            <div class="row my-5">
-                <div class="col-12 text-center " style="font-size: 1rem;">&copy; Earthers 2022</div>
-            </div>
-        </div>
-    </footer>
-    <!-- Scripts -->
-    <!-- Vendor JS Files -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent"><div class="container d-flex justify-content-between align-items-center"><div id="logo"><h1><a href="index.html">EARTHERS</a></h1></div><nav id="navbar" class="navbar"><ul><li><a class="nav-link scrollto" href="../../index.html">Home</a></li><li><a class="nav-link scrollto" href="../newsfeed.html">Newsfeed</a></li><li class="dropdown"><a href="#" class="active"><span>Environmental Issues</span> <i class="bi bi-chevron-down"></i></a><ul><li><a href="../environmentalissues/foodwaste.html">Food Waste</a></li><li><a href="../environmentalissues/deforestation.html">Deforestation</a></li><li><a href="../environmentalissues/airpollution.html">Air Pollution</a></li><li><a href="../environmentalissues/globalwarming.html" class="active">Global Warming</a></li><li><a href="../environmentalissues/lossofbiodiversity.html">Loss of Biodiversity</a></li><li><a href="../environmentalissues/plasticpollution.html">Plastic Pollution</a></li></ul></li><li class="dropdown"><a href="#"><span>Waste Management</span> <i class="bi bi-chevron-down"></i></a><ul><li><a href="../wastemanagement/3rs.html">3Rs</a></li><li><a href="../wastemanagement/playyourpart.html">Play Your Part</a></li><li><a href="../../assets/game/game.html">Recycling Game</a></li></ul></li><li class="dropdown"><a href="#"><span>Support Us</span> <i class="bi bi-chevron-down"></i></a><ul><li><a href="../supportus/volunteer.html">Volunteer Events</a></li><li><a href="../supportus/shop.html">Shop</a></li></ul></li><li class="dropdown"><a href="#"><span>Account</span> <i class="bi bi-chevron-down"></i></a><ul><li><a id="login-dropdown" href="../account/login.html">Login</a></li><li><a id="register-dropdown" href="../account/register.html">Register</a></li></ul></li><li><div class="cart-btn"><span class="nav-icon"><i class="fa fa-cart-plus" style="color:#fff"></i></span><div class="cart-items">0</div></div></li></ul><i class="bi bi-list mobile-nav-toggle"></i></nav></div><div class="cart-overlay"><div class="cart"><span class="close-cart"><i class="fa fa-window-close"></i></span><h2><b>Your Cart</b></h2><div class="cart-content"></div><div class="cart-footer"><h3>Cart Total: $<span class="cart-total">0</span></h3><h3>Reward Points Attainable: <span class="cart-point">0</span></h3><h3>Reward Points Earned: <span class="cart-totalpoint">0</span></h3><button class="checkout-cart banner-btn rounded-pill"><b>checkout</b></button></div></div></div></header><header class="masthead" style="background-image:url(../../assets/images/globalwarming-bg.jpg)"><div class="container position-relative px-4 px-lg-5"><div class="row gx-4 gx-lg-5 justify-content-center"><div class="col-md-10 col-lg-8 col-xl-7"><div class="post-heading"><h1>Global Warming</h1><h2 class="subheading">Glaciers are melting, sea levels are rising, cloud forests are dying, and wildlife is scrambling to keep pace</h2><span class="meta">Header and Subheader by <a href="https://en.reset.org/knowledge/global-food-waste-and-its-environmental-impact-09122018">Christina Nunez</a> on January, 2019</span></div></div></div></div></header><main><div><section id="1"><h2>Causes and effects of climate change</h2><img class="img-fluid" src="../../assets/images/globalwarming1-img.jpg" alt="..."><p>Glaciers are melting, sea levels are rising, cloud forests are dying, and wildlife is scrambling to keep pace. It has become clear that humans have caused most of the past century's warming by releasing heat-trapping gases as we power our modern lives. Called greenhouse gases, their levels are higher now than at any time in the last 800,000 years.</p><p>We often call the result global warming, but it is causing a set of changes to the Earth's climate, or long-term weather patterns, that varies from place to place. While many people think of global warming and climate change as synonyms, scientists use “climate change” when describing the complex shifts now affecting our planet’s weather and climate systems—in part because some areas actually get cooler in the short term.</p><p>Climate change encompasses not only rising average temperatures but also extreme weather events, shifting wildlife populations and habitats, rising seas, and a range of other impacts. All of those changes are emerging as humans continue to add heat-trapping greenhouse gases to the atmosphere, changing the rhythms of climate that all living things have come to rely on.</p><p>What will we do—what can we do—to slow this human-caused warming? How will we cope with the changes we've already set into motion? While we struggle to figure it all out, the fate of the Earth as we know it—coasts, forests, farms, and snow-capped mountains—hangs in the balance.</p><span class="caption text-muted">An iceberg melts in the waters off Antarctica. Climate change has accelerated the rate of ice loss across the continent.</span><p>Photography by <a href="https://www.nationalgeographic.com/photography">Paul Nicklen</a> &middot;</p><a href="#!"><img class="img-fluid" src="../../assets/images/globalwarming2-img.jpg" alt="..."></a> <span class="caption text-muted">Greenland is covered with a vast amount of ice—but the ice is melting four times faster than thought, suggesting that Greenland may be approaching a dangerous tipping point, with implications for global sea-level rise.</span><p>Photography by <a href="https://www.nationalgeographic.com/photography">Michael Melford</a> &middot;</p></section><section id="2"><h2>Why does this matter?</h2><p>The rapid rise in greenhouse gases is a problem because it’s changing the climate faster than some living things can adapt to. Also, a new and more unpredictable climate poses unique challenges to all life.</p><p>Historically, Earth's climate has regularly shifted between temperatures like those we see today and temperatures cold enough to cover much of North America and Europe with ice. The difference between average global temperatures today and during those ice ages is only about 9 degrees Fahrenheit (5 degrees Celsius), and the swings have tended to happen slowly, over hundreds of thousands of years.</p><p>But with concentrations of greenhouse gases rising, Earth's remaining ice sheets such as Greenland and Antarctica are starting to melt too. That extra water could raise sea levels significantly, and quickly. By 2050, sea levels are predicted to rise between one and 2.3 feet as glaciers melt.</p><p>As the mercury rises, the climate can change in unexpected ways. In addition to sea levels rising, weather can become more extreme. This means more intense major storms, more rain followed by longer and drier droughts—a challenge for growing crops—changes in the ranges in which plants and animals can live, and loss of water supplies that have historically come from glaciers.</p><p>Article credit to <a href="https://www.nationalgeographic.com/environment/article/global-warming-overview">Christina Nunez</a> &middot;</p></section><section id="3"><h2>What can we do to help?</h2><p><span style="font-weight:700">Save energy at home</span>. Much of our electricity and heat is powered by coal, oil and gas. Use less energy by lowering your heating and cooling, switching to LED light bulbs and energy-efficient electric appliances, washing your laundry with cold water or hanging things to dry instead of using a dryer.</p><p><span style="font-weight:700">Walk, cycle or take public transport</span>. The world’s roads are clogged with vehicles, most of them burning diesel or petrol. Walking or riding a bike instead of driving will reduce greenhouse gas emissions – and help your health and fitness. For longer distances, consider taking a train or bus. And carpool whenever possible.</p><p><span style="font-weight:700">Eat more vegetables</span>. Eating more vegetables, fruits, whole grains, legumes, nuts and seeds, and less meat and dairy, can significantly lower your environmental impact. Producing plant-based foods generally results in fewer greenhouse gas emissions and requires less energy, land and water.</p><p><span style="font-weight:700">Consider your travel</span>. Aeroplanes burn large amounts of fossil fuels, producing significant greenhouse gas emissions. That makes taking fewer flights one of the fastest ways to reduce your environmental impact. When you can, meet virtually, take a train or skip that long-distance trip altogether.</p><p><span style="font-weight:700">Throw away less food</span>. When you throw food away, you're also wasting the resources and energy that were used to grow, produce, package and transport it. And when food rots in a landfill, it produces methane, a powerful greenhouse gas. So use what you buy and compost any leftovers.</p><p><span style="font-weight:700">Reduce, reuse, repair & recycle</span>. Electronics, clothes and other items we buy cause carbon emissions at each point in production, from the extraction of raw materials to manufacturing and transporting goods to market. To protect our climate, buy fewer things, shop second-hand, repair what you can and recycle.</p><p><span style="font-weight:700">Change your home's source of energy</span>.Ask your utility company if your home energy comes from oil, coal or gas. If possible, see if you can switch to renewable sources such as wind or solar. Or install solar panels on your roof to generate energy for your home.</p><p><span style="font-weight:700">Switch to an electric vehicle</span>. If you plan to buy a car, consider going electric, with more and cheaper models coming on the market. Even if they still run on electricity produced from fossil fuels, electric cars help reduce air pollution and cause significantly fewer greenhouse gas emissions than petrol or diesel-powered vehicles.</p><p>Article credit to <a href="https://www.un.org/en/actnow/ten-actions#fly-less">un.org</a> &middot;</p></section><section id="4"><div class="quiz-container" style="padding-top:5%"><h2 style="text-align:center">Click on the start button below to try out our quiz!</h2><div class="start_btn"><button>Commence Quiz</button></div><div class="info_box"><div class="info-title"><span>Some Rules of this Quiz</span></div><div class="info-list"><div class="info">1. You will have only <span>15 seconds</span> per each question.</div><div class="info">2. Once you select your answer, it can't be undone.</div><div class="info">3. You can't select any option once time goes off.</div><div class="info">4. You can't exit from the Quiz while you're playing.</div><div class="info">5. You'll earn points on the basis of your correct answers.</div></div><div class="buttons"><button class="quit">Exit Quiz</button> <button class="restart" id="globalWarming" onclick="selectCat(this.id)">Continue</button></div></div><div class="quiz_box"><header><div class="title">Quiz</div><div class="timer"><div class="time_left_txt">Time Left</div><div class="timer_sec">15</div></div><div class="time_line"></div></header><div class="section"><div class="que_text"></div><div class="option_list"></div></div><footer><div class="total_que"></div><button class="next_btn">Next</button></footer></div><div class="result_box"><div class="icon"><i class="fa fa-quora"></i></div><div class="complete_text">You've completed the Quiz!</div><div class="score_text"></div><div class="buttons"><button class="restart">Replay Quiz</button> <button class="quit">Quit Quiz</button></div></div></div></section></div><nav class="section-nav"><ol><li><a href="#1">Causes and effects of climate change</a></li><li><a href="#2">Why does this matter?</a></li><li><a href="#3">What can we do to help?</a></li><li><a href="#4">Quiz</a></li></ol></nav></main><div id="lottie-loading-container"><lottie-player src="https://assets2.lottiefiles.com/packages/lf20_grdyYQ.json" background="transparent" speed="1" style="width:300px;height:300px" loop autoplay></lottie-player><h1 style="text-align:center;letter-spacing:2px;color:#b9e498">Loading</h1></div><a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-chevron-up"></i></a><footer class="d-flex align-items-center justify-content-center glassmorphism-footer" style="color:#fff"><div class="container"><div class="row my-5 px-0"><div class="col-6"><b>Earthers</b><br><br>Connect with us<br><br><a href="https://www.linkedin.com/school/ngee-ann-polytechnic/?originalSubdomain=sg" target="_blank"><img src="../../assets/images/linkedin.png" alt="LinkedIn logo" width="32" height="32" title="LinkedIn"></a> <a href="https://github.com/JayNg96/PFD-SaveMyWorld" target="_blank"><img src="../../assets/images/github-light.png" alt="GitHub logo" width="32" height="32" title="GitHub"></a> <a href="https://twitter.com/Earthers13" target="_blank"><img src="../../assets/images/twitter.png" alt="GitHub logo" width="32" height="32" title="GitHub"></a></div><div class="col-3"><b>Team</b><br><br><p>👨‍💻 Alexander [Front-End Developer]</p><p>👨‍💻 Jian Wei [Full Stack Developer]</p><p>👨‍💻 Jun Keat [Back-End Developer]</p><p>🖼️ Herman [Content Specialist]</p><p>🖼️ Mitchell [Content Specialist]</p></div><div class="col-3" id="contact"><b>Contact Us</b><br><br><address><a href="mailto:earthsavers@mail.com" class="remove-link-deco" title="Email us">earthsavers@mail.com</a></address><a href="tel:+6512345678" class="remove-link-deco" title="Call us">+65 1234 5678</a></div></div><div class="row my-5"><div class="col-12 text-center" style="font-size:1rem">&copy; Earthers 2022</div></div></div></footer>
     <script src="../../assets/vendor/aos/aos.js"></script>
     <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="../../assets/vendor/php-email-form/validate.js"></script>
-    <!-- Others -->
     <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <!-- Scripts -->
     <script src="../../assets/scripts/script.js"></script>
     <script src="../../assets/scripts/shop.js"></script>
     <script src="../../assets/scripts/quiz.js"></script>
